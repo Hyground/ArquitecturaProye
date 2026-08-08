@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compara componentes de PC de distintas marcas, característica por característica." />
+  <title>VERSUS — Comparador de hardware</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">V</span><span>VERSUS</span></a>
+    <nav>
+      <a class="active" href="#comparador">Comparador</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como-funciona">Cómo funciona</a>
+    </nav>
+    <button class="api-button" id="openApi"><span class="status-dot"></span><span id="apiLabel">Modo catálogo</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="comparador">
+      <div class="eyebrow"><span></span> DECIDE CON DATOS</div>
+      <h1>Dos componentes.<br><em>Una decisión clara.</em></h1>
+      <p>Compara especificaciones, rendimiento y precio entre marcas. Sin ruido, sin sesgos.</p>
+      <div class="hero-search">
+        <span class="search-icon">⌕</span>
+        <input id="heroSearch" type="search" placeholder="Busca un componente: RTX 5070, Ryzen 7, 32 GB DDR5…" autocomplete="off" />
+        <kbd>⌘ K</kbd>
+      </div>
+      <div class="hero-meta"><span>↗ <b id="productCount">0</b> productos disponibles</span><span>•</span><span><b id="categoryCount">0</b> categorías</span><span>•</span><span>Comparación instantánea</span></div>
+    </section>
+
+    <section class="compare-section">
+      <div class="section-heading">
+        <div><span class="step">01</span><h2>Elige tus contendientes</h2></div>
+        <button class="swap" id="swapButton" title="Intercambiar">⇄ Intercambiar</button>
+      </div>
+      <div class="compare-grid">
+        <button class="pick-card" id="pickA" data-side="a">
+          <span class="side-label">COMPONENTE A</span>
+          <span class="plus">＋</span>
+          <strong>Seleccionar componente</strong>
+          <small>Haz clic para explorar el catálogo</small>
+        </button>
+        <div class="vs-badge">VS</div>
+        <button class="pick-card" id="pickB" data-side="b">
+          <span class="side-label">COMPONENTE B</span>
+          <span class="plus">＋</span>
+          <strong>Seleccionar componente</strong>
+          <small>Elige otra marca para comparar</small>
+        </button>
+      </div>
+      <div id="comparison" class="comparison hidden"></div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading catalog-head">
+        <div><span class="step">02</span><h2>Explora el catálogo</h2></div>
+        <span id="resultsCount" class="results-count"></span>
+      </div>
+      <div class="category-list" id="categories"></div>
+      <div class="catalog-tools">
+        <label><span>⌕</span><input id="catalogSearch" type="search" placeholder="Buscar por nombre, marca o especificación" /></label>
+        <select id="sortSelect" aria-label="Ordenar productos">
+          <option value="featured">Orden: destacados</option>
+          <option value="priceAsc">Precio: menor primero</option>
+          <option value="priceDesc">Precio: mayor primero</option>
+          <option value="score">Mejor puntuación</option>
+        </select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="how" id="como-funciona">
+      <div><span>01</span><h3>Busca</h3><p>Encuentra componentes por categoría, nombre o marca.</p></div>
+      <div><span>02</span><h3>Selecciona</h3><p>Elige dos modelos equivalentes de fabricantes distintos.</p></div>
+      <div><span>03</span><h3>Decide</h3><p>Ve diferencias, ventajas y una recomendación transparente.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">V</span><span>VERSUS</span></a><p>Datos para decidir mejor.</p><span>© 2026 VERSUS</span></footer>
+
+  <dialog id="pickerModal">
+    <div class="modal-head"><div><span class="modal-kicker">SELECCIONAR</span><h2 id="pickerTitle">Elige un componente</h2></div><button class="close" data-close="pickerModal">×</button></div>
+    <input id="pickerSearch" class="modal-search" type="search" placeholder="Buscar en esta categoría…" autofocus />
+    <div id="pickerList" class="picker-list"></div>
+  </dialog>
+
+  <dialog id="apiModal">
+    <div class="modal-head"><div><span class="modal-kicker">FUENTE DE DATOS</span><h2>Conectar Channel3</h2></div><button class="close" data-close="apiModal">×</button></div>
+    <p class="modal-copy">Channel3 ofrece búsquedas gratuitas de productos. Tu clave se guarda únicamente en este navegador.</p>
+    <label class="field">API key<input id="apiKey" type="password" placeholder="ch_••••••••••••" /></label>
+    <div class="api-actions"><button class="secondary" id="removeApi">Usar catálogo local</button><button class="primary" id="saveApi">Guardar y conectar</button></div>
+    <p class="fineprint">La cobertura total no puede garantizarse: depende del catálogo y disponibilidad de terceros.</p>
+  </dialog>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
