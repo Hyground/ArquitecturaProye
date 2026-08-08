@@ -18,14 +18,14 @@
       <a href="#catalogo">Catálogo</a>
       <a href="#como-funciona">Cómo funciona</a>
     </nav>
-    <button class="api-button" id="openApi"><span class="status-dot"></span><span id="apiLabel">Modo catálogo</span></button>
+    <button class="api-button" id="openApi"><span class="status-dot online"></span><span id="apiLabel">Datos abiertos</span></button>
   </header>
 
   <main>
     <section class="hero" id="comparador">
       <div class="eyebrow"><span></span> DECIDE CON DATOS</div>
-      <h1>Dos componentes.<br><em>Una decisión clara.</em></h1>
-      <p>Compara especificaciones, rendimiento y precio entre marcas. Sin ruido, sin sesgos.</p>
+      <h1>¿Cuál te conviene<br><em>de verdad?</em></h1>
+      <p>Elige una categoría y enfrenta dos productos equivalentes, lado a lado.</p>
       <div class="hero-search">
         <span class="search-icon">⌕</span>
         <input id="heroSearch" type="search" placeholder="Busca un componente: RTX 5070, Ryzen 7, 32 GB DDR5…" autocomplete="off" />
@@ -59,7 +59,7 @@
 
     <section class="catalog-section" id="catalogo">
       <div class="section-heading catalog-head">
-        <div><span class="step">02</span><h2>Explora el catálogo</h2></div>
+        <div><span class="step">02</span><h2>Primero, elige una categoría</h2></div>
         <span id="resultsCount" class="results-count"></span>
       </div>
       <div class="category-list" id="categories"></div>
@@ -91,11 +91,10 @@
   </dialog>
 
   <dialog id="apiModal">
-    <div class="modal-head"><div><span class="modal-kicker">FUENTE DE DATOS</span><h2>Conectar Channel3</h2></div><button class="close" data-close="apiModal">×</button></div>
-    <p class="modal-copy">Channel3 ofrece búsquedas gratuitas de productos. Tu clave se guarda únicamente en este navegador.</p>
-    <label class="field">API key<input id="apiKey" type="password" placeholder="ch_••••••••••••" /></label>
-    <div class="api-actions"><button class="secondary" id="removeApi">Usar catálogo local</button><button class="primary" id="saveApi">Guardar y conectar</button></div>
-    <p class="fineprint">La cobertura total no puede garantizarse: depende del catálogo y disponibilidad de terceros.</p>
+    <div class="modal-head"><div><span class="modal-kicker">FUENTE DE DATOS</span><h2>Catálogo abierto y sin claves</h2></div><button class="close" data-close="apiModal">×</button></div>
+    <p class="modal-copy">Las búsquedas de hardware consultan el dataset público PCPartPicker Parts alojado en Hugging Face. No requiere cuenta, API key ni configuración.</p>
+    <div class="source-card"><span class="status-dot online"></span><div><strong>Hugging Face Dataset API</strong><small>MIT · acceso público · imágenes y especificaciones</small></div></div>
+    <p class="fineprint">Los precios pueden variar por región o estar desactualizados. Consolas y periféricos adicionales provienen del catálogo editorial incluido.</p>
   </dialog>
 
   <div id="toast" class="toast"></div>
