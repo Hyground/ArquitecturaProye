@@ -1,3 +1,4 @@
+# Deploy a Hostinger via FTP
 name: Deploy FTP
 
 on:
