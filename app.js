@@ -1,90 +1,636 @@
-const products = [
- {id:'cpu-amd',cat:'CPU',brand:'AMD',name:'Ryzen 7 9800X3D',price:479,score:96,emoji:'▣',specs:{'Núcleos / hilos':'8 / 16','Frecuencia boost':'5.2 GHz','Caché':'104 MB','TDP':'120 W','Socket':'AM5'}},
- {id:'cpu-intel',cat:'CPU',brand:'Intel',name:'Core Ultra 7 265K',price:399,score:88,emoji:'▣',specs:{'Núcleos / hilos':'20 / 20','Frecuencia boost':'5.5 GHz','Caché':'66 MB','TDP':'125 W','Socket':'LGA1851'}},
- {id:'gpu-nvidia',cat:'GPU',brand:'NVIDIA',name:'GeForce RTX 5070 Ti',price:749,score:94,emoji:'▤',specs:{'VRAM':'16 GB GDDR7','Boost':'2.45 GHz','Bus de memoria':'256-bit','Consumo':'300 W','Ray tracing':'4ª generación'}},
- {id:'gpu-amd',cat:'GPU',brand:'AMD',name:'Radeon RX 9070 XT',price:599,score:92,emoji:'▤',specs:{'VRAM':'16 GB GDDR6','Boost':'2.97 GHz','Bus de memoria':'256-bit','Consumo':'304 W','Ray tracing':'3ª generación'}},
- {id:'ram-corsair',cat:'RAM',brand:'Corsair',name:'Vengeance RGB 32 GB',price:119,score:91,emoji:'▥',specs:{'Capacidad':'32 GB (2×16)','Velocidad':'6000 MT/s','Latencia':'CL30','Tipo':'DDR5','Voltaje':'1.40 V'}},
- {id:'ram-gskill',cat:'RAM',brand:'G.Skill',name:'Trident Z5 Neo 32 GB',price:124,score:93,emoji:'▥',specs:{'Capacidad':'32 GB (2×16)','Velocidad':'6000 MT/s','Latencia':'CL30','Tipo':'DDR5','Voltaje':'1.35 V'}},
- {id:'mb-asus',cat:'Placa base',brand:'ASUS',name:'ROG Strix X870E-E',price:499,score:94,emoji:'▦',specs:{'Socket':'AM5','Formato':'ATX','Memoria':'DDR5 · 192 GB','Wi-Fi':'Wi-Fi 7','M.2':'5 ranuras'}},
- {id:'mb-msi',cat:'Placa base',brand:'MSI',name:'MAG X870 Tomahawk',price:299,score:91,emoji:'▦',specs:{'Socket':'AM5','Formato':'ATX','Memoria':'DDR5 · 256 GB','Wi-Fi':'Wi-Fi 7','M.2':'4 ranuras'}},
- {id:'ssd-samsung',cat:'Almacenamiento',brand:'Samsung',name:'990 Pro 2 TB',price:169,score:95,emoji:'▰',specs:{'Capacidad':'2 TB','Lectura':'7450 MB/s','Escritura':'6900 MB/s','Interfaz':'PCIe 4.0','Garantía':'5 años'}},
- {id:'ssd-wd',cat:'Almacenamiento',brand:'WD',name:'Black SN850X 2 TB',price:149,score:93,emoji:'▰',specs:{'Capacidad':'2 TB','Lectura':'7300 MB/s','Escritura':'6600 MB/s','Interfaz':'PCIe 4.0','Garantía':'5 años'}},
- {id:'psu-seasonic',cat:'Fuente',brand:'Seasonic',name:'Vertex GX-850',price:189,score:94,emoji:'◉',specs:{'Potencia':'850 W','Certificación':'80+ Gold','Estándar':'ATX 3.0','Modular':'Sí','Garantía':'12 años'}},
- {id:'psu-corsair',cat:'Fuente',brand:'Corsair',name:'RM850x Shift',price:159,score:92,emoji:'◉',specs:{'Potencia':'850 W','Certificación':'80+ Gold','Estándar':'ATX 3.0','Modular':'Sí','Garantía':'10 años'}},
- {id:'cool-nzxt',cat:'Refrigeración',brand:'NZXT',name:'Kraken Elite 360',price:279,score:91,emoji:'❄',specs:{'Tipo':'AIO líquido','Radiador':'360 mm','Ruido':'33.9 dBA','Pantalla':'LCD 2.72”','Garantía':'6 años'}},
- {id:'cool-arctic',cat:'Refrigeración',brand:'Arctic',name:'Liquid Freezer III 360',price:129,score:95,emoji:'❄',specs:{'Tipo':'AIO líquido','Radiador':'360 mm','Ruido':'23.5 dBA','Pantalla':'No','Garantía':'6 años'}},
- {id:'case-fractal',cat:'Gabinete',brand:'Fractal',name:'North XL',price:179,score:94,emoji:'▯',specs:{'Formato':'Full tower','Placa máxima':'E-ATX','GPU máxima':'413 mm','Ventiladores':'3 incluidos','Peso':'9.7 kg'}},
- {id:'case-lianli',cat:'Gabinete',brand:'Lian Li',name:'O11 Dynamic EVO',price:169,score:93,emoji:'▯',specs:{'Formato':'Mid tower','Placa máxima':'E-ATX','GPU máxima':'426 mm','Ventiladores':'0 incluidos','Peso':'12.7 kg'}},
- {id:'mon-lg',cat:'Monitor',brand:'LG',name:'UltraGear 27GS95QE',price:699,score:94,emoji:'▱',specs:{'Panel':'OLED','Resolución':'2560 × 1440','Frecuencia':'240 Hz','Respuesta':'0.03 ms','HDR':'HDR10'}},
- {id:'mon-samsung',cat:'Monitor',brand:'Samsung',name:'Odyssey OLED G6',price:749,score:95,emoji:'▱',specs:{'Panel':'QD-OLED','Resolución':'2560 × 1440','Frecuencia':'360 Hz','Respuesta':'0.03 ms','HDR':'HDR10+ Gaming'}},
- {id:'kb-razer',cat:'Teclado',brand:'Razer',name:'Huntsman V3 Pro TKL',price:219,score:92,emoji:'⌨',specs:{'Formato':'TKL','Switch':'Óptico analógico','Conexión':'Cable','Iluminación':'RGB','Peso':'719 g'}},
- {id:'kb-logi',cat:'Teclado',brand:'Logitech',name:'G Pro X TKL Rapid',price:169,score:91,emoji:'⌨',specs:{'Formato':'TKL','Switch':'Magnético','Conexión':'Inalámbrica','Iluminación':'RGB','Peso':'1035 g'}},
- {id:'mouse-logi',cat:'Mouse',brand:'Logitech',name:'G Pro X Superlight 2',price:159,score:95,emoji:'◒',specs:{'Sensor':'HERO 2','DPI':'44000','Peso':'60 g','Conexión':'Inalámbrica','Batería':'95 horas'}},
- {id:'mouse-razer',cat:'Mouse',brand:'Razer',name:'Viper V3 Pro',price:159,score:96,emoji:'◒',specs:{'Sensor':'Focus Pro 35K','DPI':'35000','Peso':'54 g','Conexión':'Inalámbrica','Batería':'95 horas'}},
- {id:'print-hp',cat:'Impresora',brand:'HP',name:'OfficeJet Pro 9125e',price:209,score:88,emoji:'▣',specs:{'Tecnología':'Inyección térmica','Color':'Sí','Velocidad':'22 ppm','Dúplex':'Automático','Conexión':'Wi-Fi · USB'}},
- {id:'print-epson',cat:'Impresora',brand:'Epson',name:'EcoTank ET-4850',price:399,score:93,emoji:'▣',specs:{'Tecnología':'Tanque de tinta','Color':'Sí','Velocidad':'15.5 ppm','Dúplex':'Automático','Conexión':'Wi-Fi · Ethernet'}},
- {id:'speaker-edifier',cat:'Bocinas',brand:'Edifier',name:'R1280DBs',price:159,score:92,emoji:'◖',specs:{'Potencia':'42 W RMS','Canales':'2.0','Respuesta':'51 Hz–20 kHz','Bluetooth':'5.0','Subwoofer':'Salida disponible'}},
- {id:'speaker-logi',cat:'Bocinas',brand:'Logitech',name:'Z407',price:119,score:87,emoji:'◖',specs:{'Potencia':'40 W RMS','Canales':'2.1','Respuesta':'40 Hz–20 kHz','Bluetooth':'5.0','Subwoofer':'Incluido'}},
- {id:'head-sony',cat:'Audífonos',brand:'Sony',name:'INZONE H9',price:299,score:91,emoji:'Ω',specs:{'Tipo':'Over-ear','Conexión':'2.4 GHz · Bluetooth','Cancelación':'Activa','Batería':'32 horas','Peso':'330 g'}},
- {id:'head-hyperx',cat:'Audífonos',brand:'HyperX',name:'Cloud III Wireless',price:169,score:93,emoji:'Ω',specs:{'Tipo':'Over-ear','Conexión':'2.4 GHz','Cancelación':'Pasiva','Batería':'120 horas','Peso':'342 g'}},
- {id:'web-logi',cat:'Webcam',brand:'Logitech',name:'MX Brio',price:199,score:94,emoji:'◉',specs:{'Resolución':'4K','Fotogramas':'30 fps 4K','Enfoque':'Automático','Micrófono':'Doble','Campo de visión':'90°'}},
- {id:'web-elgato',cat:'Webcam',brand:'Elgato',name:'Facecam MK.2',price:149,score:92,emoji:'◉',specs:{'Resolución':'1080p','Fotogramas':'60 fps','Enfoque':'Fijo','Micrófono':'No','Campo de visión':'84°'}},
- {id:'mic-blue',cat:'Micrófono',brand:'Blue',name:'Yeti X',price:169,score:91,emoji:'♩',specs:{'Patrones':'4','Frecuencia':'20 Hz–20 kHz','Resolución':'24-bit / 48 kHz','Conexión':'USB','Monitoreo':'3.5 mm'}},
- {id:'mic-hyperx',cat:'Micrófono',brand:'HyperX',name:'QuadCast 2',price:149,score:92,emoji:'♩',specs:{'Patrones':'4','Frecuencia':'20 Hz–20 kHz','Resolución':'24-bit / 96 kHz','Conexión':'USB-C','Monitoreo':'3.5 mm'}},
- {id:'ups-apc',cat:'UPS',brand:'APC',name:'Back-UPS Pro 1500VA',price:249,score:94,emoji:'ϟ',specs:{'Capacidad':'1500 VA','Potencia':'900 W','Topología':'Line-interactive','Salidas':'10','Pantalla':'LCD'}},
- {id:'ups-cyber',cat:'UPS',brand:'CyberPower',name:'CP1500PFCLCD',price:219,score:95,emoji:'ϟ',specs:{'Capacidad':'1500 VA','Potencia':'1000 W','Topología':'Line-interactive','Salidas':'12','Pantalla':'LCD'}},
- {id:'cap-elgato',cat:'Capturadora',brand:'Elgato',name:'4K X',price:229,score:94,emoji:'▣',specs:{'Captura máxima':'4K 144 Hz','Interfaz':'USB 3.2','HDR':'Sí','VRR':'Sí','Passthrough':'4K 144 Hz'}},
- {id:'cap-aver',cat:'Capturadora',brand:'AVerMedia',name:'Live Gamer Ultra 2.1',price:249,score:93,emoji:'▣',specs:{'Captura máxima':'4K 60 Hz','Interfaz':'USB 3.2','HDR':'Sí','VRR':'Sí','Passthrough':'4K 144 Hz'}},
- {id:'net-asus',cat:'Red',brand:'ASUS',name:'PCE-BE92BT',price:99,score:94,emoji:'⌁',specs:{'Wi-Fi':'Wi-Fi 7','Velocidad':'5.8 Gbps','Bluetooth':'5.4','Bandas':'Tri-band','Interfaz':'PCIe'}},
- {id:'net-tp',cat:'Red',brand:'TP-Link',name:'Archer TBE550E',price:89,score:93,emoji:'⌁',specs:{'Wi-Fi':'Wi-Fi 7','Velocidad':'5.8 Gbps','Bluetooth':'5.4','Bandas':'Tri-band','Interfaz':'PCIe'}},
- {id:'scan-canon',cat:'Escáner',brand:'Canon',name:'imageFORMULA R40',price:329,score:92,emoji:'▱',specs:{'Tipo':'Alimentador de hojas','Resolución':'600 dpi','Velocidad':'40 ppm','Dúplex':'Sí','Alimentador':'60 hojas'}},
- {id:'scan-epson',cat:'Escáner',brand:'Epson',name:'WorkForce ES-580W',price:399,score:94,emoji:'▱',specs:{'Tipo':'Alimentador de hojas','Resolución':'600 dpi','Velocidad':'35 ppm','Dúplex':'Sí','Alimentador':'100 hojas'}},
- {id:'console-ps5',cat:'Consola',brand:'Sony',name:'PlayStation 5 Pro',price:699,score:95,emoji:'◈',specs:{'Resolución':'Hasta 8K','Almacenamiento':'2 TB SSD','Unidad óptica':'No','Ray tracing':'Avanzado','Controles incluidos':'1'}},
- {id:'console-xbox',cat:'Consola',brand:'Microsoft',name:'Xbox Series X 2 TB',price:599,score:93,emoji:'◈',specs:{'Resolución':'Hasta 8K','Almacenamiento':'2 TB SSD','Unidad óptica':'Sí','Ray tracing':'Sí','Controles incluidos':'1'}},
- {id:'control-dual',cat:'Control',brand:'Sony',name:'DualSense Edge',price:199,score:93,emoji:'⌘',specs:{'Compatibilidad':'PS5 · PC','Conexión':'Bluetooth · USB','Batería':'6 horas','Gatillos adaptativos':'Sí','Peso':'325 g'}},
- {id:'control-xbox',cat:'Control',brand:'Microsoft',name:'Xbox Elite Series 2',price:179,score:92,emoji:'⌘',specs:{'Compatibilidad':'Xbox · PC','Conexión':'Bluetooth · USB','Batería':'40 horas','Gatillos adaptativos':'No','Peso':'345 g'}},
- {id:'project-benq',cat:'Proyector',brand:'BenQ',name:'X3100i Gaming',price:2399,score:94,emoji:'▰',specs:{'Resolución':'4K UHD','Brillo':'3300 ANSI lm','Frecuencia':'240 Hz a 1080p','Fuente':'LED','HDR':'HDR10+'}},
- {id:'project-epson',cat:'Proyector',brand:'Epson',name:'Home Cinema 3800',price:1699,score:92,emoji:'▰',specs:{'Resolución':'4K PRO-UHD','Brillo':'3000 ANSI lm','Frecuencia':'60 Hz','Fuente':'Lámpara','HDR':'HDR10'}},
- {id:'chair-secret',cat:'Silla',brand:'Secretlab',name:'Titan Evo',price:549,score:94,emoji:'♙',specs:{'Material':'Tela SoftWeave','Carga máxima':'130 kg','Reposabrazos':'4D','Reclinación':'165°','Garantía':'5 años'}},
- {id:'chair-corsair',cat:'Silla',brand:'Corsair',name:'TC100 Relaxed',price:249,score:88,emoji:'♙',specs:{'Material':'Tela','Carga máxima':'120 kg','Reposabrazos':'2D','Reclinación':'160°','Garantía':'2 años'}},
- {id:'dock-caldigit',cat:'Dock',brand:'CalDigit',name:'TS4 Thunderbolt 4',price:399,score:96,emoji:'▪',specs:{'Puertos':'18','Host':'Thunderbolt 4','Carga':'98 W','Pantallas':'2 × 6K','Ethernet':'2.5 GbE'}},
- {id:'dock-anker',cat:'Dock',brand:'Anker',name:'Prime TB5 Dock',price:399,score:94,emoji:'▪',specs:{'Puertos':'14','Host':'Thunderbolt 5','Carga':'140 W','Pantallas':'2 × 8K','Ethernet':'2.5 GbE'}},
- {id:'tablet-wacom',cat:'Tableta gráfica',brand:'Wacom',name:'Intuos Pro Medium',price:379,score:94,emoji:'▱',specs:{'Área activa':'224 × 148 mm','Niveles de presión':'8192','Conexión':'Bluetooth · USB','Teclas':'8','Peso':'700 g'}},
- {id:'tablet-xppen',cat:'Tableta gráfica',brand:'XPPen',name:'Deco Pro Gen 2',price:199,score:91,emoji:'▱',specs:{'Área activa':'228 × 152 mm','Niveles de presión':'16384','Conexión':'Bluetooth · USB','Teclas':'10','Peso':'838 g'}}
-];
+/**
+ * VERSUS — Comparador de hardware y componentes de PC
+ * Arquitectura: Datasets modulares por categoria en /data/categories/*.json
+ * Auto-descubrimiento dinamico: Detecta y agrega categorias automaticamente sin modificar codigo JS.
+ */
 
-const cats=['Todos',...new Set(products.map(p=>p.cat))];
-const familyByCat={CPU:'Componentes',GPU:'Componentes',RAM:'Componentes','Placa base':'Componentes',Almacenamiento:'Componentes',Fuente:'Componentes',Refrigeración:'Componentes',Gabinete:'Componentes',Red:'Componentes',Monitor:'Pantallas',Proyector:'Pantallas',Teclado:'Periféricos',Mouse:'Periféricos',Bocinas:'Audio',Audífonos:'Audio',Micrófono:'Audio',Impresora:'Oficina',Escáner:'Oficina',Webcam:'Periféricos',UPS:'Energía',Capturadora:'Video',Consola:'Gaming',Control:'Gaming',Silla:'Mobiliario',Dock:'Accesorios','Tableta gráfica':'Creatividad'};
-const catPhoto={CPU:'https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80',GPU:'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80',Teclado:'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80',Mouse:'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80',Monitor:'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80',Consola:'https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=700&q=80',Control:'https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80',Audífonos:'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80',Impresora:'assets/hardware-hero.png',Escáner:'assets/hardware-hero.png',default:'assets/hardware-hero.png'};
-const photo=p=>p.image||catPhoto[p.cat]||catPhoto.default;
-let activeCat='CPU', sideToPick='a', selected={a:null,b:null};
-const $=s=>document.querySelector(s); const money=n=>new Intl.NumberFormat('es-GT',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
-const toast=msg=>{const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500)};
+let products = [];
+let cats = ['Todos'];
+let activeCat = 'Todos';
+let compareCat = 'CPU';
+let sideToPick = 'a';
+let selected = { a: null, b: null };
 
-function renderCats(){ const grouped={};cats.slice(1).forEach(c=>(grouped[familyByCat[c]||'Otros']??=[]).push(c));$('#categories').innerHTML=`<button class="category-card ${activeCat==='Todos'?'active':''}" data-cat="Todos"><b>✦</b><span><strong>Ver todo</strong><small>${products.length} productos</small></span></button>`+Object.entries(grouped).map(([family,list])=>`<div class="cat-family"><span>${family}</span>${list.map(c=>`<button class="${c===activeCat?'active':''}" data-cat="${c}">${c}<small>${products.filter(p=>p.cat===c).length}</small></button>`).join('')}</div>`).join(''); }
-function filtered(){const q=$('#catalogSearch').value.trim().toLowerCase();let list=products.filter(p=>(activeCat==='Todos'||p.cat===activeCat)&&(`${p.name} ${p.brand} ${Object.values(p.specs).join(' ')}`).toLowerCase().includes(q));const sort=$('#sortSelect').value;if(sort==='priceAsc')list.sort((a,b)=>a.price-b.price);if(sort==='priceDesc')list.sort((a,b)=>b.price-a.price);if(sort==='score')list.sort((a,b)=>b.score-a.score);return list}
-function renderProducts(){const list=filtered();$('#resultsCount').textContent=`${list.length} resultados`;$('#productGrid').innerHTML=list.map(p=>`<article class="product-card"><div class="product-image"><img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy"><span class="tag">${p.cat.toUpperCase()}</span></div><div class="product-top"><span>${p.brand}</span><span class="rating">★ ${p.score/10}</span></div><h3>${p.name}</h3><p>${Object.values(p.specs).slice(0,2).join(' · ')}</p><div class="price-row"><b>${money(p.price)}</b><button data-add="${p.id}" title="Comparar">COMPARAR</button></div></article>`).join('')||'<p>No encontramos productos con esos filtros.</p>';}
-function pickerItems(q=''){let list=products;if(selected.a||selected.b){const other=selected[sideToPick==='a'?'b':'a'];if(other)list=list.filter(p=>p.cat===other.cat)}q=q.toLowerCase();list=list.filter(p=>(p.name+' '+p.brand).toLowerCase().includes(q));$('#pickerList').innerHTML=list.map(p=>`<button class="picker-item" data-pick="${p.id}"><span class="emoji">${p.emoji}</span><span><strong>${p.name}</strong><small>${p.brand} · ${p.cat}</small></span><b>${money(p.price)}</b></button>`).join('')||'<p>Sin resultados.</p>'}
-function openPicker(side){sideToPick=side;const other=selected[side==='a'?'b':'a'];$('#pickerTitle').textContent=other?`Elige otro ${other.cat}`:'Elige un componente';$('#pickerSearch').value='';pickerItems();$('#pickerModal').showModal()}
-function pick(id){const p=products.find(x=>x.id===id),other=selected[sideToPick==='a'?'b':'a'];if(other&&other.cat!==p.cat)return toast('Elige un componente de la misma categoría');selected[sideToPick]=p;$('#pickerModal').close();renderSelection();if(other&&other.brand===p.brand)toast('Consejo: compara fabricantes distintos para una decisión más útil')}
-function renderSelection(){['a','b'].forEach(side=>{const p=selected[side],el=$(`#pick${side.toUpperCase()}`);if(!p){el.className='pick-card';el.innerHTML=`<span class="side-label">PRODUCTO ${side.toUpperCase()}</span><span class="plus">＋</span><strong>${side==='a'?'Elige el primer producto':'Elige con qué compararlo'}</strong><small>${side==='a'?'Selecciona cualquier categoría':'Debe ser de la misma categoría'}</small>`;return}el.className='pick-card selected';el.innerHTML=`<span class="side-label">PRODUCTO ${side.toUpperCase()} · ${p.cat.toUpperCase()}</span><img class="picked-image" src="${photo(p)}" alt="${p.name}"><div class="picked-copy"><small>${p.brand}</small><strong>${p.name}</strong><span class="picked-meta"><b>${money(p.price)}</b><small>CAMBIAR ↗</small></span></div>`});renderComparison()}
-function compareValue(a,b,key){const nums=[a,b].map(v=>parseFloat(String(v).replace(/[^0-9.]/g,'')));if(nums.some(Number.isNaN)||nums[0]===nums[1])return['',''];const lowerWins=/consumo|tdp|ruido|peso|precio|latencia|respuesta/i.test(key);const aw=lowerWins?nums[0]<nums[1]:nums[0]>nums[1];return aw?['winner','']:['','winner']}
-function renderComparison(){const box=$('#comparison'),a=selected.a,b=selected.b;if(!a||!b){box.classList.add('hidden');return}box.classList.remove('hidden');const winner=a.score===b.score?null:(a.score>b.score?a:b);const keys=[...new Set([...Object.keys(a.specs),...Object.keys(b.specs)])];box.innerHTML=`<div class="verdict"><div><small>VEREDICTO</small><h3>${winner?`${winner.name} obtiene la ventaja`:'Empate técnico'}</h3></div><div class="score"><span>PUNTUACIÓN</span><b>${a.score} — ${b.score}</b></div></div><div class="spec-row"><span class="${a.price<b.price?'winner':''}">${money(a.price)}</span><span>Precio estimado</span><span class="${b.price<a.price?'winner':''}">${money(b.price)}</span></div>${keys.map(k=>{const cls=compareValue(a.specs[k]||'—',b.specs[k]||'—',k);return`<div class="spec-row"><span class="${cls[0]}">${a.specs[k]||'—'}</span><span>${k}</span><span class="${cls[1]}">${b.specs[k]||'—'}</span></div>`}).join('')}`}
-function apiState(){$('#apiLabel').textContent='Datos abiertos';document.querySelector('.status-dot').classList.add('online')}
-async function remoteSearch(query){
- if(!query.trim())return; toast('Buscando en el dataset abierto…');
- try{
-  const url=`https://datasets-server.huggingface.co/search?dataset=Doshiba%2Fpcpartpicker-parts-dataset&config=default&split=train&query=${encodeURIComponent(query)}&offset=0&length=40`;
-  const res=await fetch(url);if(!res.ok)throw new Error(`API ${res.status}`);const data=await res.json();const rows=(data.rows||[]).map(x=>x.row||x);
-  const catMap={cpu:'CPU','cpu-cooler':'Refrigeración',motherboard:'Placa base',memory:'RAM','internal-hard-drive':'Almacenamiento','video-card':'GPU','power-supply':'Fuente',case:'Gabinete'};
-  rows.forEach((x,i)=>{const cat=catMap[x.category]||'Otros',name=x.name||'Componente sin nombre',brand=x.brand||name.split(' ')[0],price=Number(x.price_eur||0),id=`hf-${x.source_id||x.product_tag||i}`;let specs=x.specs||{};if(typeof specs==='string'){try{specs=JSON.parse(specs)}catch{specs={'Detalles':specs}}}specs={...specs,'Fuente':'Dataset abierto','Precio original':x.price_eur?`€${x.price_eur}`:'No disponible'};if(!products.some(p=>p.id===id))products.unshift({id,cat,brand,name,price,score:80,emoji:'◇',image:x.image_url,specs})});
-  renderProducts();renderCats();$('#productCount').textContent=products.length;toast(`${rows.length} productos abiertos encontrados`);
- }catch(err){toast('El servicio abierto no respondió; seguimos con el catálogo incluido.');console.warn('Hugging Face Dataset API:',err)}
+const catPhoto = {
+  CPU: 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80',
+  GPU: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80',
+  RAM: 'https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80',
+  'Placa base': 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80',
+  Almacenamiento: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80',
+  'Memoria USB': 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80',
+  Ventiladores: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80',
+  Gabinete: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80',
+  Teclado: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80',
+  Mouse: 'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80',
+  Monitor: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80',
+  Consola: 'https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=700&q=80',
+  Control: 'https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80',
+  Audífonos: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80',
+  Impresora: 'assets/hardware-hero.png',
+  Escáner: 'assets/hardware-hero.png',
+  default: 'assets/hardware-hero.png'
+};
+
+const photo = p => (p && p.image) || (p && catPhoto[p.cat]) || catPhoto.default;
+const $ = s => document.querySelector(s);
+const money = n => new Intl.NumberFormat('es-GT', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+
+const toast = msg => {
+  const t = $('#toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+};
+
+function updateDatasetState() {
+  const uniqueCats = [...new Set(products.map(p => p.cat).filter(Boolean))].sort();
+  cats = ['Todos', ...uniqueCats];
+  const countEl = $('#productCount');
+  const catEl = $('#categoryCount');
+  if (countEl) countEl.textContent = new Intl.NumberFormat('es').format(products.length);
+  if (catEl) catEl.textContent = uniqueCats.length;
 }
 
-document.addEventListener('click',e=>{const cat=e.target.closest('[data-cat]');if(cat){const next=cat.dataset.cat;if(next!=='Todos'&&selected.a&&selected.a.cat!==next){selected={a:null,b:null};renderSelection();toast(`Comparador preparado para ${next}`)}activeCat=next;renderCats();renderProducts()}const add=e.target.closest('[data-add]');if(add){sideToPick=selected.a&&!selected.b?'b':'a';pick(add.dataset.add);document.querySelector('#comparador').scrollIntoView()}const p=e.target.closest('[data-pick]');if(p)pick(p.dataset.pick);const close=e.target.closest('[data-close]');if(close)document.getElementById(close.dataset.close).close()});
-$('#pickA').onclick=()=>openPicker('a');$('#pickB').onclick=()=>openPicker('b');$('#pickerSearch').oninput=e=>pickerItems(e.target.value);$('#catalogSearch').oninput=renderProducts;$('#sortSelect').onchange=renderProducts;
-$('#heroSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=e.target.value;activeCat='Todos';$('#catalogSearch').value=q;$('#catalogo').scrollIntoView();renderCats();renderProducts();remoteSearch(q)}});$('#catalogSearch').addEventListener('keydown',e=>{if(e.key==='Enter')remoteSearch(e.target.value)});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();$('#heroSearch').focus()}});
-$('#swapButton').onclick=()=>{[selected.a,selected.b]=[selected.b,selected.a];renderSelection()};$('#openApi').onclick=()=>{$('#apiModal').showModal()};
+function renderCats() {
+  const grouped = {};
+  cats.slice(1).forEach(c => {
+    // Clasificacion dinamica por la familia declarada en los productos
+    const sample = products.find(p => p.cat === c);
+    const family = (sample && sample.family) || 'Otros';
+    (grouped[family] ??= []).push(c);
+  });
 
-$('#productCount').textContent=new Intl.NumberFormat('es').format(products.length);$('#categoryCount').textContent=cats.length-1;renderCats();renderProducts();renderSelection();apiState();
+  const categoriesEl = $('#categories');
+  if (!categoriesEl) return;
+
+  categoriesEl.innerHTML = `
+    <button class="category-card ${activeCat === 'Todos' ? 'active' : ''}" data-cat="Todos">
+      <span>
+        <strong>Ver todo</strong>
+        <small>${products.length} productos</small>
+      </span>
+    </button>
+  ` + Object.entries(grouped).map(([family, list]) => `
+    <div class="cat-family">
+      <span>${family}</span>
+      ${list.map(c => `
+        <button class="${c === activeCat ? 'active' : ''}" data-cat="${c}">
+          ${c}
+          <small>${products.filter(p => p.cat === c).length}</small>
+        </button>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+function filtered() {
+  const searchInput = $('#catalogSearch');
+  const q = searchInput ? searchInput.value.trim().toLowerCase() : '';
+  let list = products.filter(p => {
+    const matchesCat = (activeCat === 'Todos' || p.cat === activeCat);
+    const specStr = p.specs ? Object.values(p.specs).join(' ') : '';
+    const matchesQuery = `${p.name} ${p.brand} ${specStr}`.toLowerCase().includes(q);
+    return matchesCat && matchesQuery;
+  });
+
+  const sortSelect = $('#sortSelect');
+  const sort = sortSelect ? sortSelect.value : 'featured';
+  if (sort === 'priceAsc') list.sort((a, b) => a.price - b.price);
+  if (sort === 'priceDesc') list.sort((a, b) => b.price - a.price);
+  if (sort === 'score') list.sort((a, b) => b.score - a.score);
+  return list;
+}
+
+function renderProducts() {
+  const list = filtered();
+  const resultsEl = $('#resultsCount');
+  const gridEl = $('#productGrid');
+
+  if (resultsEl) resultsEl.textContent = `${list.length} resultados`;
+  if (!gridEl) return;
+
+  gridEl.innerHTML = list.map(p => `
+    <article class="product-card">
+      <div class="product-image">
+        <img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy">
+        <span class="tag">${p.cat.toUpperCase()}</span>
+      </div>
+      <div class="product-top">
+        <span>${p.brand}</span>
+        <span class="rating">${(p.score / 10).toFixed(1)} / 10</span>
+      </div>
+      <h3>${p.name}</h3>
+      <p>${p.specs ? Object.values(p.specs).slice(0, 2).join(' · ') : ''}</p>
+      <div class="price-row">
+        <b>${money(p.price)}</b>
+        <button data-add="${p.id}" title="Comparar este modelo">COMPARAR</button>
+      </div>
+    </article>
+  `).join('') || '<p style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">No encontramos productos con esos filtros.</p>';
+}
+
+/**
+ * Renderiza los chips horizontales de categorias en la barra superior del comparador.
+ * Al hacer clic en un chip, se fija la categoria y se actualizan ambos componentes.
+ */
+function populateCompareCategories() {
+  const nav = $('#compareNav');
+  if (!nav) return;
+  const availableCats = cats.filter(c => c !== 'Todos');
+
+  nav.innerHTML = availableCats.map(c => {
+    const count = products.filter(p => p.cat === c).length;
+    return `
+      <button class="compare-cat-btn ${c === compareCat ? 'active' : ''}" data-compare-cat="${c}" type="button">
+        <span>${c}</span>
+        <small>(${count})</small>
+      </button>
+    `;
+  }).join('');
+}
+
+/**
+ * Fija la categoria activa del comparador.
+ * Garantiza que Componente A y Componente B pertenezcan ESTRICTAMENTE a la misma categoria.
+ */
+function setCompareCategory(newCat, specificProduct = null, targetSide = 'a') {
+  compareCat = newCat;
+
+  // Actualiza estilo activo en chips
+  document.querySelectorAll('.compare-cat-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.compareCat === newCat);
+  });
+
+  const catProducts = products.filter(p => p.cat === newCat);
+  if (catProducts.length === 0) return;
+
+  if (specificProduct) {
+    if (targetSide === 'a') {
+      selected.a = specificProduct;
+      selected.b = catProducts.find(p => p.id !== specificProduct.id) || catProducts[0];
+    } else {
+      selected.b = specificProduct;
+      selected.a = catProducts.find(p => p.id !== specificProduct.id) || catProducts[0];
+    }
+  } else {
+    // Si la seleccion actual no es de esta categoria, auto-asigna los 2 primeros modelos de ella
+    if (!selected.a || selected.a.cat !== newCat || !selected.b || selected.b.cat !== newCat) {
+      selected.a = catProducts[0];
+      selected.b = catProducts.length > 1 ? catProducts[1] : catProducts[0];
+    }
+  }
+
+  renderSelection();
+}
+
+/**
+ * Renderiza los componentes A y B.
+ * Incluye un selector directo por desplegable con SOLO los modelos de esa categoria,
+ * impidiendo mezclar tipos de componentes incompatibles (ej. USB vs CPU).
+ */
+function renderSelection() {
+  const catProducts = products.filter(p => p.cat === compareCat);
+
+  ['a', 'b'].forEach(side => {
+    const p = selected[side] || catProducts[0];
+    selected[side] = p;
+    const el = $(`#pick${side.toUpperCase()}`);
+    if (!el) return;
+
+    if (!p) {
+      el.className = 'pick-card';
+      el.innerHTML = `
+        <span class="side-label">COMPONENTE ${side.toUpperCase()}</span>
+        <span class="plus">+</span>
+        <strong>Sin componentes</strong>
+        <small>No hay modelos cargados en ${compareCat}</small>
+      `;
+      return;
+    }
+
+    el.className = 'pick-card selected';
+    el.innerHTML = `
+      <span class="side-label">COMPONENTE ${side.toUpperCase()} · ${compareCat.toUpperCase()}</span>
+      <div class="picked-image-wrap">
+        <img class="picked-image" src="${photo(p)}" alt="${p.name}">
+      </div>
+      <div class="picked-copy">
+        <div class="card-select-row">
+          <label for="selectModel_${side}">Elegir modelo (${compareCat}):</label>
+          <select class="card-dropdown" id="selectModel_${side}" data-side="${side}">
+            ${catProducts.map(item => `
+              <option value="${item.id}" ${item.id === p.id ? 'selected' : ''}>
+                ${item.brand} — ${item.name} (${money(item.price)})
+              </option>
+            `).join('')}
+          </select>
+        </div>
+        <small class="picked-brand-tag">${p.brand}</small>
+        <strong class="picked-name">${p.name}</strong>
+        <div class="picked-meta">
+          <b>${money(p.price)}</b>
+          <span style="font-size:11px;color:var(--muted);font-weight:700;">Puntaje: ${p.score}/100</span>
+        </div>
+        <div class="pick-open-modal">
+          <span>¿Deseas buscar con fotos?</span>
+          <button type="button" data-open-picker="${side}">Ver lista completa de ${compareCat}</button>
+        </div>
+      </div>
+    `;
+  });
+
+  renderComparison();
+}
+
+/**
+ * Listado del modal de seleccion:
+ * Bloqueado estrictamente a los productos de compareCat.
+ */
+function pickerItems(q = '') {
+  let list = products.filter(p => p.cat === compareCat);
+  q = q.toLowerCase();
+  if (q) {
+    list = list.filter(p => (p.name + ' ' + p.brand).toLowerCase().includes(q));
+  }
+
+  const listEl = $('#pickerList');
+  if (!listEl) return;
+
+  listEl.innerHTML = list.map(p => `
+    <button class="picker-item" data-pick="${p.id}" type="button">
+      <img class="picker-thumb" src="${photo(p)}" alt="${p.name}">
+      <span>
+        <strong>${p.name}</strong>
+        <small>${p.brand} · ${p.cat}</small>
+      </span>
+      <b>${money(p.price)}</b>
+    </button>
+  `).join('') || `<p style="grid-column: 1/-1; text-align: center; padding: 20px; color: var(--muted);">No hay modelos coincidentes en ${compareCat}.</p>`;
+}
+
+function openPicker(side) {
+  sideToPick = side;
+  const titleEl = $('#pickerTitle');
+  if (titleEl) {
+    titleEl.textContent = `Seleccionar Componente ${side.toUpperCase()} de ${compareCat}`;
+  }
+  const searchEl = $('#pickerSearch');
+  if (searchEl) {
+    searchEl.placeholder = `Buscar dentro de ${compareCat}…`;
+    searchEl.value = '';
+  }
+  pickerItems();
+  const modal = $('#pickerModal');
+  if (modal && typeof modal.showModal === 'function') modal.showModal();
+}
+
+function pick(id) {
+  const p = products.find(x => x.id === id);
+  if (!p) return;
+  if (p.cat !== compareCat) {
+    return toast(`Solo puedes comparar modelos dentro de la categoría ${compareCat}`);
+  }
+  selected[sideToPick] = p;
+  const modal = $('#pickerModal');
+  if (modal && typeof modal.close === 'function') modal.close();
+  renderSelection();
+}
+
+function compareValue(a, b, key) {
+  const nums = [a, b].map(v => parseFloat(String(v).replace(/[^0-9.]/g, '')));
+  if (nums.some(Number.isNaN) || nums[0] === nums[1]) return ['', ''];
+  const lowerWins = /consumo|tdp|ruido|peso|precio|latencia|respuesta/i.test(key);
+  const aw = lowerWins ? nums[0] < nums[1] : nums[0] > nums[1];
+  return aw ? ['winner', ''] : ['', 'winner'];
+}
+
+function renderComparison() {
+  const box = $('#comparison');
+  if (!box) return;
+  const a = selected.a, b = selected.b;
+  if (!a || !b) {
+    box.classList.add('hidden');
+    return;
+  }
+  box.classList.remove('hidden');
+
+  const winner = a.score === b.score ? null : (a.score > b.score ? a : b);
+  const keys = [...new Set([...Object.keys(a.specs || {}), ...Object.keys(b.specs || {})])];
+
+  box.innerHTML = `
+    <div class="verdict">
+      <div>
+        <small>VEREDICTO · ${compareCat.toUpperCase()}</small>
+        <h3>${winner ? `${winner.name} obtiene la ventaja general` : 'Empate técnico'}</h3>
+      </div>
+      <div class="score">
+        <span>PUNTUACIÓN</span>
+        <b>${a.score} — ${b.score}</b>
+      </div>
+    </div>
+    <div class="spec-row">
+      <span class="${a.price < b.price ? 'winner' : ''}">${money(a.price)}</span>
+      <span>Precio estimado</span>
+      <span class="${b.price < a.price ? 'winner' : ''}">${money(b.price)}</span>
+    </div>
+    ${keys.map(k => {
+      const valA = a.specs[k] || '—';
+      const valB = b.specs[k] || '—';
+      const cls = compareValue(valA, valB, k);
+      return `
+        <div class="spec-row">
+          <span class="${cls[0]}">${valA}</span>
+          <span>${k}</span>
+          <span class="${cls[1]}">${valB}</span>
+        </div>
+      `;
+    }).join('')}
+  `;
+}
+
+/**
+ * Búsqueda opcional complementaria en servidor de datasets abiertos
+ */
+async function remoteSearch(query) {
+  if (!query.trim()) return;
+  toast('Buscando componentes adicionales…');
+  try {
+    const url = `https://datasets-server.huggingface.co/search?dataset=Doshiba%2Fpcpartpicker-parts-dataset&config=default&split=train&query=${encodeURIComponent(query)}&offset=0&length=40`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`API ${res.status}`);
+    const data = await res.json();
+    const rows = (data.rows || []).map(x => x.row || x);
+    const catMap = {
+      cpu: 'CPU',
+      'cpu-cooler': 'Refrigeración',
+      motherboard: 'Placa base',
+      memory: 'RAM',
+      'internal-hard-drive': 'Almacenamiento',
+      'video-card': 'GPU',
+      'power-supply': 'Fuente',
+      case: 'Gabinete'
+    };
+
+    rows.forEach((x, i) => {
+      const cat = catMap[x.category] || 'Otros';
+      const name = x.name || 'Componente sin nombre';
+      const brand = x.brand || name.split(' ')[0];
+      const price = Number(x.price_eur || 0);
+      const id = `hf-${x.source_id || x.product_tag || i}`;
+      let specs = x.specs || {};
+      if (typeof specs === 'string') {
+        try { specs = JSON.parse(specs); } catch { specs = { 'Detalles': specs }; }
+      }
+      specs = { ...specs, 'Fuente': 'Dataset abierto', 'Precio original': x.price_eur ? `€${x.price_eur}` : 'No disponible' };
+      if (!products.some(p => p.id === id)) {
+        products.unshift({ id, cat, brand, name, price, score: 80, image: x.image_url, specs });
+      }
+    });
+
+    updateDatasetState();
+    renderProducts();
+    renderCats();
+    populateCompareCategories();
+    toast(`${rows.length} componentes adicionales encontrados`);
+  } catch (err) {
+    console.warn('Dataset remoto complementario:', err);
+  }
+}
+
+function startComparisonFromQuery(query) {
+  const normalized = query.trim().toLocaleLowerCase('es');
+  if (!normalized) return false;
+
+  const matches = products.filter(p => {
+    const specs = p.specs ? Object.values(p.specs).join(' ') : '';
+    return `${p.cat} ${p.brand} ${p.name} ${specs}`
+      .toLocaleLowerCase('es')
+      .includes(normalized);
+  }).sort((a, b) => (b.score || 0) - (a.score || 0));
+
+  if (matches.length === 0) return false;
+
+  const category = matches[0].cat;
+  const comparableMatches = matches.filter(p => p.cat === category);
+  const categoryProducts = products
+    .filter(p => p.cat === category)
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
+
+  compareCat = category;
+  selected.a = comparableMatches[0];
+  selected.b = comparableMatches[1]
+    || categoryProducts.find(p => p.id !== selected.a.id)
+    || selected.a;
+
+  populateCompareCategories();
+  setCompareCategory(category);
+  const compEl = document.querySelector('.compare-section');
+  if (compEl) compEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  toast(`Comparando ${selected.a.name} con ${selected.b.name}`);
+  return true;
+}
+/**
+ * AUTO-DESCUBRIMIENTO Y CARGA MODULAR DE DATASETS:
+ * Detecta y carga archivos JSON de /data/categories/ automáticamente sin tocar código JS.
+ * 1. Lee /data/categories/ para auto-descubrir cualquier nuevo archivo *.json.
+ * 2. Lee /data/manifest.json para registrar archivos añadidos al repositorio.
+ * 3. Carga en paralelo todos los archivos encontrados.
+ * 4. Infiere categorias, familias y chips dinamicamente desde los propios datos.
+ */
+async function loadDataset() {
+  const basePath = './data/categories/';
+  const filesToLoad = new Set();
+
+  // 1. Auto-descubrimiento via listado de directorio del servidor
+  try {
+    const dirRes = await fetch(basePath);
+    if (dirRes.ok) {
+      const html = await dirRes.text();
+      const matches = html.match(/[a-zA-Z0-9_-]+\.json/g);
+      if (matches) {
+        matches.forEach(f => filesToLoad.add(f));
+      }
+    }
+  } catch (e) {
+    // Servidor sin listado de directorio; recurre a manifest.json
+  }
+
+  // 2. Registro de manifest.json (configuración declarativa de datos)
+  try {
+    const manifestRes = await fetch('./data/manifest.json');
+    if (manifestRes.ok) {
+      const manifest = await manifestRes.json();
+      const list = Array.isArray(manifest) ? manifest : (manifest.datasets || manifest.files || []);
+      list.forEach(item => {
+        const fileName = typeof item === 'string' ? item : item.file;
+        if (fileName) filesToLoad.add(fileName);
+      });
+    }
+  } catch (e) {
+    console.warn('Aviso: manifest.json no respondió:', e);
+  }
+
+  // 3. Fallback de archivos predeterminados si el navegador no permite listar carpetas
+  if (filesToLoad.size === 0) {
+    [
+      'cpu.json', 'gpu.json', 'ram.json', 'storage.json', 'usb.json',
+      'motherboard.json', 'power-supply.json', 'cooling.json', 'fans.json',
+      'case.json', 'monitor.json', 'printers.json', 'peripherals.json', 'others.json'
+    ].forEach(f => filesToLoad.add(f));
+  }
+
+  // 4. Descarga en paralelo de todos los datasets modulares
+  const loadPromises = Array.from(filesToLoad).map(async file => {
+    try {
+      const res = await fetch(`${basePath}${file}`);
+      if (!res.ok) return [];
+      const data = await res.json();
+      return Array.isArray(data) ? data : [];
+    } catch (err) {
+      console.warn(`Error al leer archivo ${file}:`, err);
+      return [];
+    }
+  });
+
+  const results = await Promise.all(loadPromises);
+  products = results.flat().filter(p => p && p.id && p.name && p.cat);
+
+  // 5. Deduplicar por id
+  const seenIds = new Set();
+  products = products.filter(p => {
+    if (seenIds.has(p.id)) return false;
+    seenIds.add(p.id);
+    return true;
+  });
+
+  // 6. Actualizar interfaz dinamicamente
+  updateDatasetState();
+  populateCompareCategories();
+
+  // Fija la categoria inicial (prioriza CPU si existe, o la primera disponible)
+  const availableCats = cats.filter(c => c !== 'Todos');
+  const initialCat = availableCats.includes('CPU') ? 'CPU' : (availableCats[0] || 'CPU');
+  setCompareCategory(initialCat);
+
+  renderCats();
+  renderProducts();
+}
+
+// Inicialización de Eventos de Usuario
+document.addEventListener('click', e => {
+  // Clic en chip de categoria del catálogo
+  const cat = e.target.closest('[data-cat]');
+  if (cat) {
+    const next = cat.dataset.cat;
+    activeCat = next;
+    renderCats();
+    renderProducts();
+    if (next !== 'Todos') {
+      setCompareCategory(next);
+      toast(`Comparador enfocado en: ${next}`);
+    }
+  }
+
+  // Clic en botón "COMPARAR" de una tarjeta del catálogo
+  const add = e.target.closest('[data-add]');
+  if (add) {
+    const item = products.find(x => x.id === add.dataset.add);
+    if (item) {
+      setCompareCategory(item.cat, item, 'a');
+      const compEl = $('#comparador') || document.querySelector('.compare-section');
+      if (compEl) compEl.scrollIntoView({ behavior: 'smooth' });
+      toast(`Enfrentamiento preparado para ${item.cat}: ${item.name}`);
+    }
+  }
+
+  // Clic en chip de categoria del comparador
+  const compBtn = e.target.closest('[data-compare-cat]');
+  if (compBtn) {
+    const c = compBtn.dataset.compareCat;
+    setCompareCategory(c);
+  }
+
+  // Clic en abrir modal de exploracion de modelos
+  const openP = e.target.closest('[data-open-picker]');
+  if (openP) {
+    openPicker(openP.dataset.openPicker);
+  }
+
+  // Clic en seleccionar item del modal
+  const p = e.target.closest('[data-pick]');
+  if (p) pick(p.dataset.pick);
+
+  // Clic en cerrar modal
+  const close = e.target.closest('[data-close]');
+  if (close) {
+    const dlg = document.getElementById(close.dataset.close);
+    if (dlg && typeof dlg.close === 'function') dlg.close();
+  }
+});
+
+// Evento al cambiar directamente el desplegable de modelo en la tarjeta A o B
+document.addEventListener('change', e => {
+  const sel = e.target.closest('.card-dropdown');
+  if (sel) {
+    const side = sel.dataset.side;
+    const id = sel.value;
+    const found = products.find(x => x.id === id);
+    if (found) {
+      selected[side] = found;
+      renderSelection();
+      toast(`Componente ${side.toUpperCase()} cambiado a: ${found.name}`);
+    }
+  }
+});
+
+const pickerSearchEl = $('#pickerSearch');
+if (pickerSearchEl) pickerSearchEl.oninput = e => pickerItems(e.target.value);
+
+const catalogSearchEl = $('#catalogSearch');
+if (catalogSearchEl) {
+  catalogSearchEl.oninput = renderProducts;
+  catalogSearchEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter') remoteSearch(e.target.value);
+  });
+}
+
+const sortSelectEl = $('#sortSelect');
+if (sortSelectEl) sortSelectEl.onchange = renderProducts;
+
+const heroSearchEl = $('#heroSearch');
+if (heroSearchEl) {
+  heroSearchEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      const q = e.target.value;
+      if (startComparisonFromQuery(q)) return;
+
+      activeCat = 'Todos';
+      if (catalogSearchEl) catalogSearchEl.value = q;
+      const catSec = $('#catalogo');
+      if (catSec) catSec.scrollIntoView({ behavior: 'smooth' });
+      renderCats();
+      renderProducts();
+      remoteSearch(q);
+    }
+  });
+}
+
+document.addEventListener('keydown', e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    if (heroSearchEl) heroSearchEl.focus();
+  }
+});
+
+const swapBtn = $('#swapButton');
+if (swapBtn) {
+  swapBtn.onclick = () => {
+    [selected.a, selected.b] = [selected.b, selected.a];
+    renderSelection();
+    toast('Posiciones intercambiadas');
+  };
+}
+
+// Iniciar aplicación cargando los datasets modulares
+loadDataset();

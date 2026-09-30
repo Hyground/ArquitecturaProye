@@ -1,0 +1,70 @@
+[
+  {
+    "id": "print-epson-et4850",
+    "cat": "Impresora",
+    "family": "Oficina",
+    "brand": "Epson",
+    "name": "EcoTank ET-4850",
+    "price": 399,
+    "score": 93,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Tecnología": "Tanque continuo de tinta (EcoTank)",
+      "Velocidad en negro": "15.5 ppm",
+      "Velocidad en color": "8.5 ppm",
+      "Dúplex automático": "Sí",
+      "Conectividad": "Wi-Fi Direct · Ethernet · USB"
+    }
+  },
+  {
+    "id": "print-hp-laserjet-m404dn",
+    "cat": "Impresora",
+    "family": "Oficina",
+    "brand": "HP",
+    "name": "LaserJet Pro M404dn",
+    "price": 279,
+    "score": 91,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Tecnología": "Láser monocromo",
+      "Velocidad en negro": "40 ppm",
+      "Velocidad en color": "No",
+      "Dúplex automático": "Sí",
+      "Conectividad": "Gigabit Ethernet · USB 2.0"
+    }
+  },
+  {
+    "id": "print-brother-hll2370dw",
+    "cat": "Impresora",
+    "family": "Oficina",
+    "brand": "Brother",
+    "name": "HL-L2370DW Compact",
+    "price": 149,
+    "score": 90,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Tecnología": "Láser monocromo",
+      "Velocidad en negro": "36 ppm",
+      "Velocidad en color": "No",
+      "Dúplex automático": "Sí",
+      "Conectividad": "Wi-Fi · Ethernet · USB"
+    }
+  },
+  {
+    "id": "print-canon-megatank-g6020",
+    "cat": "Impresora",
+    "family": "Oficina",
+    "brand": "Canon",
+    "name": "PIXMA MegaTank G6020",
+    "price": 299,
+    "score": 89,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Tecnología": "Inyección continua MegaTank",
+      "Velocidad en negro": "13.0 ipm",
+      "Velocidad en color": "6.8 ipm",
+      "Dúplex automático": "Sí",
+      "Conectividad": "Wi-Fi · Ethernet · USB"
+    }
+  }
+]

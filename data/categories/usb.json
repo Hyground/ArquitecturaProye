@@ -1,0 +1,70 @@
+[
+  {
+    "id": "usb-kingston-dtmax",
+    "cat": "Memoria USB",
+    "family": "Componentes",
+    "brand": "Kingston",
+    "name": "DataTraveler Max 256 GB",
+    "price": 42,
+    "score": 95,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "256 GB",
+      "Velocidad de lectura": "1000 MB/s",
+      "Velocidad de escritura": "900 MB/s",
+      "Interfaz": "USB 3.2 Gen 2 (Type-C)",
+      "Garantía": "5 años"
+    }
+  },
+  {
+    "id": "usb-sandisk-extreme-pro",
+    "cat": "Memoria USB",
+    "family": "Componentes",
+    "brand": "SanDisk",
+    "name": "Extreme PRO 256 GB",
+    "price": 49,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "256 GB",
+      "Velocidad de lectura": "420 MB/s",
+      "Velocidad de escritura": "380 MB/s",
+      "Interfaz": "USB 3.2 Gen 1 (Type-A)",
+      "Garantía": "De por vida limitada"
+    }
+  },
+  {
+    "id": "usb-samsung-bar-plus",
+    "cat": "Memoria USB",
+    "family": "Componentes",
+    "brand": "Samsung",
+    "name": "Bar Plus 128 GB",
+    "price": 22,
+    "score": 88,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "128 GB",
+      "Velocidad de lectura": "400 MB/s",
+      "Velocidad de escritura": "110 MB/s",
+      "Interfaz": "USB 3.1 (Type-A)",
+      "Garantía": "5 años"
+    }
+  },
+  {
+    "id": "usb-corsair-voyager-gtx",
+    "cat": "Memoria USB",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "Flash Voyager GTX 256 GB",
+    "price": 64,
+    "score": 92,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "256 GB",
+      "Velocidad de lectura": "440 MB/s",
+      "Velocidad de escritura": "440 MB/s",
+      "Interfaz": "USB 3.1 SSD",
+      "Garantía": "5 años"
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ram-corsair-vengeance-32",
+    "cat": "RAM",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "Vengeance RGB 32 GB",
+    "price": 119,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "32 GB (2×16)",
+      "Velocidad": "6000 MT/s",
+      "Latencia": "CL30",
+      "Tipo": "DDR5",
+      "Voltaje": "1.40 V",
+      "Perfil": "AMD EXPO / Intel XMP"
+    }
+  },
+  {
+    "id": "ram-gskill-trident-32",
+    "cat": "RAM",
+    "family": "Componentes",
+    "brand": "G.Skill",
+    "name": "Trident Z5 Neo 32 GB",
+    "price": 124,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "32 GB (2×16)",
+      "Velocidad": "6000 MT/s",
+      "Latencia": "CL30",
+      "Tipo": "DDR5",
+      "Voltaje": "1.35 V",
+      "Perfil": "AMD EXPO"
+    }
+  },
+  {
+    "id": "ram-kingston-fury-32",
+    "cat": "RAM",
+    "family": "Componentes",
+    "brand": "Kingston",
+    "name": "Fury Beast RGB 32 GB",
+    "price": 109,
+    "score": 89,
+    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "32 GB (2×16)",
+      "Velocidad": "5600 MT/s",
+      "Latencia": "CL36",
+      "Tipo": "DDR5",
+      "Voltaje": "1.25 V",
+      "Perfil": "Intel XMP 3.0"
+    }
+  }
+]

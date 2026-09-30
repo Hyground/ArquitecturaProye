@@ -1,0 +1,36 @@
+[
+  {
+    "id": "psu-seasonic-vertex",
+    "cat": "Fuente",
+    "family": "Componentes",
+    "brand": "Seasonic",
+    "name": "Vertex GX-850",
+    "price": 189,
+    "score": 94,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Potencia": "850 W",
+      "Certificación": "80+ Gold",
+      "Estándar": "ATX 3.0 / PCIe 5.0",
+      "Modular": "Totalmente modular",
+      "Garantía": "12 años"
+    }
+  },
+  {
+    "id": "psu-corsair-rm850x",
+    "cat": "Fuente",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "RM850x Shift",
+    "price": 159,
+    "score": 92,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Potencia": "850 W",
+      "Certificación": "80+ Gold",
+      "Estándar": "ATX 3.0 / PCIe 5.0",
+      "Modular": "Totalmente modular lateral",
+      "Garantía": "10 años"
+    }
+  }
+]

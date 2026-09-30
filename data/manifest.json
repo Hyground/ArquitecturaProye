@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "basePath": "./data/categories/",
+  "files": [
+    "case.json",
+    "cooling.json",
+    "cpu.json",
+    "fans.json",
+    "gpu.json",
+    "monitor.json",
+    "motherboard.json",
+    "others.json",
+    "peripherals.json",
+    "power-supply.json",
+    "printers.json",
+    "ram.json",
+    "storage.json",
+    "usb.json"
+  ]
+}

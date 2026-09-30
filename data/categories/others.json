@@ -1,0 +1,288 @@
+[
+  {
+    "id": "head-sony-inzone-h9",
+    "cat": "Audífonos",
+    "family": "Audio",
+    "brand": "Sony",
+    "name": "INZONE H9",
+    "price": 299,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tipo": "Over-ear cerrado",
+      "Conexión": "2.4 GHz + Bluetooth",
+      "Cancelación": "Activa dual (ANC)",
+      "Batería": "32 horas"
+    }
+  },
+  {
+    "id": "head-hyperx-cloud3",
+    "cat": "Audífonos",
+    "family": "Audio",
+    "brand": "HyperX",
+    "name": "Cloud III Wireless",
+    "price": 169,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tipo": "Over-ear cerrado",
+      "Conexión": "2.4 GHz inalámbrico",
+      "Batería": "120 horas"
+    }
+  },
+  {
+    "id": "speaker-edifier-r1280dbs",
+    "cat": "Bocinas",
+    "family": "Audio",
+    "brand": "Edifier",
+    "name": "R1280DBs",
+    "price": 159,
+    "score": 92,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Potencia": "42 W RMS",
+      "Canales": "2.0 estéreo",
+      "Bluetooth": "5.0 aptX"
+    }
+  },
+  {
+    "id": "speaker-logi-z407",
+    "cat": "Bocinas",
+    "family": "Audio",
+    "brand": "Logitech",
+    "name": "Z407",
+    "price": 119,
+    "score": 87,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Potencia": "40 W RMS",
+      "Canales": "2.1 con subwoofer",
+      "Bluetooth": "5.0"
+    }
+  },
+  {
+    "id": "mic-blue-yeti-x",
+    "cat": "Micrófono",
+    "family": "Audio",
+    "brand": "Blue",
+    "name": "Yeti X",
+    "price": 169,
+    "score": 91,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Patrones": "4 patrones polares",
+      "Resolución": "24-bit / 48 kHz",
+      "Conexión": "USB"
+    }
+  },
+  {
+    "id": "mic-hyperx-quadcast2",
+    "cat": "Micrófono",
+    "family": "Audio",
+    "brand": "HyperX",
+    "name": "QuadCast 2",
+    "price": 149,
+    "score": 92,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Patrones": "4 patrones polares",
+      "Resolución": "24-bit / 96 kHz",
+      "Conexión": "USB-C"
+    }
+  },
+  {
+    "id": "ups-apc-1500",
+    "cat": "UPS",
+    "family": "Energía",
+    "brand": "APC",
+    "name": "Back-UPS Pro 1500VA",
+    "price": 249,
+    "score": 94,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Capacidad": "1500 VA",
+      "Potencia": "900 W",
+      "Topología": "Line-interactive AVR"
+    }
+  },
+  {
+    "id": "ups-cyber-1500",
+    "cat": "UPS",
+    "family": "Energía",
+    "brand": "CyberPower",
+    "name": "CP1500PFCLCD",
+    "price": 219,
+    "score": 95,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Capacidad": "1500 VA",
+      "Potencia": "1000 W",
+      "Topología": "Onda senoidal pura PFC"
+    }
+  },
+  {
+    "id": "cap-elgato-4kx",
+    "cat": "Capturadora",
+    "family": "Video",
+    "brand": "Elgato",
+    "name": "4K X",
+    "price": 229,
+    "score": 94,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Captura máxima": "4K a 144 Hz / 1080p a 240 Hz",
+      "Interfaz": "USB 3.2 Gen 2 Type-C",
+      "VRR": "Sí (HDMI 2.1)"
+    }
+  },
+  {
+    "id": "cap-aver-ultra21",
+    "cat": "Capturadora",
+    "family": "Video",
+    "brand": "AVerMedia",
+    "name": "Live Gamer Ultra 2.1",
+    "price": 249,
+    "score": 93,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Captura máxima": "4K a 60 Hz / 1440p a 120 Hz",
+      "Interfaz": "USB 3.2 Gen 2 Type-C",
+      "VRR": "Sí (HDMI 2.1)"
+    }
+  },
+  {
+    "id": "net-asus-be92bt",
+    "cat": "Red",
+    "family": "Componentes",
+    "brand": "ASUS",
+    "name": "PCE-BE92BT",
+    "price": 99,
+    "score": 94,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Wi-Fi": "Wi-Fi 7 (802.11be)",
+      "Velocidad": "5.8 Gbps",
+      "Bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "net-tp-tbe550e",
+    "cat": "Red",
+    "family": "Componentes",
+    "brand": "TP-Link",
+    "name": "Archer TBE550E",
+    "price": 89,
+    "score": 93,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Wi-Fi": "Wi-Fi 7 (802.11be)",
+      "Velocidad": "5.8 Gbps",
+      "Bluetooth": "5.4"
+    }
+  },
+  {
+    "id": "print-hp-9125e",
+    "cat": "Impresora",
+    "family": "Oficina",
+    "brand": "HP",
+    "name": "OfficeJet Pro 9125e",
+    "price": 209,
+    "score": 88,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Tecnología": "Inyección térmica",
+      "Velocidad en negro": "22 ppm",
+      "Dúplex": "Automático"
+    }
+  },
+  {
+    "id": "console-ps5-pro",
+    "cat": "Consola",
+    "family": "Gaming",
+    "brand": "Sony",
+    "name": "PlayStation 5 Pro",
+    "price": 699,
+    "score": 95,
+    "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Resolución": "Hasta 8K",
+      "Almacenamiento": "2 TB SSD",
+      "Ray tracing": "Avanzado PSSR"
+    }
+  },
+  {
+    "id": "console-xbox-seriesx",
+    "cat": "Consola",
+    "family": "Gaming",
+    "brand": "Microsoft",
+    "name": "Xbox Series X 2 TB",
+    "price": 599,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Resolución": "Hasta 8K",
+      "Almacenamiento": "2 TB SSD",
+      "Ray tracing": "Acelerado hardware"
+    }
+  },
+  {
+    "id": "control-dualsense-edge",
+    "cat": "Control",
+    "family": "Gaming",
+    "brand": "Sony",
+    "name": "DualSense Edge",
+    "price": 199,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Compatibilidad": "PS5 · PC",
+      "Conexión": "Bluetooth · USB-C",
+      "Batería": "6 horas"
+    }
+  },
+  {
+    "id": "control-xbox-elite2",
+    "cat": "Control",
+    "family": "Gaming",
+    "brand": "Microsoft",
+    "name": "Xbox Elite Series 2",
+    "price": 179,
+    "score": 92,
+    "image": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Compatibilidad": "Xbox · PC",
+      "Conexión": "Xbox Wireless · Bluetooth",
+      "Batería": "40 horas"
+    }
+  },
+  {
+    "id": "dock-caldigit-ts4",
+    "cat": "Dock",
+    "family": "Accesorios",
+    "brand": "CalDigit",
+    "name": "TS4 Thunderbolt 4",
+    "price": 399,
+    "score": 96,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Puertos": "18 puertos",
+      "Host": "Thunderbolt 4 (40 Gbps)",
+      "Carga": "98 W"
+    }
+  },
+  {
+    "id": "dock-anker-prime-tb5",
+    "cat": "Dock",
+    "family": "Accesorios",
+    "brand": "Anker",
+    "name": "Prime TB5 Dock",
+    "price": 399,
+    "score": 94,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Puertos": "14 puertos",
+      "Host": "Thunderbolt 5 (120 Gbps)",
+      "Carga": "140 W"
+    }
+  }
+]

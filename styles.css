@@ -7,3 +7,35 @@
 @media(max-width:900px){.category-list{grid-template-columns:repeat(2,1fr)}.hero{background-position:60% center}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#eeece6 20%,#eeece6dd 55%,transparent)}.hero>*{position:relative}.pick-card.selected{grid-template-columns:40% 1fr}}
 @media(max-width:620px){.hero{min-height:auto;background-position:72% center}.hero:before{background:#eeece6dd}.category-list{grid-template-columns:1fr}.pick-card.selected{grid-template-columns:42% 1fr}.picked-copy{padding:48px 15px 15px}.picked-copy strong{font-size:16px}}
 .source-card{display:flex;align-items:center;gap:12px;background:#f3f5ed;border:1px solid var(--line);padding:15px;border-radius:12px}.source-card div{display:flex;flex-direction:column}.source-card strong{font-size:13px}.source-card small{font-size:11px;color:var(--muted);margin-top:2px}
+.compare-nav{display:flex;flex-wrap:nowrap;gap:10px;width:100%;overflow-x:auto;overflow-y:hidden;padding:2px 2px 22px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.compare-nav::-webkit-scrollbar{height:4px}
+.compare-nav::-webkit-scrollbar-thumb{background:#dedfdc;border-radius:999px}
+.compare-cat-btn{display:inline-flex;flex:0 0 auto;align-items:center;gap:8px;background:white;border:1px solid var(--line);padding:10px 16px;border-radius:999px;font:700 13px "DM Sans",sans-serif;color:var(--ink);cursor:pointer;white-space:nowrap;transition:all .2s ease;box-shadow:0 2px 5px #00000008}
+.compare-cat-btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+.compare-cat-btn.active{background:var(--ink);color:white;border-color:var(--ink);box-shadow:0 4px 12px #15171b26}
+.compare-cat-btn small{opacity:.55;font-weight:500;font-size:11px}
+.picker-thumb{width:42px;height:42px;border-radius:8px;object-fit:cover;background:#ebeae5}
+.compare-step-bar{display:flex;align-items:center;gap:10px;font:700 13px Manrope,sans-serif;color:var(--ink);margin:18px 0 12px;letter-spacing:.3px}
+.compare-step-bar span{background:var(--ink);color:var(--lime);font:800 10px Manrope;padding:3px 8px;border-radius:6px;letter-spacing:1px}
+.card-select-row{display:flex;flex-direction:column;gap:5px;margin:8px 0 12px}
+.card-select-row label{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:700}
+.card-dropdown{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);font:600 12px "DM Sans",sans-serif;color:var(--ink);cursor:pointer;outline:none;transition:border-color .2s}
+.card-dropdown:focus,.card-dropdown:hover{border-color:var(--ink)}
+.pick-open-modal{margin-top:auto;padding-top:10px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);font-size:11px}
+.pick-open-modal button{border:0;background:transparent;color:var(--orange);font:700 11px Manrope;cursor:pointer;padding:0}
+.pick-open-modal button:hover{text-decoration:underline}
+.pick-card{min-height:260px;height:auto}
+.pick-card.selected .picked-copy{padding:32px 22px 20px}
+
+/* Tarjetas comparativas de tamano estable */
+.compare-grid{align-items:stretch}
+.pick-card,.pick-card.selected{height:320px;min-height:320px;max-height:320px;min-width:0;overflow:hidden}
+.pick-card.selected{grid-template-rows:minmax(0,1fr)}
+.picked-image-wrap{min-width:0;min-height:0;height:100%;overflow:hidden;background:#ebeae5}
+.pick-card.selected .picked-image{display:block;width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center}
+.pick-card.selected .picked-copy{min-width:0;min-height:0;height:100%;overflow:hidden;padding:32px 22px 20px}
+.picked-name{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2}
+.card-dropdown{min-width:0;text-overflow:ellipsis}
+.pick-open-modal{gap:10px}
+.pick-open-modal span,.pick-open-modal button{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:620px){.pick-card,.pick-card.selected{height:280px;min-height:280px;max-height:280px}.pick-card.selected .picked-copy{padding:28px 14px 14px}.pick-open-modal span{display:none}}

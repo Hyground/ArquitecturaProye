@@ -1,0 +1,110 @@
+[
+  {
+    "id": "gpu-nvidia-5070ti",
+    "cat": "GPU",
+    "family": "Componentes",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 5070 Ti",
+    "price": 749,
+    "score": 94,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "VRAM": "16 GB GDDR7",
+      "Frecuencia boost": "2.45 GHz",
+      "Bus de memoria": "256-bit",
+      "Consumo": "300 W",
+      "Ray tracing": "4ª generación",
+      "Interfaz": "PCIe 5.0"
+    }
+  },
+  {
+    "id": "gpu-amd-9070xt",
+    "cat": "GPU",
+    "family": "Componentes",
+    "brand": "AMD",
+    "name": "Radeon RX 9070 XT",
+    "price": 599,
+    "score": 92,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "VRAM": "16 GB GDDR6",
+      "Frecuencia boost": "2.97 GHz",
+      "Bus de memoria": "256-bit",
+      "Consumo": "304 W",
+      "Ray tracing": "3ª generación",
+      "Interfaz": "PCIe 4.0"
+    }
+  },
+  {
+    "id": "gpu-nvidia-4070s",
+    "cat": "GPU",
+    "family": "Componentes",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4070 Super",
+    "price": 599,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "VRAM": "12 GB GDDR6X",
+      "Frecuencia boost": "2.48 GHz",
+      "Bus de memoria": "192-bit",
+      "Consumo": "220 W",
+      "Ray tracing": "3ª generación",
+      "Interfaz": "PCIe 4.0"
+    }
+  },
+  {
+    "id": "gpu-amd-7800xt",
+    "cat": "GPU",
+    "family": "Componentes",
+    "brand": "AMD",
+    "name": "Radeon RX 7800 XT",
+    "price": 489,
+    "score": 89,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "VRAM": "16 GB GDDR6",
+      "Frecuencia boost": "2.43 GHz",
+      "Bus de memoria": "256-bit",
+      "Consumo": "263 W",
+      "Ray tracing": "2ª generación",
+      "Interfaz": "PCIe 4.0"
+    }
+  },
+  {
+    "id": "gpu-nvidia-4060",
+    "cat": "GPU",
+    "family": "Componentes",
+    "brand": "NVIDIA",
+    "name": "GeForce RTX 4060",
+    "price": 299,
+    "score": 82,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "VRAM": "8 GB GDDR6",
+      "Frecuencia boost": "2.46 GHz",
+      "Bus de memoria": "128-bit",
+      "Consumo": "115 W",
+      "Ray tracing": "3ª generación",
+      "Interfaz": "PCIe 4.0"
+    }
+  },
+  {
+    "id": "gpu-amd-7600",
+    "cat": "GPU",
+    "family": "Componentes",
+    "brand": "AMD",
+    "name": "Radeon RX 7600",
+    "price": 259,
+    "score": 80,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "VRAM": "8 GB GDDR6",
+      "Frecuencia boost": "2.66 GHz",
+      "Bus de memoria": "128-bit",
+      "Consumo": "165 W",
+      "Ray tracing": "2ª generación",
+      "Interfaz": "PCIe 4.0"
+    }
+  }
+]

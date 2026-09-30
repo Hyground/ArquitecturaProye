@@ -1,0 +1,106 @@
+[
+  {
+    "id": "kb-razer-huntsman-v3",
+    "cat": "Teclado",
+    "family": "Periféricos",
+    "brand": "Razer",
+    "name": "Huntsman V3 Pro TKL",
+    "price": 219,
+    "score": 92,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Formato": "TKL (80%)",
+      "Switch": "Óptico analógico Gen 2",
+      "Punto de actuación": "0.1 a 4.0 mm",
+      "Rapid Trigger": "Sí (0.1 mm)",
+      "Conexión": "Cable USB-C extraíble",
+      "Peso": "719 g"
+    }
+  },
+  {
+    "id": "kb-logi-gpro-rapid",
+    "cat": "Teclado",
+    "family": "Periféricos",
+    "brand": "Logitech",
+    "name": "G Pro X TKL Rapid",
+    "price": 169,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Formato": "TKL (80%)",
+      "Switch": "Magnético efecto Hall",
+      "Punto de actuación": "0.1 a 4.0 mm",
+      "Rapid Trigger": "Sí",
+      "Conexión": "Inalámbrica Lightspeed",
+      "Peso": "1035 g"
+    }
+  },
+  {
+    "id": "mouse-logi-superlight2",
+    "cat": "Mouse",
+    "family": "Periféricos",
+    "brand": "Logitech",
+    "name": "G Pro X Superlight 2",
+    "price": 159,
+    "score": 95,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Sensor": "HERO 2",
+      "DPI": "44000 DPI",
+      "Polling rate": "4000 Hz / 8000 Hz",
+      "Peso": "60 g",
+      "Conexión": "Lightspeed",
+      "Batería": "95 horas"
+    }
+  },
+  {
+    "id": "mouse-razer-viper-v3",
+    "cat": "Mouse",
+    "family": "Periféricos",
+    "brand": "Razer",
+    "name": "Viper V3 Pro",
+    "price": 159,
+    "score": 96,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Sensor": "Focus Pro 35K Gen 2",
+      "DPI": "35000 DPI",
+      "Polling rate": "8000 Hz nativo",
+      "Peso": "54 g",
+      "Conexión": "HyperSpeed",
+      "Batería": "95 horas"
+    }
+  },
+  {
+    "id": "web-logi-mxbrio",
+    "cat": "Webcam",
+    "family": "Periféricos",
+    "brand": "Logitech",
+    "name": "MX Brio",
+    "price": 199,
+    "score": 94,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Resolución": "4K Ultra HD",
+      "Fotogramas": "30 fps 4K / 60 fps 1080p",
+      "Enfoque": "Automático PDAF",
+      "Campo de visión": "90°"
+    }
+  },
+  {
+    "id": "web-elgato-facecam-mk2",
+    "cat": "Webcam",
+    "family": "Periféricos",
+    "brand": "Elgato",
+    "name": "Facecam MK.2",
+    "price": 149,
+    "score": 92,
+    "image": "assets/hardware-hero.png",
+    "specs": {
+      "Resolución": "1080p Full HD sin comprimir",
+      "Fotogramas": "60 fps HDR",
+      "Enfoque": "Fijo streaming",
+      "Campo de visión": "84°"
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "cpu-amd-9800x3d",
+    "cat": "CPU",
+    "family": "Componentes",
+    "brand": "AMD",
+    "name": "Ryzen 7 9800X3D",
+    "price": 479,
+    "score": 96,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Núcleos / hilos": "8 / 16",
+      "Frecuencia boost": "5.2 GHz",
+      "Frecuencia base": "4.7 GHz",
+      "Caché": "104 MB",
+      "TDP": "120 W",
+      "Socket": "AM5",
+      "Litografía": "4 nm"
+    }
+  },
+  {
+    "id": "cpu-intel-265k",
+    "cat": "CPU",
+    "family": "Componentes",
+    "brand": "Intel",
+    "name": "Core Ultra 7 265K",
+    "price": 399,
+    "score": 88,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Núcleos / hilos": "20 / 20",
+      "Frecuencia boost": "5.5 GHz",
+      "Frecuencia base": "3.9 GHz",
+      "Caché": "66 MB",
+      "TDP": "125 W",
+      "Socket": "LGA1851",
+      "Litografía": "3 nm"
+    }
+  },
+  {
+    "id": "cpu-amd-7800x3d",
+    "cat": "CPU",
+    "family": "Componentes",
+    "brand": "AMD",
+    "name": "Ryzen 7 7800X3D",
+    "price": 399,
+    "score": 94,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Núcleos / hilos": "8 / 16",
+      "Frecuencia boost": "5.0 GHz",
+      "Frecuencia base": "4.2 GHz",
+      "Caché": "104 MB",
+      "TDP": "120 W",
+      "Socket": "AM5",
+      "Litografía": "5 nm"
+    }
+  },
+  {
+    "id": "cpu-intel-14700k",
+    "cat": "CPU",
+    "family": "Componentes",
+    "brand": "Intel",
+    "name": "Core i7-14700K",
+    "price": 389,
+    "score": 90,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Núcleos / hilos": "20 / 28",
+      "Frecuencia boost": "5.6 GHz",
+      "Frecuencia base": "3.4 GHz",
+      "Caché": "61 MB",
+      "TDP": "125 W",
+      "Socket": "LGA1700",
+      "Litografía": "10 nm"
+    }
+  },
+  {
+    "id": "cpu-amd-7600x",
+    "cat": "CPU",
+    "family": "Componentes",
+    "brand": "AMD",
+    "name": "Ryzen 5 7600X",
+    "price": 199,
+    "score": 85,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Núcleos / hilos": "6 / 12",
+      "Frecuencia boost": "5.3 GHz",
+      "Frecuencia base": "4.7 GHz",
+      "Caché": "38 MB",
+      "TDP": "105 W",
+      "Socket": "AM5",
+      "Litografía": "5 nm"
+    }
+  },
+  {
+    "id": "cpu-intel-14600k",
+    "cat": "CPU",
+    "family": "Componentes",
+    "brand": "Intel",
+    "name": "Core i5-14600K",
+    "price": 289,
+    "score": 87,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Núcleos / hilos": "14 / 20",
+      "Frecuencia boost": "5.3 GHz",
+      "Frecuencia base": "3.5 GHz",
+      "Caché": "44 MB",
+      "TDP": "125 W",
+      "Socket": "LGA1700",
+      "Litografía": "10 nm"
+    }
+  }
+]

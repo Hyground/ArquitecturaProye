@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ssd-samsung-990pro",
+    "cat": "Almacenamiento",
+    "family": "Componentes",
+    "brand": "Samsung",
+    "name": "990 Pro 2 TB",
+    "price": 169,
+    "score": 95,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "2 TB",
+      "Lectura": "7450 MB/s",
+      "Escritura": "6900 MB/s",
+      "Interfaz": "PCIe 4.0 NVMe M.2",
+      "DRAM Caché": "2 GB LPDDR4",
+      "Garantía": "5 años"
+    }
+  },
+  {
+    "id": "ssd-wd-sn850x",
+    "cat": "Almacenamiento",
+    "family": "Componentes",
+    "brand": "WD",
+    "name": "Black SN850X 2 TB",
+    "price": 149,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "2 TB",
+      "Lectura": "7300 MB/s",
+      "Escritura": "6600 MB/s",
+      "Interfaz": "PCIe 4.0 NVMe M.2",
+      "DRAM Caché": "2 GB DDR4",
+      "Garantía": "5 años"
+    }
+  },
+  {
+    "id": "ssd-crucial-t700",
+    "cat": "Almacenamiento",
+    "family": "Componentes",
+    "brand": "Crucial",
+    "name": "T700 2 TB PCIe 5.0",
+    "price": 279,
+    "score": 96,
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacidad": "2 TB",
+      "Lectura": "12400 MB/s",
+      "Escritura": "11800 MB/s",
+      "Interfaz": "PCIe 5.0 NVMe M.2",
+      "DRAM Caché": "4 GB LPDDR4",
+      "Garantía": "5 años"
+    }
+  }
+]

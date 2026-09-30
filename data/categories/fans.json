@@ -1,0 +1,73 @@
+[
+  {
+    "id": "fan-noctua-nfa12x25",
+    "cat": "Ventiladores",
+    "family": "Componentes",
+    "brand": "Noctua",
+    "name": "NF-A12x25 PWM",
+    "price": 34,
+    "score": 96,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tamaño": "120 mm",
+      "Flujo de aire": "60.09 CFM",
+      "Presión estática": "2.34 mm H₂O",
+      "Nivel de ruido": "22.6 dBA",
+      "Velocidad de giro": "2000 RPM",
+      "Garantía": "6 años"
+    }
+  },
+  {
+    "id": "fan-lianli-unisl-inf",
+    "cat": "Ventiladores",
+    "family": "Componentes",
+    "brand": "Lian Li",
+    "name": "UNI FAN SL-Infinity 120",
+    "price": 29,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tamaño": "120 mm",
+      "Flujo de aire": "61.3 CFM",
+      "Presión estática": "2.66 mm H₂O",
+      "Nivel de ruido": "29 dBA",
+      "Velocidad de giro": "2100 RPM",
+      "Conexión": "Modular sin cables"
+    }
+  },
+  {
+    "id": "fan-arctic-p12-max",
+    "cat": "Ventiladores",
+    "family": "Componentes",
+    "brand": "Arctic",
+    "name": "P12 Max High Performance",
+    "price": 12,
+    "score": 94,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tamaño": "120 mm",
+      "Flujo de aire": "81.04 CFM",
+      "Presión estática": "4.35 mm H₂O",
+      "Nivel de ruido": "25 dBA",
+      "Velocidad de giro": "3300 RPM",
+      "Garantía": "6 años"
+    }
+  },
+  {
+    "id": "fan-corsair-icue-qx120",
+    "cat": "Ventiladores",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "iCUE LINK QX120 RGB",
+    "price": 49,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tamaño": "120 mm",
+      "Flujo de aire": "63.1 CFM",
+      "Presión estática": "3.8 mm H₂O",
+      "Nivel de ruido": "37 dBA",
+      "Velocidad de giro": "2400 RPM"
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cool-nzxt-kraken",
+    "cat": "Refrigeración",
+    "family": "Componentes",
+    "brand": "NZXT",
+    "name": "Kraken Elite 360",
+    "price": 279,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tipo": "AIO líquido",
+      "Radiador": "360 mm",
+      "Ruido": "33.9 dBA",
+      "Pantalla": "LCD 2.72”",
+      "Ventiladores": "3× 120 mm",
+      "Garantía": "6 años"
+    }
+  },
+  {
+    "id": "cool-arctic-liquid3",
+    "cat": "Refrigeración",
+    "family": "Componentes",
+    "brand": "Arctic",
+    "name": "Liquid Freezer III 360",
+    "price": 129,
+    "score": 95,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tipo": "AIO líquido",
+      "Radiador": "360 mm",
+      "Ruido": "23.5 dBA",
+      "Pantalla": "No (Ventilador VRM)",
+      "Ventiladores": "3× 120 mm",
+      "Garantía": "6 años"
+    }
+  },
+  {
+    "id": "cool-thermalright-peerless",
+    "cat": "Refrigeración",
+    "family": "Componentes",
+    "brand": "Thermalright",
+    "name": "Peerless Assassin 120 SE",
+    "price": 38,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Tipo": "Aire doble torre",
+      "Radiador": "6 heatpipes 6mm",
+      "Ruido": "25.6 dBA",
+      "Pantalla": "No",
+      "Ventiladores": "2× 120 mm",
+      "Garantía": "3 años"
+    }
+  }
+]

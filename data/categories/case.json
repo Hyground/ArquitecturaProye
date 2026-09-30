@@ -1,0 +1,71 @@
+[
+  {
+    "id": "case-fractal-north",
+    "cat": "Gabinete",
+    "family": "Componentes",
+    "brand": "Fractal",
+    "name": "North XL",
+    "price": 179,
+    "score": 94,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Formato": "Full tower",
+      "Placa máxima": "E-ATX",
+      "GPU máxima": "413 mm",
+      "Ventiladores incluidos": "3× Aspect 140 mm",
+      "Frontal": "Madera de roble natural",
+      "Peso": "9.7 kg"
+    }
+  },
+  {
+    "id": "case-lianli-o11d",
+    "cat": "Gabinete",
+    "family": "Componentes",
+    "brand": "Lian Li",
+    "name": "O11 Dynamic EVO",
+    "price": 169,
+    "score": 93,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Formato": "Mid tower doble cámara",
+      "Placa máxima": "E-ATX",
+      "GPU máxima": "426 mm",
+      "Frontal": "Cristal templado panorámico",
+      "Peso": "12.7 kg"
+    }
+  },
+  {
+    "id": "case-corsair-4000d",
+    "cat": "Gabinete",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "4000D Airflow",
+    "price": 104,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Formato": "Mid tower",
+      "Placa máxima": "ATX",
+      "GPU máxima": "360 mm",
+      "Frontal": "Acero perforado alto flujo",
+      "Peso": "7.85 kg"
+    }
+  },
+  {
+    "id": "case-nzxt-h6-flow",
+    "cat": "Gabinete",
+    "family": "Componentes",
+    "brand": "NZXT",
+    "name": "H6 Flow RGB",
+    "price": 134,
+    "score": 92,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Formato": "Mid tower doble cámara",
+      "Placa máxima": "ATX",
+      "GPU máxima": "365 mm",
+      "Frontal": "Cristal envolvente panorámico",
+      "Peso": "9.4 kg"
+    }
+  }
+]

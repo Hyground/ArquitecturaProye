@@ -1,0 +1,56 @@
+[
+  {
+    "id": "mb-asus-x870e",
+    "cat": "Placa base",
+    "family": "Componentes",
+    "brand": "ASUS",
+    "name": "ROG Strix X870E-E Gaming",
+    "price": 499,
+    "score": 94,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Formato": "ATX",
+      "Memoria": "DDR5 · 192 GB",
+      "Wi-Fi": "Wi-Fi 7",
+      "M.2": "5 ranuras",
+      "PCIe": "PCIe 5.0 x16"
+    }
+  },
+  {
+    "id": "mb-msi-x870",
+    "cat": "Placa base",
+    "family": "Componentes",
+    "brand": "MSI",
+    "name": "MAG X870 Tomahawk WiFi",
+    "price": 299,
+    "score": 91,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Formato": "ATX",
+      "Memoria": "DDR5 · 256 GB",
+      "Wi-Fi": "Wi-Fi 7",
+      "M.2": "4 ranuras",
+      "PCIe": "PCIe 5.0 x16"
+    }
+  },
+  {
+    "id": "mb-gigabyte-b650",
+    "cat": "Placa base",
+    "family": "Componentes",
+    "brand": "Gigabyte",
+    "name": "B650 AORUS Elite AX",
+    "price": 199,
+    "score": 88,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Formato": "ATX",
+      "Memoria": "DDR5 · 192 GB",
+      "Wi-Fi": "Wi-Fi 6E",
+      "M.2": "3 ranuras",
+      "PCIe": "PCIe 4.0 x16"
+    }
+  }
+]
