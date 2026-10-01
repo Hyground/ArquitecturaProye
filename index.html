@@ -15,7 +15,7 @@
     <a class="brand" href="#"><span class="brand-mark">V</span><span>VERSUS</span></a>
     <nav>
       <a class="active" href="#comparador">Comparador</a>
-      <a href="#catalogo">Catálogo</a>
+      <a href="#catalogo">Guía</a>
       <a href="#como-funciona">Cómo funciona</a>
     </nav>
   </header>
@@ -24,7 +24,6 @@
     <section class="hero" id="comparador">
       <div class="eyebrow"><span></span> DECIDE CON DATOS</div>
       <h1>¿Cuál te conviene<br><em>de verdad?</em></h1>
-      <p>Elige una categoría y enfrenta dos productos equivalentes, lado a lado.</p>
       <div class="hero-search">
         <span class="search-icon">⌕</span>
         <input id="heroSearch" type="search" placeholder="Busca un componente: RTX 5070, Ryzen 7, 32 GB DDR5…" autocomplete="off" />
@@ -59,16 +58,31 @@
       <div id="comparison" class="comparison hidden"></div>
     </section>
 
-    <section class="catalog-section" id="catalogo">
-      <div class="section-heading catalog-head">
-        <div><span class="step">02</span><h2>Explora el catálogo completo</h2></div>
+    <section class="catalog-section advisor-section" id="catalogo">
+      <div class="section-heading advisor-heading">
+        <div><span class="step">02</span><h2>Encuentra una comparación que sí te ayude</h2></div>
+        <span class="advisor-badge">GUÍA INTERACTIVA</span>
+      </div>
+
+      <div class="comparison-advisor">
+        <div class="advisor-copy">
+          <span class="advisor-kicker">ANTES DE COMPARAR</span>
+          <h3>¿Qué quieres mejorar?</h3>
+          <p>No todas las especificaciones importan igual. Elige tu objetivo y te mostraremos qué componentes conviene enfrentar y en qué datos debes fijarte.</p>
+          <div class="advisor-options" role="group" aria-label="Objetivo de la comparación">
+            <button class="advisor-option active" type="button" data-advisor="gaming"><span>01</span>Gaming</button>
+            <button class="advisor-option" type="button" data-advisor="work"><span>02</span>Trabajo</button>
+            <button class="advisor-option" type="button" data-advisor="creator"><span>03</span>Creación</button>
+            <button class="advisor-option" type="button" data-advisor="upgrade"><span>04</span>Actualizar PC</button>
+          </div>
+        </div>
+        <div class="advisor-result" id="advisorResult" aria-live="polite"></div>
+      </div>
+
+      <div class="catalog-divider">
+        <div><span>CATÁLOGO</span><h3>O explora todos los productos</h3></div>
         <span id="resultsCount" class="results-count"></span>
       </div>
-      <div class="catalog-intro">
-        <p>Elige una familia o busca una categoría para encontrar el equipo que necesitas.</p>
-        <label class="category-search"><span>⌕</span><input id="categorySearch" type="search" placeholder="Buscar categoría: router, impresora, monitor…" /></label>
-      </div>
-      <div class="category-list" id="categories"></div>
       <div class="catalog-tools">
         <label><span>⌕</span><input id="catalogSearch" type="search" placeholder="Buscar por nombre, marca o especificación" /></label>
         <select id="sortSelect" aria-label="Ordenar productos">
@@ -80,7 +94,6 @@
       </div>
       <div class="product-grid" id="productGrid"></div>
     </section>
-
     <section class="how" id="como-funciona">
       <div><span>01</span><h3>Busca</h3><p>Encuentra componentes por categoría, nombre o marca.</p></div>
       <div><span>02</span><h3>Selecciona</h3><p>Elige dos modelos equivalentes de fabricantes distintos.</p></div>

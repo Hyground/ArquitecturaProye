@@ -27,26 +27,30 @@ const catPhoto = {
   Control: 'https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80',
   Audífonos: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80',
   Impresora: 'assets/hardware-hero.png',
-  Escáner: 'assets/products/categories/scanner.png',
-  Proyector: 'assets/products/categories/projector.png',
-  Plotter: 'assets/products/categories/plotter.png',
-  Etiquetadora: 'assets/products/categories/label-maker.png',
-  'Destructora de papel': 'assets/products/categories/paper-shredder.png',
-  'Tableta gráfica': 'assets/products/categories/drawing-tablet.png',
-  Router: 'assets/products/categories/router.png',
-  NAS: 'assets/products/categories/nas.png',
-  'Silla ergonómica': 'assets/products/categories/ergonomic-chair.png',
+  Escáner: 'assets/hardware-hero.png',
   default: 'assets/hardware-hero.png'
 };
 
-const photo = p => {
-  const categoryPhoto = p && catPhoto[p.cat];
-  // El hero genérico solo es un fallback de datos: prioriza la imagen local de categoría.
-  if (p && (!p.image || p.image === 'assets/hardware-hero.png') && categoryPhoto) return categoryPhoto;
-  return (p && p.image) || categoryPhoto || catPhoto.default;
-};
+const photo = p => (p && p.image) || (p && catPhoto[p.cat]) || catPhoto.default;
 const $ = s => document.querySelector(s);
 const money = n => new Intl.NumberFormat('es-GT', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+
+const advisorProfiles = {
+  gaming: { label: 'Gaming', title: 'Más rendimiento, menos cuellos de botella', description: 'Compara primero la GPU y el CPU. Revisa puntuación, memoria, frecuencia y consumo antes de pagar por potencia que quizá no necesitas.', categories: ['GPU', 'CPU', 'Monitor'], metric: 'Prioriza FPS, resolución y equilibrio entre CPU y GPU.' },
+  work: { label: 'Trabajo', title: 'Fluidez para tu jornada diaria', description: 'Para multitarea importan la memoria, el almacenamiento y un monitor cómodo. Compara capacidad, velocidad y conectividad.', categories: ['RAM', 'Almacenamiento', 'Monitor'], metric: 'Prioriza capacidad, rapidez y comodidad de uso.' },
+  creator: { label: 'Creación', title: 'Potencia para editar, diseñar y producir', description: 'Las cargas creativas necesitan procesamiento sostenido y una buena pantalla. Contrasta GPU, CPU y monitor según tu software.', categories: ['GPU', 'CPU', 'Monitor'], metric: 'Prioriza VRAM, núcleos, resolución y precisión visual.' },
+  upgrade: { label: 'Actualizar PC', title: 'Mejora donde realmente se nota', description: 'Antes de reemplazar todo, compara el componente que limita tu equipo y comprueba compatibilidad, consumo y ganancia real.', categories: ['CPU', 'GPU', 'RAM', 'Almacenamiento'], metric: 'Prioriza compatibilidad, mejora obtenida y costo.' }
+};
+function renderAdvisor(profileKey = 'gaming') {
+  const result = $('#advisorResult');
+  if (!result) return;
+  const profile = advisorProfiles[profileKey] || advisorProfiles.gaming;
+  const available = profile.categories.filter(category => cats.includes(category));
+  const fallback = cats.filter(category => category !== 'Todos').slice(0, 3);
+  const recommendations = available.length ? available : fallback;
+  result.innerHTML = `<div class="advisor-result-top"><span>RECOMENDACIÓN · ${profile.label.toUpperCase()}</span><span class="advisor-status"><i></i> Basado en tu objetivo</span></div><h3>${profile.title}</h3><p>${profile.description}</p><div class="advisor-focus"><span>EN QUÉ FIJARTE</span><strong>${profile.metric}</strong></div><div class="advisor-actions"><div class="advisor-categories">${recommendations.map((category, index) => `<button type="button" data-advisor-cat="${category}"><small>0${index + 1}</small>${category}</button>`).join('')}</div>${recommendations[0] ? `<button class="advisor-cta" type="button" data-advisor-cat="${recommendations[0]}">Comparar ${recommendations[0]} <span>→</span></button>` : ''}</div>`;
+}
+
 
 const toast = msg => {
   const t = $('#toast');
@@ -63,19 +67,16 @@ function updateDatasetState() {
   const catEl = $('#categoryCount');
   if (countEl) countEl.textContent = new Intl.NumberFormat('es').format(products.length);
   if (catEl) catEl.textContent = uniqueCats.length;
+  renderAdvisor(document.querySelector('.advisor-option.active')?.dataset.advisor || 'gaming');
 }
 
 function renderCats() {
-  const categorySearch = $('#categorySearch');
-  const categoryQuery = categorySearch ? categorySearch.value.trim().toLocaleLowerCase('es') : '';
   const grouped = {};
   cats.slice(1).forEach(c => {
     // Clasificacion dinamica por la familia declarada en los productos
     const sample = products.find(p => p.cat === c);
     const family = (sample && sample.family) || 'Otros';
-    if (!categoryQuery || `${c} ${family}`.toLocaleLowerCase('es').includes(categoryQuery)) {
-      (grouped[family] ??= []).push(c);
-    }
+    (grouped[family] ??= []).push(c);
   });
 
   const categoriesEl = $('#categories');
@@ -127,10 +128,8 @@ function renderProducts() {
   if (resultsEl) resultsEl.textContent = `${list.length} resultados`;
   if (!gridEl) return;
 
-  gridEl.innerHTML = list.map(p => {
-    const keySpecs = p.specs ? Object.entries(p.specs).slice(0, 3) : [];
-    return `
-    <article class="product-card" aria-label="${p.brand} ${p.name}">
+  gridEl.innerHTML = list.map(p => `
+    <article class="product-card">
       <div class="product-image">
         <img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy">
         <span class="tag">${p.cat.toUpperCase()}</span>
@@ -140,20 +139,77 @@ function renderProducts() {
         <span class="rating">${(p.score / 10).toFixed(1)} / 10</span>
       </div>
       <h3>${p.name}</h3>
-      <ul class="product-specs">${keySpecs.map(([label, value]) => `<li><span>${label}</span><b>${value}</b></li>`).join('')}</ul>
+      <p>${p.specs ? Object.values(p.specs).slice(0, 2).join(' · ') : ''}</p>
       <div class="price-row">
         <b>${money(p.price)}</b>
         <button data-add="${p.id}" title="Comparar este modelo">COMPARAR</button>
       </div>
     </article>
-  `;
-  }).join('') || '<p class="empty-state">No encontramos productos con esos filtros. Prueba con otra categoría o término.</p>';
+  `).join('') || '<p style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">No encontramos productos con esos filtros.</p>';
 }
 
 /**
  * Renderiza los chips horizontales de categorias en la barra superior del comparador.
  * Al hacer clic en un chip, se fija la categoria y se actualizan ambos componentes.
  */
+
+function enableChipDragScroll() {
+  const nav = $('#compareNav');
+  if (!nav || nav.dataset.dragReady) return;
+  nav.dataset.dragReady = 'true';
+
+  let dragging = false;
+  let moved = false;
+  let startX = 0;
+  let startScrollLeft = 0;
+
+  nav.addEventListener('pointerdown', event => {
+    if (event.pointerType === 'touch') return;
+    dragging = true;
+    moved = false;
+    startX = event.clientX;
+    startScrollLeft = nav.scrollLeft;
+  });
+
+  nav.addEventListener('pointermove', event => {
+    if (!dragging) return;
+    const distance = event.clientX - startX;
+    if (Math.abs(distance) > 5) {
+      if (!moved) {
+        moved = true;
+        nav.classList.add('is-dragging');
+        nav.setPointerCapture(event.pointerId);
+      }
+      event.preventDefault();
+      nav.scrollLeft = startScrollLeft - distance;
+    }
+  });
+
+  const stopDragging = event => {
+    if (!dragging) return;
+    dragging = false;
+    nav.classList.remove('is-dragging');
+    if (nav.hasPointerCapture(event.pointerId)) nav.releasePointerCapture(event.pointerId);
+    // El clic sintético ocurre justo después de pointerup. Si no ocurre,
+    // libera el estado para que el siguiente clic real nunca quede bloqueado.
+    setTimeout(() => { moved = false; }, 0);
+  };
+
+  nav.addEventListener('pointerup', stopDragging);
+  nav.addEventListener('pointercancel', stopDragging);
+  nav.addEventListener('click', event => {
+    if (!moved) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }, true);
+
+  nav.addEventListener('wheel', event => {
+    if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+    event.preventDefault();
+    nav.scrollLeft += event.deltaY;
+  }, { passive: false });
+}
+
 function populateCompareCategories() {
   const nav = $('#compareNav');
   if (!nav) return;
@@ -168,6 +224,7 @@ function populateCompareCategories() {
       </button>
     `;
   }).join('');
+  enableChipDragScroll();
 }
 
 /**
@@ -215,6 +272,7 @@ function renderSelection() {
   ['a', 'b'].forEach(side => {
     const p = selected[side] || catProducts[0];
     selected[side] = p;
+    const quickSpecs = p && p.specs ? Object.entries(p.specs).slice(0, 2) : [];
     const el = $(`#pick${side.toUpperCase()}`);
     if (!el) return;
 
@@ -248,9 +306,16 @@ function renderSelection() {
         </div>
         <small class="picked-brand-tag">${p.brand}</small>
         <strong class="picked-name">${p.name}</strong>
-        <div class="picked-meta">
-          <b>${money(p.price)}</b>
-          <span style="font-size:11px;color:var(--muted);font-weight:700;">Puntaje: ${p.score}/100</span>
+        <div class="picked-highlights">
+          <div class="picked-price"><small>PRECIO ESTIMADO</small><b>${money(p.price)}</b></div>
+          <div class="picked-score" aria-label="Puntaje ${p.score} de 100">
+            <span>PUNTAJE</span>
+            <strong>${p.score}</strong>
+            <small>/100</small>
+          </div>
+        </div>
+        <div class="picked-quick-specs">
+          ${quickSpecs.map(([label, value]) => `<span><small>${label}</small><b>${value}</b></span>`).join('')}
         </div>
         <div class="pick-open-modal">
           <span>¿Deseas buscar con fotos?</span>
@@ -343,14 +408,12 @@ function renderComparison() {
       <div>
         <small>VEREDICTO · ${compareCat.toUpperCase()}</small>
         <h3>${winner ? `${winner.name} obtiene la ventaja general` : 'Empate técnico'}</h3>
-        <p>La puntuación resume las especificaciones cargadas; revisa las filas para decidir según tu uso.</p>
       </div>
       <div class="score">
         <span>PUNTUACIÓN</span>
         <b>${a.score} — ${b.score}</b>
       </div>
     </div>
-    <div class="comparison-guide"><span>Precio</span><span>El valor destacado indica la opción más conveniente para esa métrica.</span></div>
     <div class="spec-row">
       <span class="${a.price < b.price ? 'winner' : ''}">${money(a.price)}</span>
       <span>Precio estimado</span>
@@ -541,6 +604,20 @@ async function loadDataset() {
 
 // Inicialización de Eventos de Usuario
 document.addEventListener('click', e => {
+  const advisorOption = e.target.closest('[data-advisor]');
+  if (advisorOption) {
+    document.querySelectorAll('.advisor-option').forEach(button => button.classList.toggle('active', button === advisorOption));
+    renderAdvisor(advisorOption.dataset.advisor);
+  }
+  const advisorCategory = e.target.closest('[data-advisor-cat]');
+  if (advisorCategory) {
+    const category = advisorCategory.dataset.advisorCat;
+    setCompareCategory(category);
+    const comparisonSection = document.querySelector('.compare-section');
+    if (comparisonSection) comparisonSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    toast(`Comparación de ${category} preparada`);
+  }
+
   // Clic en chip de categoria del catálogo
   const cat = e.target.closest('[data-cat]');
   if (cat) {
@@ -616,9 +693,6 @@ if (catalogSearchEl) {
     if (e.key === 'Enter') remoteSearch(e.target.value);
   });
 }
-
-const categorySearchEl = $('#categorySearch');
-if (categorySearchEl) categorySearchEl.oninput = renderCats;
 
 const sortSelectEl = $('#sortSelect');
 if (sortSelectEl) sortSelectEl.onchange = renderProducts;
