@@ -52,5 +52,15 @@
       "Ventiladores": "2× 120 mm",
       "Garantía": "3 años"
     }
-  }
+  },
+  {"id":"cool-nzxt-kraken-360","cat":"Refrigeración","family":"Componentes","brand":"NZXT","name":"Kraken 360 RGB","price":199,"score":92,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"21–33 dBA","Pantalla":"LCD 1.54 pulgadas","Ventiladores":"3 × 120 mm RGB","Garantía":"6 años"}},
+  {"id":"cool-arctic-liquid-freezer-iii","cat":"Refrigeración","family":"Componentes","brand":"ARCTIC","name":"Liquid Freezer III 360","price":119,"score":94,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"22.5 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm","Garantía":"6 años"}},
+  {"id":"cool-corsair-icue-link-360","cat":"Refrigeración","family":"Componentes","brand":"Corsair","name":"iCUE LINK H150i RGB","price":229,"score":91,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"10–37.8 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm RGB","Garantía":"5 años"}},
+  {"id":"cool-noctua-nhd15g2","cat":"Refrigeración","family":"Componentes","brand":"Noctua","name":"NH-D15 G2","price":149,"score":93,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire","Radiador":"Doble torre","Ruido":"24.8 dBA","Pantalla":"No","Ventiladores":"2 × 140 mm","Garantía":"6 años"}},
+  {"id":"cool-deepcool-ak620","cat":"Refrigeración","family":"Componentes","brand":"DeepCool","name":"AK620","price":69,"score":88,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire","Radiador":"Doble torre","Ruido":"28 dBA","Pantalla":"No","Ventiladores":"2 × 120 mm","Garantía":"3 años"}},
+  {"id":"cool-bequiet-darkrock-pro5","cat":"Refrigeración","family":"Componentes","brand":"be quiet!","name":"Dark Rock Pro 5","price":99,"score":90,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire","Radiador":"Doble torre","Ruido":"32.3 dBA","Pantalla":"No","Ventiladores":"1 × 135 mm + 1 × 120 mm","Garantía":"3 años"}},
+  {"id":"cool-thermalright-frozen-notte","cat":"Refrigeración","family":"Componentes","brand":"Thermalright","name":"Frozen Notte 360","price":64,"score":86,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"27 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm","Garantía":"3 años"}}
+,
+  {"id":"refrigeracion-id-cooling-catalog-01","cat":"Refrigeración","family":"Componentes","brand":"ID-COOLING","name":"ID-COOLING Refrigeración Serie 01","price":123,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}},
+  {"id":"refrigeracion-ek-catalog-02","cat":"Refrigeración","family":"Componentes","brand":"EK","name":"EK Refrigeración Serie 02","price":160,"score":79,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 02","Garantía":"1 año"}}
 ]

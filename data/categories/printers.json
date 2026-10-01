@@ -66,5 +66,12 @@
       "Dúplex automático": "Sí",
       "Conectividad": "Wi-Fi · Ethernet · USB"
     }
-  }
+  },
+  {"id":"print-epson-et-8550","cat":"Impresora","family":"Oficina","brand":"Epson","name":"EcoTank Photo ET-8550","price":699,"score":95,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Tanque de tinta fotográfico","Velocidad en negro":"16 ppm","Velocidad en color":"9 ppm","Dúplex automático":"Sí","Conectividad":"Wi-Fi · Ethernet · USB"}},
+  {"id":"print-brother-mfc-l8905cdw","cat":"Impresora","family":"Oficina","brand":"Brother","name":"MFC-L8905CDW","price":649,"score":92,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Láser color multifunción","Velocidad en negro":"33 ppm","Velocidad en color":"33 ppm","Dúplex automático":"Sí","Conectividad":"Wi‑Fi · Ethernet · USB"}},
+  {"id":"print-hp-officejet-pro-9125e","cat":"Impresora","family":"Oficina","brand":"HP","name":"OfficeJet Pro 9125e","price":229,"score":87,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Inyección térmica","Velocidad en negro":"22 ppm","Velocidad en color":"18 ppm","Dúplex automático":"Sí","Conectividad":"Wi‑Fi · Ethernet · USB"}},
+  {"id":"print-canon-maxify-gx7020","cat":"Impresora","family":"Oficina","brand":"Canon","name":"MAXIFY GX7020","price":549,"score":91,"image":"assets/hardware-hero.png","specs":{"Tecnología":"MegaTank de tinta","Velocidad en negro":"24 ipm","Velocidad en color":"15.5 ipm","Dúplex automático":"Sí","Conectividad":"Wi‑Fi · Ethernet · USB"}},
+  {"id":"print-xerox-c405","cat":"Impresora","family":"Oficina","brand":"Xerox","name":"VersaLink C405","price":699,"score":89,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Láser color multifunción","Velocidad en negro":"36 ppm","Velocidad en color":"36 ppm","Dúplex automático":"Sí","Conectividad":"Wi‑Fi · Ethernet · USB"}},
+  {"id":"print-brother-hl-l2460dw","cat":"Impresora","family":"Oficina","brand":"Brother","name":"HL-L2460DW","price":169,"score":85,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Láser monocromo","Velocidad en negro":"36 ppm","Velocidad en color":"No","Dúplex automático":"Sí","Conectividad":"Wi‑Fi · USB"}},
+  {"id":"print-epson-wf-7840","cat":"Impresora","family":"Oficina","brand":"Epson","name":"WorkForce Pro WF-7840","price":299,"score":84,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Inyección de tinta","Velocidad en negro":"25 ppm","Velocidad en color":"12 ppm","Dúplex automático":"Sí","Conectividad":"Wi‑Fi · Ethernet · USB"}}
 ]

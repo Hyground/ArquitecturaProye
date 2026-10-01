@@ -52,5 +52,15 @@
       "DRAM Caché": "4 GB LPDDR4",
       "Garantía": "5 años"
     }
-  }
+  },
+  {"id":"storage-samsung-990pro-2tb","cat":"Almacenamiento","family":"Componentes","brand":"Samsung","name":"990 PRO 2 TB","price":179,"score":95,"image":"assets/hardware-hero.png","specs":{"Capacidad":"2 TB","Lectura":"7,450 MB/s","Escritura":"6,900 MB/s","Interfaz":"PCIe 4.0 NVMe","DRAM Caché":"2 GB LPDDR4","Garantía":"5 años"}},
+  {"id":"storage-wd-sn850x-2tb","cat":"Almacenamiento","family":"Componentes","brand":"WD_BLACK","name":"SN850X 2 TB","price":169,"score":93,"image":"assets/hardware-hero.png","specs":{"Capacidad":"2 TB","Lectura":"7,300 MB/s","Escritura":"6,600 MB/s","Interfaz":"PCIe 4.0 NVMe","DRAM Caché":"2 GB","Garantía":"5 años"}},
+  {"id":"storage-crucial-t705-2tb","cat":"Almacenamiento","family":"Componentes","brand":"Crucial","name":"T705 2 TB","price":249,"score":96,"image":"assets/hardware-hero.png","specs":{"Capacidad":"2 TB","Lectura":"14,500 MB/s","Escritura":"12,700 MB/s","Interfaz":"PCIe 5.0 NVMe","DRAM Caché":"2 GB LPDDR4","Garantía":"5 años"}},
+  {"id":"storage-kingston-kc3000-2tb","cat":"Almacenamiento","family":"Componentes","brand":"Kingston","name":"KC3000 2 TB","price":159,"score":90,"image":"assets/hardware-hero.png","specs":{"Capacidad":"2 TB","Lectura":"7,000 MB/s","Escritura":"7,000 MB/s","Interfaz":"PCIe 4.0 NVMe","DRAM Caché":"2 GB","Garantía":"5 años"}},
+  {"id":"storage-lexar-nm790-2tb","cat":"Almacenamiento","family":"Componentes","brand":"Lexar","name":"NM790 2 TB","price":139,"score":88,"image":"assets/hardware-hero.png","specs":{"Capacidad":"2 TB","Lectura":"7,400 MB/s","Escritura":"6,500 MB/s","Interfaz":"PCIe 4.0 NVMe","DRAM Caché":"HMB","Garantía":"5 años"}},
+  {"id":"storage-sandisk-extreme-2tb","cat":"Almacenamiento","family":"Componentes","brand":"SanDisk","name":"Extreme Portable SSD 2 TB","price":169,"score":86,"image":"assets/hardware-hero.png","specs":{"Capacidad":"2 TB","Lectura":"1,050 MB/s","Escritura":"1,000 MB/s","Interfaz":"USB 3.2 Gen 2","DRAM Caché":"No","Garantía":"5 años"}},
+  {"id":"storage-seagate-barracuda-4tb","cat":"Almacenamiento","family":"Componentes","brand":"Seagate","name":"BarraCuda 4 TB","price":89,"score":78,"image":"assets/hardware-hero.png","specs":{"Capacidad":"4 TB","Lectura":"190 MB/s","Escritura":"190 MB/s","Interfaz":"SATA III","DRAM Caché":"256 MB","Garantía":"2 años"}}
+,
+  {"id":"almacenamiento-crucial-catalog-01","cat":"Almacenamiento","family":"Componentes","brand":"Crucial","name":"Crucial Almacenamiento Serie 01","price":493,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}},
+  {"id":"almacenamiento-samsung-catalog-02","cat":"Almacenamiento","family":"Componentes","brand":"Samsung","name":"Samsung Almacenamiento Serie 02","price":530,"score":79,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 02","Garantía":"1 año"}}
 ]

@@ -69,5 +69,14 @@
       "Nivel de ruido": "37 dBA",
       "Velocidad de giro": "2400 RPM"
     }
-  }
+  },
+  {"id":"fan-noctua-nfa14x25","cat":"Ventiladores","family":"Componentes","brand":"Noctua","name":"NF-A14x25 G2 PWM","price":39,"score":94,"image":"assets/hardware-hero.png","specs":{"Tamaño":"140 mm","Flujo de aire":"91.6 CFM","Presión estática":"2.56 mmH₂O","Nivel de ruido":"24.8 dBA","Velocidad de giro":"300–1,500 RPM","Garantía":"6 años"}},
+  {"id":"fan-arctic-p14-max","cat":"Ventiladores","family":"Componentes","brand":"ARCTIC","name":"P14 Max","price":16,"score":90,"image":"assets/hardware-hero.png","specs":{"Tamaño":"140 mm","Flujo de aire":"95 CFM","Presión estática":"4.2 mmH₂O","Nivel de ruido":"31 dBA","Velocidad de giro":"400–2,800 RPM","Garantía":"6 años"}},
+  {"id":"fan-corsair-icue-link-qx120","cat":"Ventiladores","family":"Componentes","brand":"Corsair","name":"iCUE LINK QX120 RGB","price":49,"score":88,"image":"assets/hardware-hero.png","specs":{"Tamaño":"120 mm","Flujo de aire":"63.1 CFM","Presión estática":"3.8 mmH₂O","Nivel de ruido":"37 dBA","Velocidad de giro":"480–2,400 RPM","Garantía":"5 años"}},
+  {"id":"fan-lianli-unifan-sl120","cat":"Ventiladores","family":"Componentes","brand":"Lian Li","name":"UNI FAN SL-INF 120","price":29,"score":89,"image":"assets/hardware-hero.png","specs":{"Tamaño":"120 mm","Flujo de aire":"61.3 CFM","Presión estática":"2.66 mmH₂O","Nivel de ruido":"29 dBA","Velocidad de giro":"0–2,100 RPM","Garantía":"2 años"}},
+  {"id":"fan-bequiet-silentwings4","cat":"Ventiladores","family":"Componentes","brand":"be quiet!","name":"Silent Wings 4 140 mm","price":27,"score":91,"image":"assets/hardware-hero.png","specs":{"Tamaño":"140 mm","Flujo de aire":"51.3 CFM","Presión estática":"2.36 mmH₂O","Nivel de ruido":"13.6 dBA","Velocidad de giro":"0–1,100 RPM","Garantía":"3 años"}},
+  {"id":"fan-thermaltake-swfex","cat":"Ventiladores","family":"Componentes","brand":"Thermaltake","name":"SWAFAN EX12 RGB","price":39,"score":85,"image":"assets/hardware-hero.png","specs":{"Tamaño":"120 mm","Flujo de aire":"57.1 CFM","Presión estática":"2.6 mmH₂O","Nivel de ruido":"30.6 dBA","Velocidad de giro":"500–2,000 RPM","Garantía":"2 años"}},
+  {"id":"fan-coolermaster-mobius","cat":"Ventiladores","family":"Componentes","brand":"Cooler Master","name":"Mobius 120P ARGB","price":24,"score":84,"image":"assets/hardware-hero.png","specs":{"Tamaño":"120 mm","Flujo de aire":"75.2 CFM","Presión estática":"3.63 mmH₂O","Nivel de ruido":"30 dBA","Velocidad de giro":"0–2,400 RPM","Garantía":"2 años"}}
+,
+  {"id":"ventiladores-phanteks-catalog-01","cat":"Ventiladores","family":"Componentes","brand":"Phanteks","name":"Phanteks Ventiladores Serie 01","price":197,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}}
 ]

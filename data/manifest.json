@@ -15,6 +15,15 @@
     "printers.json",
     "ram.json",
     "storage.json",
-    "usb.json"
+    "usb.json",
+    "chairs.json",
+    "drawing-tablets.json",
+    "label-makers.json",
+    "nas.json",
+    "paper-shredders.json",
+    "plotters.json",
+    "projectors.json",
+    "routers.json",
+    "scanners.json"
   ]
 }

@@ -52,5 +52,15 @@
       "Voltaje": "1.25 V",
       "Perfil": "Intel XMP 3.0"
     }
-  }
+  },
+  {"id":"ram-corsair-dominator-64","cat":"RAM","family":"Componentes","brand":"Corsair","name":"Dominator Titanium DDR5 64 GB","price":279,"score":94,"image":"assets/hardware-hero.png","specs":{"Capacidad":"64 GB (2×32 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.40 V","Perfil":"Intel XMP / AMD EXPO"}},
+  {"id":"ram-gskill-ripjaws-s5-48","cat":"RAM","family":"Componentes","brand":"G.Skill","name":"Ripjaws S5 48 GB","price":169,"score":92,"image":"assets/hardware-hero.png","specs":{"Capacidad":"48 GB (2×24 GB)","Velocidad":"DDR5-6400","Latencia":"CL32","Tipo":"DDR5","Voltaje":"1.40 V","Perfil":"Intel XMP"}},
+  {"id":"ram-kingston-fury-64","cat":"RAM","family":"Componentes","brand":"Kingston","name":"FURY Beast RGB 64 GB","price":219,"score":90,"image":"assets/hardware-hero.png","specs":{"Capacidad":"64 GB (2×32 GB)","Velocidad":"DDR5-5600","Latencia":"CL36","Tipo":"DDR5","Voltaje":"1.25 V","Perfil":"Intel XMP"}},
+  {"id":"ram-crucial-pro-32","cat":"RAM","family":"Componentes","brand":"Crucial","name":"Pro Overclocking 32 GB","price":109,"score":87,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2×16 GB)","Velocidad":"DDR5-6000","Latencia":"CL36","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"Intel XMP / AMD EXPO"}},
+  {"id":"ram-teamgroup-delta-32","cat":"RAM","family":"Componentes","brand":"TeamGroup","name":"T-Force Delta RGB 32 GB","price":119,"score":88,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2×16 GB)","Velocidad":"DDR5-6400","Latencia":"CL40","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"Intel XMP"}},
+  {"id":"ram-adata-lancer-32","cat":"RAM","family":"Componentes","brand":"ADATA","name":"XPG Lancer Blade 32 GB","price":114,"score":86,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2×16 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"AMD EXPO"}},
+  {"id":"ram-corsair-vengeance-rgb-96","cat":"RAM","family":"Componentes","brand":"Corsair","name":"Vengeance RGB 96 GB","price":299,"score":83,"image":"assets/hardware-hero.png","specs":{"Capacidad":"96 GB (2×48 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.40 V","Perfil":"Intel XMP / AMD EXPO"}}
+,
+  {"id":"ram-patriot-catalog-01","cat":"RAM","family":"Componentes","brand":"Patriot","name":"Patriot RAM Serie 01","price":419,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}},
+  {"id":"ram-kingston-catalog-02","cat":"RAM","family":"Componentes","brand":"Kingston","name":"Kingston RAM Serie 02","price":456,"score":79,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 02","Garantía":"1 año"}}
 ]

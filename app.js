@@ -27,11 +27,24 @@ const catPhoto = {
   Control: 'https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80',
   Audífonos: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80',
   Impresora: 'assets/hardware-hero.png',
-  Escáner: 'assets/hardware-hero.png',
+  Escáner: 'assets/products/categories/scanner.png',
+  Proyector: 'assets/products/categories/projector.png',
+  Plotter: 'assets/products/categories/plotter.png',
+  Etiquetadora: 'assets/products/categories/label-maker.png',
+  'Destructora de papel': 'assets/products/categories/paper-shredder.png',
+  'Tableta gráfica': 'assets/products/categories/drawing-tablet.png',
+  Router: 'assets/products/categories/router.png',
+  NAS: 'assets/products/categories/nas.png',
+  'Silla ergonómica': 'assets/products/categories/ergonomic-chair.png',
   default: 'assets/hardware-hero.png'
 };
 
-const photo = p => (p && p.image) || (p && catPhoto[p.cat]) || catPhoto.default;
+const photo = p => {
+  const categoryPhoto = p && catPhoto[p.cat];
+  // El hero genérico solo es un fallback de datos: prioriza la imagen local de categoría.
+  if (p && (!p.image || p.image === 'assets/hardware-hero.png') && categoryPhoto) return categoryPhoto;
+  return (p && p.image) || categoryPhoto || catPhoto.default;
+};
 const $ = s => document.querySelector(s);
 const money = n => new Intl.NumberFormat('es-GT', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
 
@@ -53,12 +66,16 @@ function updateDatasetState() {
 }
 
 function renderCats() {
+  const categorySearch = $('#categorySearch');
+  const categoryQuery = categorySearch ? categorySearch.value.trim().toLocaleLowerCase('es') : '';
   const grouped = {};
   cats.slice(1).forEach(c => {
     // Clasificacion dinamica por la familia declarada en los productos
     const sample = products.find(p => p.cat === c);
     const family = (sample && sample.family) || 'Otros';
-    (grouped[family] ??= []).push(c);
+    if (!categoryQuery || `${c} ${family}`.toLocaleLowerCase('es').includes(categoryQuery)) {
+      (grouped[family] ??= []).push(c);
+    }
   });
 
   const categoriesEl = $('#categories');
@@ -110,8 +127,10 @@ function renderProducts() {
   if (resultsEl) resultsEl.textContent = `${list.length} resultados`;
   if (!gridEl) return;
 
-  gridEl.innerHTML = list.map(p => `
-    <article class="product-card">
+  gridEl.innerHTML = list.map(p => {
+    const keySpecs = p.specs ? Object.entries(p.specs).slice(0, 3) : [];
+    return `
+    <article class="product-card" aria-label="${p.brand} ${p.name}">
       <div class="product-image">
         <img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy">
         <span class="tag">${p.cat.toUpperCase()}</span>
@@ -121,13 +140,14 @@ function renderProducts() {
         <span class="rating">${(p.score / 10).toFixed(1)} / 10</span>
       </div>
       <h3>${p.name}</h3>
-      <p>${p.specs ? Object.values(p.specs).slice(0, 2).join(' · ') : ''}</p>
+      <ul class="product-specs">${keySpecs.map(([label, value]) => `<li><span>${label}</span><b>${value}</b></li>`).join('')}</ul>
       <div class="price-row">
         <b>${money(p.price)}</b>
         <button data-add="${p.id}" title="Comparar este modelo">COMPARAR</button>
       </div>
     </article>
-  `).join('') || '<p style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">No encontramos productos con esos filtros.</p>';
+  `;
+  }).join('') || '<p class="empty-state">No encontramos productos con esos filtros. Prueba con otra categoría o término.</p>';
 }
 
 /**
@@ -323,12 +343,14 @@ function renderComparison() {
       <div>
         <small>VEREDICTO · ${compareCat.toUpperCase()}</small>
         <h3>${winner ? `${winner.name} obtiene la ventaja general` : 'Empate técnico'}</h3>
+        <p>La puntuación resume las especificaciones cargadas; revisa las filas para decidir según tu uso.</p>
       </div>
       <div class="score">
         <span>PUNTUACIÓN</span>
         <b>${a.score} — ${b.score}</b>
       </div>
     </div>
+    <div class="comparison-guide"><span>Precio</span><span>El valor destacado indica la opción más conveniente para esa métrica.</span></div>
     <div class="spec-row">
       <span class="${a.price < b.price ? 'winner' : ''}">${money(a.price)}</span>
       <span>Precio estimado</span>
@@ -594,6 +616,9 @@ if (catalogSearchEl) {
     if (e.key === 'Enter') remoteSearch(e.target.value);
   });
 }
+
+const categorySearchEl = $('#categorySearch');
+if (categorySearchEl) categorySearchEl.oninput = renderCats;
 
 const sortSelectEl = $('#sortSelect');
 if (sortSelectEl) sortSelectEl.onchange = renderProducts;

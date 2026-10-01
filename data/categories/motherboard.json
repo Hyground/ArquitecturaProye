@@ -52,5 +52,15 @@
       "M.2": "3 ranuras",
       "PCIe": "PCIe 4.0 x16"
     }
-  }
+  },
+  {"id":"mb-asus-rog-x870e-hero","cat":"Placa base","family":"Componentes","brand":"ASUS","name":"ROG Crosshair X870E Hero","price":699,"score":96,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"5 ranuras","PCIe":"PCIe 5.0 x16"}},
+  {"id":"mb-msi-x870e-carbon","cat":"Placa base","family":"Componentes","brand":"MSI","name":"MPG X870E Carbon WiFi","price":499,"score":94,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"4 ranuras","PCIe":"PCIe 5.0 x16"}},
+  {"id":"mb-gigabyte-x870-aorus-elite","cat":"Placa base","family":"Componentes","brand":"Gigabyte","name":"X870 AORUS Elite WIFI7","price":299,"score":90,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}},
+  {"id":"mb-asrock-b850-steel-legend","cat":"Placa base","family":"Componentes","brand":"ASRock","name":"B850 Steel Legend WiFi","price":229,"score":87,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}},
+  {"id":"mb-asus-b650e-f","cat":"Placa base","family":"Componentes","brand":"ASUS","name":"TUF Gaming B650E-PLUS WiFi","price":219,"score":86,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 192 GB","Wi-Fi":"Wi-Fi 6","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}},
+  {"id":"mb-msi-z890-tomahawk","cat":"Placa base","family":"Componentes","brand":"MSI","name":"MAG Z890 Tomahawk WiFi","price":299,"score":89,"image":"assets/hardware-hero.png","specs":{"Socket":"LGA1851","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"4 ranuras","PCIe":"PCIe 5.0 x16"}},
+  {"id":"mb-gigabyte-b860-aorus","cat":"Placa base","family":"Componentes","brand":"Gigabyte","name":"B860 AORUS Elite WIFI7","price":219,"score":85,"image":"assets/hardware-hero.png","specs":{"Socket":"LGA1851","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}}
+,
+  {"id":"placa-base-asrock-catalog-01","cat":"Placa base","family":"Componentes","brand":"ASRock","name":"ASRock Placa base Serie 01","price":234,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}},
+  {"id":"placa-base-asus-catalog-02","cat":"Placa base","family":"Componentes","brand":"ASUS","name":"ASUS Placa base Serie 02","price":271,"score":79,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 02","Garantía":"1 año"}}
 ]

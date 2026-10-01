@@ -67,5 +67,14 @@
       "Frontal": "Cristal envolvente panorámico",
       "Peso": "9.4 kg"
     }
-  }
+  },
+  {"id":"case-nzxt-h9-flow","cat":"Gabinete","family":"Componentes","brand":"NZXT","name":"H9 Flow","price":159,"score":91,"image":"assets/hardware-hero.png","specs":{"Formato":"Dual chamber","Placa máxima":"E-ATX","GPU máxima":"435 mm","Ventiladores incluidos":"4 × 120 mm","Frontal":"Malla perforada","Peso":"12.1 kg"}},
+  {"id":"case-corsair-5000d","cat":"Gabinete","family":"Componentes","brand":"Corsair","name":"5000D AIRFLOW","price":174,"score":92,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"420 mm","Ventiladores incluidos":"2 × 120 mm","Frontal":"Acero perforado","Peso":"13.8 kg"}},
+  {"id":"case-fractal-north-xl","cat":"Gabinete","family":"Componentes","brand":"Fractal Design","name":"North XL","price":179,"score":90,"image":"assets/hardware-hero.png","specs":{"Formato":"Full Tower","Placa máxima":"E-ATX","GPU máxima":"413 mm","Ventiladores incluidos":"3 × 140 mm","Frontal":"Malla y nogal","Peso":"9.5 kg"}},
+  {"id":"case-lianli-o11-vision","cat":"Gabinete","family":"Componentes","brand":"Lian Li","name":"O11 Vision","price":149,"score":89,"image":"assets/hardware-hero.png","specs":{"Formato":"Dual chamber","Placa máxima":"E-ATX","GPU máxima":"455 mm","Ventiladores incluidos":"No incluidos","Frontal":"Cristal templado","Peso":"12.2 kg"}},
+  {"id":"case-coolermaster-td500","cat":"Gabinete","family":"Componentes","brand":"Cooler Master","name":"TD500 Mesh V2","price":109,"score":85,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"410 mm","Ventiladores incluidos":"3 × 120 mm ARGB","Frontal":"Malla poligonal","Peso":"7.7 kg"}},
+  {"id":"case-montech-air903","cat":"Gabinete","family":"Componentes","brand":"Montech","name":"AIR 903 MAX","price":79,"score":87,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"400 mm","Ventiladores incluidos":"4 × 140 mm","Frontal":"Malla","Peso":"8.3 kg"}},
+  {"id":"case-thermaltake-cteceres","cat":"Gabinete","family":"Componentes","brand":"Thermaltake","name":"Ceres 500 TG ARGB","price":169,"score":88,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"425 mm","Ventiladores incluidos":"3 × 140 mm ARGB","Frontal":"Malla","Peso":"15.4 kg"}}
+,
+  {"id":"gabinete-phanteks-catalog-01","cat":"Gabinete","family":"Componentes","brand":"Phanteks","name":"Phanteks Gabinete Serie 01","price":86,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}}
 ]

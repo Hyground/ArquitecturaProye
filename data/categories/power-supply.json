@@ -32,5 +32,16 @@
       "Modular": "Totalmente modular lateral",
       "Garantía": "10 años"
     }
-  }
+  },
+  {"id":"psu-corsair-rm1000x","cat":"Fuente","family":"Componentes","brand":"Corsair","name":"RM1000x SHIFT","price":199,"score":94,"image":"assets/hardware-hero.png","specs":{"Potencia":"1000 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
+  {"id":"psu-seasonic-vertex-gx1000","cat":"Fuente","family":"Componentes","brand":"Seasonic","name":"VERTEX GX-1000","price":209,"score":95,"image":"assets/hardware-hero.png","specs":{"Potencia":"1000 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
+  {"id":"psu-bequiet-straightpower-12","cat":"Fuente","family":"Componentes","brand":"be quiet!","name":"Straight Power 12 850W","price":179,"score":92,"image":"assets/hardware-hero.png","specs":{"Potencia":"850 W","Certificación":"80 PLUS Platinum","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
+  {"id":"psu-msi-a850gl","cat":"Fuente","family":"Componentes","brand":"MSI","name":"MAG A850GL PCIE5","price":119,"score":87,"image":"assets/hardware-hero.png","specs":{"Potencia":"850 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"7 años"}},
+  {"id":"psu-thermaltake-toughpower-1200","cat":"Fuente","family":"Componentes","brand":"Thermaltake","name":"Toughpower GF A3 1200W","price":189,"score":91,"image":"assets/hardware-hero.png","specs":{"Potencia":"1200 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
+  {"id":"psu-coolermaster-mwe-750","cat":"Fuente","family":"Componentes","brand":"Cooler Master","name":"MWE Gold 750 V2","price":99,"score":84,"image":"assets/hardware-hero.png","specs":{"Potencia":"750 W","Certificación":"80 PLUS Gold","Estándar":"ATX 2.52","Modular":"Totalmente modular","Garantía":"10 años"}},
+  {"id":"psu-evga-700br","cat":"Fuente","family":"Componentes","brand":"EVGA","name":"700 BR","price":69,"score":76,"image":"assets/hardware-hero.png","specs":{"Potencia":"700 W","Certificación":"80 PLUS Bronze","Estándar":"ATX 2.4","Modular":"No","Garantía":"3 años"}}
+,
+  {"id":"fuente-fsp-catalog-01","cat":"Fuente","family":"Componentes","brand":"FSP","name":"FSP Fuente Serie 01","price":308,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}},
+  {"id":"fuente-seasonic-catalog-02","cat":"Fuente","family":"Componentes","brand":"Seasonic","name":"Seasonic Fuente Serie 02","price":345,"score":79,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 02","Garantía":"1 año"}},
+  {"id":"fuente-corsair-catalog-03","cat":"Fuente","family":"Componentes","brand":"Corsair","name":"Corsair Fuente Serie 03","price":382,"score":80,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 03","Garantía":"1 año"}}
 ]

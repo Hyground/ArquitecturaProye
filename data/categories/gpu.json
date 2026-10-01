@@ -106,5 +106,12 @@
       "Ray tracing": "2ª generación",
       "Interfaz": "PCIe 4.0"
     }
-  }
+  },
+  {"id":"gpu-nvidia-rtx5090","cat":"GPU","family":"Componentes","brand":"NVIDIA","name":"GeForce RTX 5090","price":1999,"score":99,"image":"assets/hardware-hero.png","specs":{"VRAM":"32 GB GDDR7","Frecuencia boost":"2.41 GHz","Bus de memoria":"512-bit","Consumo":"575 W","Ray tracing":"Sí, 4.ª gen.","Interfaz":"PCIe 5.0 x16"}},
+  {"id":"gpu-nvidia-rtx5080","cat":"GPU","family":"Componentes","brand":"NVIDIA","name":"GeForce RTX 5080","price":999,"score":96,"image":"assets/hardware-hero.png","specs":{"VRAM":"16 GB GDDR7","Frecuencia boost":"2.62 GHz","Bus de memoria":"256-bit","Consumo":"360 W","Ray tracing":"Sí, 4.ª gen.","Interfaz":"PCIe 5.0 x16"}},
+  {"id":"gpu-nvidia-rtx5070","cat":"GPU","family":"Componentes","brand":"NVIDIA","name":"GeForce RTX 5070","price":549,"score":91,"image":"assets/hardware-hero.png","specs":{"VRAM":"12 GB GDDR7","Frecuencia boost":"2.51 GHz","Bus de memoria":"192-bit","Consumo":"250 W","Ray tracing":"Sí, 4.ª gen.","Interfaz":"PCIe 5.0 x16"}},
+  {"id":"gpu-amd-rx9070xt","cat":"GPU","family":"Componentes","brand":"AMD","name":"Radeon RX 9070 XT","price":599,"score":93,"image":"assets/hardware-hero.png","specs":{"VRAM":"16 GB GDDR6","Frecuencia boost":"2.97 GHz","Bus de memoria":"256-bit","Consumo":"304 W","Ray tracing":"Sí, 2.ª gen.","Interfaz":"PCIe 5.0 x16"}},
+  {"id":"gpu-amd-rx9070","cat":"GPU","family":"Componentes","brand":"AMD","name":"Radeon RX 9070","price":549,"score":89,"image":"assets/hardware-hero.png","specs":{"VRAM":"16 GB GDDR6","Frecuencia boost":"2.52 GHz","Bus de memoria":"256-bit","Consumo":"220 W","Ray tracing":"Sí, 2.ª gen.","Interfaz":"PCIe 5.0 x16"}},
+  {"id":"gpu-intel-b580","cat":"GPU","family":"Componentes","brand":"Intel","name":"Arc B580","price":249,"score":82,"image":"assets/hardware-hero.png","specs":{"VRAM":"12 GB GDDR6","Frecuencia boost":"2.67 GHz","Bus de memoria":"192-bit","Consumo":"190 W","Ray tracing":"Sí","Interfaz":"PCIe 4.0 x8"}},
+  {"id":"gpu-nvidia-rtx5060ti","cat":"GPU","family":"Componentes","brand":"NVIDIA","name":"GeForce RTX 5060 Ti 16 GB","price":429,"score":86,"image":"assets/hardware-hero.png","specs":{"VRAM":"16 GB GDDR7","Frecuencia boost":"2.57 GHz","Bus de memoria":"128-bit","Consumo":"180 W","Ray tracing":"Sí, 4.ª gen.","Interfaz":"PCIe 5.0 x8"}}
 ]
