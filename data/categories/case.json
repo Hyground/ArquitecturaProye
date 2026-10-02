@@ -76,5 +76,5 @@
   {"id":"case-montech-air903","cat":"Gabinete","family":"Componentes","brand":"Montech","name":"AIR 903 MAX","price":79,"score":87,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"400 mm","Ventiladores incluidos":"4 × 140 mm","Frontal":"Malla","Peso":"8.3 kg"}},
   {"id":"case-thermaltake-cteceres","cat":"Gabinete","family":"Componentes","brand":"Thermaltake","name":"Ceres 500 TG ARGB","price":169,"score":88,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"425 mm","Ventiladores incluidos":"3 × 140 mm ARGB","Frontal":"Malla","Peso":"15.4 kg"}}
 ,
-  {"id":"gabinete-phanteks-catalog-01","cat":"Gabinete","family":"Componentes","brand":"Phanteks","name":"Phanteks Gabinete Serie 01","price":86,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}}
+  {"id":"gabinete-phanteks-catalog-01","cat":"Gabinete","family":"Componentes","brand":"Phanteks","name":"XT Pro Ultra","price":79,"score":86,"image":"assets/hardware-hero.png","specs":{"Formato":"Mid Tower","Placa máxima":"E-ATX","GPU máxima":"415 mm","Ventiladores incluidos":"4 × 140 mm M25-140","Frontal":"Malla de alto flujo","Peso":"7.3 kg"}}
 ]

@@ -5,21 +5,21 @@ Fecha de auditoría: 2026-10-01.
 ## Alcance y validación
 
 Se revisaron `index.html`, `app.js`, `styles.css`, `data/manifest.json` y los
-23 datasets de `data/categories/`. Todos los archivos de texto inspeccionados
+26 datasets de `data/categories/`. Todos los archivos de texto inspeccionados
 están codificados como UTF-8 válido, sin el carácter de sustitución Unicode
 U+FFFD ni
 secuencias de texto corrupto como `Ã`, `Â` o `â`. `index.html` ya declara
 `<meta charset="UTF-8">`.
 
-Los 23 archivos de categorías se analizaron con `JSON.parse`; todos son JSON
+Los 26 archivos de categorías se analizaron con `JSON.parse`; todos son JSON
 válido. Esta auditoría no modifica ni elimina productos.
 
 ## Resumen
 
-- Productos totales: **398**.
-- Categorías encontradas: **33**.
-- Productos genéricos o artificiales: **228**.
-- Productos que usan `assets/hardware-hero.png`: **345**.
+- Productos totales: **416**.
+- Categorías encontradas: **36**.
+- Productos genéricos o artificiales: **215**.
+- Productos que usan `assets/hardware-hero.png`: **361**.
 - Productos con una imagen distinta de ese recurso: **53**; varias de esas
   imágenes también se repiten entre modelos.
 
@@ -50,7 +50,7 @@ En esta auditoría se considera genérico un producto cuyo nombre contiene
 
 | Categoría | Productos | Genéricos | `hardware-hero.png` | Hallazgo principal |
 |---|---:|---:|---:|---|
-| Almacenamiento | 12 | 2 | 9 | Dos fichas de plantilla; posibles modelos solapados. |
+| Almacenamiento | 12 | 0 | 9 | Modelos de plantilla sustituidos; quedan posibles modelos solapados. |
 | Audífonos | 12 | 7 | 10 | Mayoría de fichas genéricas; imágenes repetidas. |
 | Bocinas | 12 | 9 | 12 | Datos e imagen enteramente de plantilla en la mayoría. |
 | CPU | 13 | 0 | 7 | Datos nominales; imágenes repetidas por categoría. |
@@ -61,40 +61,42 @@ En esta auditoría se considera genérico un producto cuyo nombre contiene
 | Dock | 12 | 10 | 12 | Datos de plantilla predominantes. |
 | Escáner | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
 | Etiquetadora | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
-| Fuente | 12 | 3 | 10 | Tres fichas de plantilla; imágenes repetidas. |
+| Fuente | 12 | 0 | 10 | Fichas de plantilla sustituidas; imágenes repetidas. |
 | GPU | 13 | 0 | 7 | Datos nominales; imágenes repetidas por categoría. |
-| Gabinete | 12 | 1 | 8 | Una ficha de plantilla; imágenes repetidas. |
+| Gabinete | 12 | 0 | 8 | Ficha de plantilla sustituida; imágenes repetidas. |
 | Impresora | 12 | 0 | 12 | Proviene de dos archivos; todas usan el hero. |
 | Memoria USB | 12 | 1 | 8 | Una ficha de plantilla y posibles modelos solapados. |
 | Micrófono | 12 | 9 | 12 | Datos de plantilla predominantes. |
 | Monitor | 12 | 0 | 7 | Datos nominales; imágenes repetidas por categoría. |
 | Mouse | 12 | 7 | 10 | Más de la mitad de fichas son genéricas. |
 | NAS | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
-| Placa base | 12 | 2 | 9 | Dos fichas de plantilla y una pareja de especificaciones idénticas. |
+| Placa base | 12 | 0 | 9 | Fichas de plantilla sustituidas; revisar una pareja de especificaciones idénticas. |
 | Plotter | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
 | Proyector | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
-| RAM | 12 | 2 | 9 | Dos fichas de plantilla; imágenes repetidas. |
+| RAM | 12 | 0 | 9 | Fichas de plantilla sustituidas; imágenes repetidas. |
+| Tarjeta de red | 6 | 0 | 5 | Categoría nueva; cinco imágenes pendientes de verificación local. |
+| Tarjeta de sonido | 6 | 0 | 6 | Categoría nueva; imágenes específicas pendientes. |
 | Red | 12 | 9 | 12 | Datos de plantilla predominantes. |
-| Refrigeración | 12 | 2 | 9 | Dos fichas de plantilla; imágenes repetidas. |
+| Refrigeración | 12 | 0 | 9 | Fichas de plantilla sustituidas; imágenes repetidas. |
 | Router | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
 | Silla ergonómica | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
 | Tableta gráfica | 12 | 12 | 12 | Requiere sustitución completa de datos e imágenes. |
 | Teclado | 12 | 7 | 10 | Más de la mitad de fichas son genéricas. |
 | UPS | 12 | 9 | 12 | Datos de plantilla predominantes. |
-| Ventiladores | 12 | 1 | 8 | Una ficha de plantilla; imágenes repetidas. |
+| Unidad óptica | 6 | 0 | 5 | Categoría nueva; cinco imágenes pendientes de verificación local. |
+| Ventiladores | 12 | 0 | 8 | Ficha de plantilla sustituida; imágenes repetidas. |
 | Webcam | 12 | 9 | 12 | Datos de plantilla predominantes. |
 
 ## Archivos afectados por datos genéricos
 
-`case.json`, `chairs.json`, `cooling.json`, `drawing-tablets.json`,
-`fans.json`, `label-makers.json`, `motherboard.json`, `nas.json`,
+`chairs.json`, `drawing-tablets.json`, `label-makers.json`, `nas.json`,
 `others.json`, `paper-shredders.json`, `peripherals.json`, `plotters.json`,
-`power-supply.json`, `projectors.json`, `ram.json`, `routers.json`,
-`scanners.json`, `storage.json` y `usb.json`.
+`projectors.json`, `routers.json`, `scanners.json` y `usb.json`.
 
-Los únicos datasets sin registros detectados como genéricos son `cpu.json`,
-`gpu.json`, `monitor.json` y `printers.json`. Aun así, estos cuatro requieren
-mejoras de imagen porque reutilizan fotos de categoría o el hero.
+Los datasets internos `case.json`, `cooling.json`, `cpu.json`, `fans.json`,
+`gpu.json`, `motherboard.json`, `power-supply.json`, `ram.json` y
+`storage.json` ya no contienen registros detectados como genéricos. Aun así,
+requieren mejoras de imagen porque reutilizan fotos de categoría o el hero.
 
 ## Prioridad de corrección de datos
 
@@ -114,3 +116,57 @@ manteniendo los mismos campos del esquema y la carga modular actual. Añadir
 una imagen específica por modelo y documentar fuente y fecha de cada precio.
 La deduplicación debe hacerse después de la sustitución, sin cambiar todavía
 la lógica de catálogo ni del comparador.
+
+## Fase 2 — Componentes internos
+
+### Alcance realizado
+
+Se trabajó exclusivamente sobre los datasets internos existentes: placa base,
+RAM, almacenamiento, fuente, gabinete, refrigeración y ventiladores. CPU y
+GPU se conservaron porque no contenían registros de plantilla. También se
+crearon las categorías internas `Unidad óptica`, `Tarjeta de sonido` y
+`Tarjeta de red`, registradas en `manifest.json` para conservar la carga
+modular automática.
+
+- Productos genéricos reemplazados: **13**.
+  - Placa base: 2; RAM: 2; almacenamiento: 2; fuente: 3; gabinete: 1;
+    refrigeración: 2; ventiladores: 1.
+- Modelos reales añadidos en categorías nuevas: **18** (6 por categoría).
+- Categorías nuevas: **3** (`Unidad óptica`, `Tarjeta de sonido`,
+  `Tarjeta de red`).
+- Imágenes específicas descargadas y verificadas por HTTP: **2**.
+  - `assets/products/optical-drives/asus-drw-24b1st.png`: ASUS DRW-24B1ST,
+    HTTP 200, `image/png`, 527,490 bytes.
+  - `assets/products/network-cards/tp-link-tx201.jpg`: TP-Link TX201,
+    HTTP 200, `image/jpeg`, 78,996 bytes.
+- Imágenes que continúan con fallback: **29** de los productos sustituidos o
+  añadidos. Se dejaron deliberadamente en `assets/hardware-hero.png` cuando
+  no se obtuvo una URL de imagen específica que hubiera sido verificada por
+  HTTP; no se añadieron hotlinks no comprobados.
+
+### Modelos sustituidos
+
+Los registros `Serie NN` de los datasets internos fueron sustituidos sin
+cambiar sus IDs: ASRock B650M Pro RS WiFi, ASUS PRIME B760-PLUS D4, Patriot
+Viper Venom DDR5-6000, Kingston FURY Beast DDR5-6000, Solidigm P44 Pro,
+WD Blue SA510, FSP Hydro G Pro ATX 3.0, Seasonic FOCUS GX-750 ATX 3.0,
+Corsair RM750e (2023), Phanteks XT Pro Ultra, ID-COOLING FROZN A620,
+EK-Nucleus AIO CR360 Lux D-RGB y Phanteks T30-120.
+
+### Productos pendientes
+
+Quedan pendientes imágenes específicas verificadas para 29 registros de esta
+fase y para los modelos internos que ya eran reales pero aún usaban la imagen
+genérica previa. La siguiente iteración debe descargar únicamente imágenes de
+producto tras validar respuesta HTTP, tipo MIME y tamaño; no debe sustituirlas
+por resultados de buscadores ni por URLs temporales.
+
+### Fuentes generales de verificación
+
+Se consultaron fichas y documentación oficial de fabricantes: ASUS (unidades
+ópticas, placas base y Xonar), ASRock (B650M Pro RS WiFi), Creative (Sound
+Blaster), TP-Link (TX201 y TX401) e Intel (I210-T1). Se usaron además las
+fichas públicas de los fabricantes de memoria, almacenamiento, energía,
+gabinetes, refrigeración y ventiladores para contrastar denominaciones y
+especificaciones. Los precios son aproximaciones en USD y no se presentan
+como cotizaciones en tiempo real.

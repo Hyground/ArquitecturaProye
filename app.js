@@ -132,7 +132,7 @@ function renderProducts() {
     return `
     <article class="product-card" aria-label="${p.brand} ${p.name}">
       <div class="product-image">
-        <img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy">
+        <img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy" onerror="this.onerror=null;this.src='assets/hardware-hero.png';">
         <span class="tag">${p.cat.toUpperCase()}</span>
       </div>
       <div class="product-top">
@@ -233,7 +233,7 @@ function renderSelection() {
     el.innerHTML = `
       <span class="side-label">COMPONENTE ${side.toUpperCase()} · ${compareCat.toUpperCase()}</span>
       <div class="picked-image-wrap">
-        <img class="picked-image" src="${photo(p)}" alt="${p.name}">
+        <img class="picked-image" src="${photo(p)}" alt="${p.name}" onerror="this.onerror=null;this.src='assets/hardware-hero.png';">
       </div>
       <div class="picked-copy">
         <div class="card-select-row">
@@ -279,7 +279,7 @@ function pickerItems(q = '') {
 
   listEl.innerHTML = list.map(p => `
     <button class="picker-item" data-pick="${p.id}" type="button">
-      <img class="picker-thumb" src="${photo(p)}" alt="${p.name}">
+      <img class="picker-thumb" src="${photo(p)}" alt="${p.name}" onerror="this.onerror=null;this.src='assets/hardware-hero.png';">
       <span>
         <strong>${p.name}</strong>
         <small>${p.brand} · ${p.cat}</small>
