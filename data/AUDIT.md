@@ -26,6 +26,23 @@ Ryzen y Walmart como distribuidor reconocido para la imagen exacta del teclado
 Razer. Esta fase dejó pendiente la cobertura masiva para no sacrificar la
 exactitud de las imágenes.
 
+## Fase 4.1 — Cobertura masiva de imágenes
+
+Se recorrió el siguiente lote prioritario de CPU, GPU y periféricos. Se
+probaron URLs de fabricante y distribuidores con respuesta HTTP antes de
+aceptar recursos. Se añadió una descarga exacta adicional: Intel Arc B580
+Limited Edition, HTTP 200, `image/jpg`, 91,868 bytes.
+
+- Fallback inicial: **158**.
+- Productos procesados en este lote: **1** adicional.
+- Descargas exitosas: **1** (`exact-third-party`).
+- Fallback final: **157**; cobertura específica: **44 / 201 (21.9%)**.
+- Duplicados esperados y sospechosos: **0**.
+- Errores de validación de archivo: **0**.
+
+Las fuentes candidatas restantes no se registran como aceptadas hasta que se
+verifiquen individualmente por HTTP, tamaño, formato y correspondencia visual.
+
 ## Fase 3 — Saneamiento del catálogo
 
 - Productos genéricos al inicio: **215**.

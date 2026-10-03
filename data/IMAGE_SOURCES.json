@@ -1,0 +1,20 @@
+{
+  "cpu-amd-9600x": {
+    "level": "exact-official",
+    "source": "https://cdn11.bigcommerce.com/s-7g81zn9sor/images/stencil/1280x1280/products/167/470/2733716-ryzen-5-9000-series_1200x1200__52053.1744293924.png?c=1",
+    "local": "assets/products/cpu/amd-ryzen-5-9600x.webp",
+    "verified": true
+  },
+  "keyboard-razer-huntsman-v3-pro-tkl": {
+    "level": "exact-third-party",
+    "source": "https://i5.walmartimages.com/seo/Razer-Huntsman-V3-Pro-TKL-Tenkeyless-Analog-Optical-Esports-Keyboard-RGB-Chroma-Wrist-Rest-Black_f887392f-5709-4493-b392-c8c220b0193f.3e446277a20c521e1b8a45d597d0c948.png",
+    "local": "assets/products/keyboard/razer-huntsman-v3-pro-tkl.png",
+    "verified": true
+  },
+  "gpu-intel-b580": {
+    "level": "exact-third-party",
+    "source": "https://img.terabyteshop.com.br/produto/g/placa-de-video-intel-arc-b580-limited-edition-12gb-gddr6-xe2-ray-tracing-31p06hb0ba_232173.jpg",
+    "local": "assets/products/gpu/intel-arc-b580-limited-edition.jpg",
+    "verified": true
+  }
+}
