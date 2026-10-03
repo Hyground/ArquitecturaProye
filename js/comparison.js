@@ -104,12 +104,19 @@ export function setCompareCategory(newCat, specificProduct = null, targetSide = 
   const categorySelect = $('#compareCategorySelect');
   if (categorySelect) categorySelect.value = newCat;
 
-  const catProducts = products.filter(p => p.cat === newCat);
-  if (catProducts.length === 0) return;
-
-  if (resetSelection) {
+  const catProducts = products
+    .filter(p => p.cat === newCat)
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
+  if (catProducts.length === 0) {
     selected.a = null;
     selected.b = null;
+    renderSelection();
+    return;
+  }
+
+  if (resetSelection) {
+    selected.a = catProducts[0];
+    selected.b = catProducts[1] || catProducts[0];
   } else if (specificProduct) {
     if (targetSide === 'a') {
       selected.a = specificProduct;
