@@ -7,7 +7,7 @@
     "name": "Sound BlasterX AE-5 Plus",
     "price": 150,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/sound-card?lock=156",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe x1",
       "Canales": "5.1 / 7.1 virtual",
@@ -25,7 +25,7 @@
     "name": "Sound Blaster AE-7",
     "price": 220,
     "score": 94,
-    "image": "https://loremflickr.com/640/640/sound-card?lock=157",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe x1",
       "Canales": "5.1 / 7.1 virtual",
@@ -43,7 +43,7 @@
     "name": "Sound Blaster Z SE",
     "price": 100,
     "score": 88,
-    "image": "https://loremflickr.com/640/640/sound-card?lock=158",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe x1",
       "Canales": "5.1 / 7.1 virtual",
@@ -61,7 +61,7 @@
     "name": "Xonar SE",
     "price": 40,
     "score": 80,
-    "image": "https://loremflickr.com/640/640/sound-card?lock=159",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe",
       "Canales": "5.1",

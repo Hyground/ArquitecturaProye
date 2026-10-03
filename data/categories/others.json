@@ -7,7 +7,7 @@
     "name": "INZONE H9",
     "price": 299,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=86",
+    "image": "",
     "specs": {
       "Tipo": "Over-ear cerrado",
       "Conexión": "2.4 GHz + Bluetooth",
@@ -23,7 +23,7 @@
     "name": "QuietComfort Ultra",
     "price": 429,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=87",
+    "image": "",
     "specs": {
       "Tipo": "Over-ear inalámbrico",
       "Conexión": "Bluetooth 5.3 / 3.5 mm",
@@ -39,7 +39,7 @@
     "name": "R1280DBs",
     "price": 159,
     "score": 84,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=88",
+    "image": "",
     "specs": {
       "Potencia": "42 W RMS",
       "Canales": "2.0 estéreo",
@@ -55,7 +55,7 @@
     "name": "Z407",
     "price": 119,
     "score": 79,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=89",
+    "image": "",
     "specs": {
       "Potencia": "40 W RMS",
       "Canales": "2.1 con subwoofer",
@@ -71,7 +71,7 @@
     "name": "Yeti X",
     "price": 169,
     "score": 85,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=90",
+    "image": "",
     "specs": {
       "Patrones": "4 patrones polares",
       "Resolución": "24-bit / 48 kHz",
@@ -87,7 +87,7 @@
     "name": "QuadCast 2",
     "price": 149,
     "score": 84,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=91",
+    "image": "",
     "specs": {
       "Patrones": "4 patrones polares",
       "Resolución": "24-bit / 96 kHz",
@@ -103,7 +103,7 @@
     "name": "Back-UPS Pro BX1500M",
     "price": 219,
     "score": 85,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=92",
+    "image": "",
     "specs": {
       "Capacidad": "1500 VA",
       "Potencia": "900 W",
@@ -120,7 +120,7 @@
     "name": "CP1500PFCLCD",
     "price": 219,
     "score": 87,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=93",
+    "image": "",
     "specs": {
       "Capacidad": "1500 VA",
       "Potencia": "1000 W",
@@ -137,7 +137,7 @@
     "name": "4K X",
     "price": 229,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=94",
+    "image": "",
     "specs": {
       "Captura máxima": "4K a 144 Hz",
       "Interfaz": "USB 3.2 Gen 2 Type-C",
@@ -153,7 +153,7 @@
     "name": "Live Gamer Ultra 2.1",
     "price": 249,
     "score": 88,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=95",
+    "image": "",
     "specs": {
       "Captura máxima": "4K a 60 Hz",
       "Interfaz": "USB 3.2 Gen 2 Type-C",
@@ -169,7 +169,7 @@
     "name": "PCE-BE92BT",
     "price": 99,
     "score": 87,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=96",
+    "image": "",
     "specs": {
       "Wi-Fi": "Wi-Fi 7",
       "Velocidad": "Hasta 5.8 Gbps",
@@ -186,7 +186,7 @@
     "name": "Archer TBE550E",
     "price": 89,
     "score": 86,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=97",
+    "image": "",
     "specs": {
       "Wi-Fi": "Wi-Fi 7",
       "Velocidad": "Hasta 5.8 Gbps",
@@ -203,7 +203,7 @@
     "name": "OfficeJet Pro 9125e",
     "price": 209,
     "score": 82,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=98",
+    "image": "",
     "specs": {
       "Tecnología": "Inyección térmica",
       "Velocidad en negro": "22 ppm",
@@ -219,7 +219,7 @@
     "name": "PlayStation 5 Pro",
     "price": 699,
     "score": 92,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=99",
+    "image": "",
     "specs": {
       "Resolución": "Hasta 8K",
       "Almacenamiento": "2 TB SSD",
@@ -235,7 +235,7 @@
     "name": "Xbox Series X 2 TB",
     "price": 599,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=100",
+    "image": "",
     "specs": {
       "Resolución": "Hasta 8K",
       "Almacenamiento": "2 TB SSD",
@@ -251,7 +251,7 @@
     "name": "DualSense Edge",
     "price": 199,
     "score": 87,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=101",
+    "image": "",
     "specs": {
       "Compatibilidad": "PS5 / PC",
       "Conexión": "Bluetooth / USB-C",
@@ -267,7 +267,7 @@
     "name": "Xbox Elite Wireless Controller Series 2",
     "price": 179,
     "score": 86,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=102",
+    "image": "",
     "specs": {
       "Compatibilidad": "Xbox / PC",
       "Conexión": "Xbox Wireless / Bluetooth",
@@ -283,7 +283,7 @@
     "name": "TS4 Thunderbolt 4",
     "price": 399,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=103",
+    "image": "",
     "specs": {
       "Puertos": "18",
       "Host": "Thunderbolt 4, 40 Gbps",
@@ -299,7 +299,7 @@
     "name": "Prime TB5 Dock",
     "price": 399,
     "score": 90,
-    "image": "https://loremflickr.com/640/640/computer-accessory?lock=104",
+    "image": "",
     "specs": {
       "Puertos": "14",
       "Host": "Thunderbolt 5, 120 Gbps",

@@ -7,7 +7,7 @@
     "name": "EcoTank ET-4850",
     "price": 399,
     "score": 93,
-    "image": "https://loremflickr.com/640/640/printer?lock=127",
+    "image": "",
     "specs": {
       "Tecnología": "Tanque continuo de tinta (EcoTank)",
       "Velocidad en negro": "15.5 ppm",
@@ -24,7 +24,7 @@
     "name": "LaserJet Pro M404dn",
     "price": 279,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/printer?lock=128",
+    "image": "",
     "specs": {
       "Tecnología": "Láser monocromo",
       "Velocidad en negro": "40 ppm",
@@ -41,7 +41,7 @@
     "name": "HL-L2370DW Compact",
     "price": 149,
     "score": 90,
-    "image": "https://loremflickr.com/640/640/printer?lock=129",
+    "image": "",
     "specs": {
       "Tecnología": "Láser monocromo",
       "Velocidad en negro": "36 ppm",

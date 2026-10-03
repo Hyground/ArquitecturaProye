@@ -7,7 +7,7 @@
     "name": "DataTraveler Max 256 GB",
     "price": 42,
     "score": 95,
-    "image": "https://loremflickr.com/640/640/usb-drive?lock=173",
+    "image": "",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "1000 MB/s",
@@ -24,7 +24,7 @@
     "name": "BAR Plus 256 GB",
     "price": 29,
     "score": 86,
-    "image": "https://loremflickr.com/640/640/usb-drive?lock=174",
+    "image": "",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "400 MB/s",
@@ -41,7 +41,7 @@
     "name": "Extreme PRO 256 GB",
     "price": 49,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/usb-drive?lock=175",
+    "image": "",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "420 MB/s",
@@ -58,7 +58,7 @@
     "name": "Flash Voyager GTX 256 GB",
     "price": 59,
     "score": 88,
-    "image": "https://loremflickr.com/640/640/usb-drive?lock=176",
+    "image": "",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "440 MB/s",

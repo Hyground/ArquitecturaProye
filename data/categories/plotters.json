@@ -7,7 +7,7 @@
     "name": "DesignJet T650 24 pulgadas",
     "price": 1100,
     "score": 87,
-    "image": "https://loremflickr.com/640/640/large-format-printer?lock=113",
+    "image": "",
     "specs": {
       "Ancho máximo": "24 pulgadas",
       "Tecnología": "Inyección térmica HP",
@@ -25,7 +25,7 @@
     "name": "SureColor T2170 24 pulgadas",
     "price": 900,
     "score": 85,
-    "image": "https://loremflickr.com/640/640/large-format-printer?lock=114",
+    "image": "",
     "specs": {
       "Ancho máximo": "24 pulgadas",
       "Tecnología": "PrecisionCore MicroTFP",

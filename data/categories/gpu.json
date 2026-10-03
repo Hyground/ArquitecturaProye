@@ -7,7 +7,7 @@
     "name": "GeForce RTX 5070 Ti",
     "price": 749,
     "score": 94,
-    "image": "https://loremflickr.com/640/640/graphics-card?lock=35",
+    "image": "",
     "specs": {
       "VRAM": "16 GB GDDR7",
       "Frecuencia boost": "2.45 GHz",
@@ -25,7 +25,7 @@
     "name": "Radeon RX 9070 XT",
     "price": 599,
     "score": 92,
-    "image": "https://loremflickr.com/640/640/graphics-card?lock=36",
+    "image": "",
     "specs": {
       "VRAM": "16 GB GDDR6",
       "Frecuencia boost": "2.97 GHz",
@@ -43,7 +43,7 @@
     "name": "GeForce RTX 4070 Super",
     "price": 599,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/graphics-card?lock=37",
+    "image": "",
     "specs": {
       "VRAM": "12 GB GDDR6X",
       "Frecuencia boost": "2.48 GHz",
@@ -61,7 +61,7 @@
     "name": "Radeon RX 7800 XT",
     "price": 489,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/graphics-card?lock=38",
+    "image": "",
     "specs": {
       "VRAM": "16 GB GDDR6",
       "Frecuencia boost": "2.43 GHz",

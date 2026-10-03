@@ -7,7 +7,7 @@
     "name": "TX401",
     "price": 100,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/network-card?lock=76",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe 3.0 x4",
       "Puertos": "1 × RJ45",
@@ -25,7 +25,7 @@
     "name": "TX201",
     "price": 30,
     "score": 84,
-    "image": "https://loremflickr.com/640/640/network-card?lock=77",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe 2.1 x1",
       "Puertos": "1 × RJ45",
@@ -42,7 +42,7 @@
     "brand": "TP-Link",
     "name": "TG-3468",
     "price": 19,
-    "image": "https://loremflickr.com/640/640/network-card?lock=78",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe x1",
       "Puertos": "1 × RJ45",
@@ -60,7 +60,7 @@
     "name": "XG-C100C",
     "price": 90,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/network-card?lock=79",
+    "image": "",
     "specs": {
       "Interfaz": "PCIe 3.0 x4",
       "Puertos": "1 × RJ45",

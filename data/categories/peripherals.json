@@ -7,7 +7,7 @@
     "name": "Huntsman V3 Pro TKL",
     "price": 219,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/computer-peripheral?lock=107",
+    "image": "",
     "specs": {
       "Formato": "TKL",
       "Switch": "Óptico analógico Gen 2",
@@ -25,7 +25,7 @@
     "name": "80HE",
     "price": 199,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/computer-peripheral?lock=108",
+    "image": "",
     "specs": {
       "Formato": "80%",
       "Switch": "Lekker L60",
@@ -43,7 +43,7 @@
     "name": "G Pro X Superlight 2",
     "price": 159,
     "score": 90,
-    "image": "https://loremflickr.com/640/640/computer-peripheral?lock=109",
+    "image": "",
     "specs": {
       "Sensor": "HERO 2",
       "DPI": "44,000",
@@ -61,7 +61,7 @@
     "name": "Viper V3 Pro",
     "price": 159,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/computer-peripheral?lock=110",
+    "image": "",
     "specs": {
       "Sensor": "Focus Pro 35K Gen 2",
       "DPI": "35,000",
@@ -79,7 +79,7 @@
     "name": "MX Brio",
     "price": 199,
     "score": 88,
-    "image": "https://loremflickr.com/640/640/computer-peripheral?lock=111",
+    "image": "",
     "specs": {
       "Resolución": "4K Ultra HD",
       "Fotogramas": "30 fps 4K / 60 fps 1080p",
@@ -96,7 +96,7 @@
     "name": "Facecam MK.2",
     "price": 149,
     "score": 86,
-    "image": "https://loremflickr.com/640/640/computer-peripheral?lock=112",
+    "image": "",
     "specs": {
       "Resolución": "1080p",
       "Fotogramas": "60 fps HDR",

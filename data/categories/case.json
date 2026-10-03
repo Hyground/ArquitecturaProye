@@ -7,7 +7,7 @@
     "name": "North XL",
     "price": 179,
     "score": 94,
-    "image": "https://loremflickr.com/640/640/computer-case?lock=1",
+    "image": "",
     "specs": {
       "Formato": "Full tower",
       "Placa máxima": "E-ATX",
@@ -25,7 +25,7 @@
     "name": "O11 Dynamic EVO",
     "price": 169,
     "score": 93,
-    "image": "https://loremflickr.com/640/640/computer-case?lock=2",
+    "image": "",
     "specs": {
       "Formato": "Mid tower doble cámara",
       "Placa máxima": "E-ATX",
@@ -42,7 +42,7 @@
     "name": "4000D Airflow",
     "price": 104,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/computer-case?lock=3",
+    "image": "",
     "specs": {
       "Formato": "Mid tower",
       "Placa máxima": "ATX",
@@ -59,7 +59,7 @@
     "name": "H6 Flow RGB",
     "price": 134,
     "score": 92,
-    "image": "https://loremflickr.com/640/640/computer-case?lock=4",
+    "image": "",
     "specs": {
       "Formato": "Mid tower doble cámara",
       "Placa máxima": "ATX",

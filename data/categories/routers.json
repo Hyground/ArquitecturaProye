@@ -7,7 +7,7 @@
     "name": "Archer BE550",
     "price": 250,
     "score": 88,
-    "image": "https://loremflickr.com/640/640/wifi-router?lock=152",
+    "image": "",
     "specs": {
       "Estándar": "Wi-Fi 7 (802.11be)",
       "Bandas": "Tri-band",
@@ -25,7 +25,7 @@
     "name": "RT-BE86U",
     "price": 300,
     "score": 90,
-    "image": "https://loremflickr.com/640/640/wifi-router?lock=153",
+    "image": "",
     "specs": {
       "Estándar": "Wi-Fi 7 (802.11be)",
       "Bandas": "Dual-band",

@@ -7,7 +7,7 @@
     "name": "Kraken Elite 360",
     "price": 279,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/computer-cooling?lock=9",
+    "image": "",
     "specs": {
       "Tipo": "AIO líquido",
       "Radiador": "360 mm",
@@ -25,7 +25,7 @@
     "name": "Liquid Freezer III 360",
     "price": 129,
     "score": 95,
-    "image": "https://loremflickr.com/640/640/computer-cooling?lock=10",
+    "image": "",
     "specs": {
       "Tipo": "AIO líquido",
       "Radiador": "360 mm",
@@ -43,7 +43,7 @@
     "name": "Peerless Assassin 120 SE",
     "price": 38,
     "score": 93,
-    "image": "https://loremflickr.com/640/640/computer-cooling?lock=11",
+    "image": "",
     "specs": {
       "Tipo": "Aire doble torre",
       "Radiador": "6 heatpipes 6mm",
@@ -61,7 +61,7 @@
     "name": "Kraken 360 RGB",
     "price": 199,
     "score": 92,
-    "image": "https://loremflickr.com/640/640/computer-cooling?lock=12",
+    "image": "",
     "specs": {
       "Tipo": "Líquida AIO",
       "Radiador": "360 mm",

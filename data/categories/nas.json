@@ -7,7 +7,7 @@
     "name": "DiskStation DS925+",
     "price": 600,
     "score": 91,
-    "image": "https://loremflickr.com/640/640/network-storage?lock=74",
+    "image": "",
     "specs": {
       "Bahías": "4 × SATA + 2 × M.2 NVMe",
       "CPU": "AMD Ryzen V1500B, 4 núcleos",
@@ -25,7 +25,7 @@
     "name": "TS-464",
     "price": 550,
     "score": 89,
-    "image": "https://loremflickr.com/640/640/network-storage?lock=75",
+    "image": "",
     "specs": {
       "Bahías": "4 × SATA + 2 × M.2 NVMe",
       "CPU": "Intel Celeron N5105, 4 núcleos",
