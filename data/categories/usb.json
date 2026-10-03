@@ -1,79 +1,9 @@
 [
-  {
-    "id": "usb-kingston-dtmax",
-    "cat": "Memoria USB",
-    "family": "Componentes",
-    "brand": "Kingston",
-    "name": "DataTraveler Max 256 GB",
-    "price": 42,
-    "score": 95,
-    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Capacidad": "256 GB",
-      "Velocidad de lectura": "1000 MB/s",
-      "Velocidad de escritura": "900 MB/s",
-      "Interfaz": "USB 3.2 Gen 2 (Type-C)",
-      "Garantía": "5 años"
-    }
-  },
-  {
-    "id": "usb-sandisk-extreme-pro",
-    "cat": "Memoria USB",
-    "family": "Componentes",
-    "brand": "SanDisk",
-    "name": "Extreme PRO 256 GB",
-    "price": 49,
-    "score": 93,
-    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Capacidad": "256 GB",
-      "Velocidad de lectura": "420 MB/s",
-      "Velocidad de escritura": "380 MB/s",
-      "Interfaz": "USB 3.2 Gen 1 (Type-A)",
-      "Garantía": "De por vida limitada"
-    }
-  },
-  {
-    "id": "usb-samsung-bar-plus",
-    "cat": "Memoria USB",
-    "family": "Componentes",
-    "brand": "Samsung",
-    "name": "Bar Plus 128 GB",
-    "price": 22,
-    "score": 88,
-    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Capacidad": "128 GB",
-      "Velocidad de lectura": "400 MB/s",
-      "Velocidad de escritura": "110 MB/s",
-      "Interfaz": "USB 3.1 (Type-A)",
-      "Garantía": "5 años"
-    }
-  },
-  {
-    "id": "usb-corsair-voyager-gtx",
-    "cat": "Memoria USB",
-    "family": "Componentes",
-    "brand": "Corsair",
-    "name": "Flash Voyager GTX 256 GB",
-    "price": 64,
-    "score": 92,
-    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Capacidad": "256 GB",
-      "Velocidad de lectura": "440 MB/s",
-      "Velocidad de escritura": "440 MB/s",
-      "Interfaz": "USB 3.1 SSD",
-      "Garantía": "5 años"
-    }
-  },
-  {"id":"usb-sandisk-extreme-pro-256","cat":"Memoria USB","family":"Componentes","brand":"SanDisk","name":"Extreme PRO 256 GB","price":49,"score":91,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"420 MB/s","Velocidad de escritura":"380 MB/s","Interfaz":"USB 3.2 Gen 1","Garantía":"Garantía limitada de por vida"}},
+  {"id":"usb-kingston-dtmax","cat":"Memoria USB","family":"Componentes","brand":"Kingston","name":"DataTraveler Max 256 GB","price":42,"score":95,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"1000 MB/s","Velocidad de escritura":"900 MB/s","Interfaz":"USB 3.2 Gen 2 Type-C","Garantía":"5 años"}},
   {"id":"usb-samsung-bar-plus-256","cat":"Memoria USB","family":"Componentes","brand":"Samsung","name":"BAR Plus 256 GB","price":29,"score":86,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"400 MB/s","Velocidad de escritura":"110 MB/s","Interfaz":"USB 3.1","Garantía":"5 años"}},
-  {"id":"usb-kingston-dtmax-1tb","cat":"Memoria USB","family":"Componentes","brand":"Kingston","name":"DataTraveler Max 1 TB","price":99,"score":93,"image":"assets/hardware-hero.png","specs":{"Capacidad":"1 TB","Velocidad de lectura":"1,000 MB/s","Velocidad de escritura":"900 MB/s","Interfaz":"USB 3.2 Gen 2 Type-C","Garantía":"5 años"}},
+  {"id":"usb-sandisk-extreme-pro-256","cat":"Memoria USB","family":"Componentes","brand":"SanDisk","name":"Extreme PRO 256 GB","price":49,"score":91,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"420 MB/s","Velocidad de escritura":"380 MB/s","Interfaz":"USB 3.2 Gen 1","Garantía":"Limitada de por vida"}},
   {"id":"usb-corsair-flash-voyager-256","cat":"Memoria USB","family":"Componentes","brand":"Corsair","name":"Flash Voyager GTX 256 GB","price":59,"score":88,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"440 MB/s","Velocidad de escritura":"440 MB/s","Interfaz":"USB 3.1","Garantía":"5 años"}},
   {"id":"usb-pny-elite-x-256","cat":"Memoria USB","family":"Componentes","brand":"PNY","name":"Elite-X 256 GB","price":24,"score":80,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"200 MB/s","Velocidad de escritura":"100 MB/s","Interfaz":"USB 3.2 Gen 1","Garantía":"1 año"}},
   {"id":"usb-transcend-jetflash-920-256","cat":"Memoria USB","family":"Componentes","brand":"Transcend","name":"JetFlash 920 256 GB","price":39,"score":84,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"420 MB/s","Velocidad de escritura":"400 MB/s","Interfaz":"USB 3.2 Gen 1","Garantía":"5 años"}},
   {"id":"usb-lexar-jumpdrive-p30-256","cat":"Memoria USB","family":"Componentes","brand":"Lexar","name":"JumpDrive P30 256 GB","price":27,"score":81,"image":"assets/hardware-hero.png","specs":{"Capacidad":"256 GB","Velocidad de lectura":"450 MB/s","Velocidad de escritura":"245 MB/s","Interfaz":"USB 3.2 Gen 1","Garantía":"3 años"}}
-,
-  {"id":"memoria-usb-sandisk-catalog-01","cat":"Memoria USB","family":"Componentes","brand":"SanDisk","name":"SanDisk Memoria USB Serie 01","price":567,"score":78,"image":"assets/hardware-hero.png","specs":{"Tipo":"Producto tecnológico","Conectividad":"Según modelo","Uso":"General","Línea":"Selección de catálogo","Versión":"Modelo 01","Garantía":"1 año"}}
 ]

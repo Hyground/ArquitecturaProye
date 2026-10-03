@@ -1,5 +1,34 @@
 # Auditoría del catálogo VERSUS
 
+## Fase 3 — Saneamiento del catálogo
+
+- Productos genéricos al inicio: **215**.
+- Productos con nombre `Serie NN` al finalizar: **0**.
+- Productos finales: **201**, en **36** categorías.
+- Categorías saneadas: sillas, tabletas gráficas, etiquetadoras, NAS,
+  destructoras, plotters, proyectores, routers, escáneres, audífonos,
+  bocinas, micrófonos, UPS, capturadoras, red, consola, controles, docks,
+  teclado, mouse, webcam y memoria USB.
+
+Las nueve categorías que contenían exclusivamente plantillas se sustituyeron
+por una selección concisa de modelos comerciales de al menos dos marcas. En
+los datasets mixtos se retiraron las filas de plantilla y se conservaron
+solamente modelos comerciales diferenciables. El catálogo disminuyó de 416 a
+201 productos para no reemplazar datos ficticios con variantes no verificadas.
+
+Se añadieron o normalizaron 18 fichas reales en las categorías que antes eran
+100% genéricas. No se descargaron imágenes adicionales en esta fase: se
+priorizó el saneamiento de datos. Hay **160** productos que siguen usando el
+fallback `assets/hardware-hero.png`; se mantienen como advertencias hasta la
+fase dedicada a imágenes.
+
+No quedaron IDs duplicados, campos estructurales vacíos, precios no positivos
+ni categorías con menos de dos marcas. `scripts/validate-catalog.js` finalizó
+con **0 errores** y 160 advertencias de fallback de imagen. Las
+especificaciones se contrastaron con fichas públicas de fabricantes, entre
+ellas Synology, BenQ, ASUS, TP-Link, Canon, Epson, Brother, Wacom, Huion,
+Steelcase, Herman Miller, QNAP y HP.
+
 Fecha de auditoría: 2026-10-01.
 
 ## Alcance y validación
