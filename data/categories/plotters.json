@@ -1,4 +1,38 @@
 [
-  {"id":"plotter-hp-designjet-t650","cat":"Plotter","family":"Oficina","brand":"HP","name":"DesignJet T650 24 pulgadas","price":1100,"score":87,"image":"assets/hardware-hero.png","specs":{"Ancho máximo":"24 pulgadas","Tecnología":"Inyección térmica HP","Resolución":"2400 × 1200 dpi","Velocidad":"26 segundos por página A1","Conectividad":"Wi-Fi / Ethernet / USB","Tinta":"4 cartuchos"}},
-  {"id":"plotter-epson-surecolor-t2170","cat":"Plotter","family":"Oficina","brand":"Epson","name":"SureColor T2170 24 pulgadas","price":900,"score":85,"image":"assets/hardware-hero.png","specs":{"Ancho máximo":"24 pulgadas","Tecnología":"PrecisionCore MicroTFP","Resolución":"2400 × 1200 dpi","Velocidad":"43 segundos por página D","Conectividad":"Wi-Fi / Ethernet / USB","Tinta":"4 cartuchos pigmentados"}}
+  {
+    "id": "plotter-hp-designjet-t650",
+    "cat": "Plotter",
+    "family": "Oficina",
+    "brand": "HP",
+    "name": "DesignJet T650 24 pulgadas",
+    "price": 1100,
+    "score": 87,
+    "image": "https://loremflickr.com/640/640/large-format-printer?lock=113",
+    "specs": {
+      "Ancho máximo": "24 pulgadas",
+      "Tecnología": "Inyección térmica HP",
+      "Resolución": "2400 × 1200 dpi",
+      "Velocidad": "26 segundos por página A1",
+      "Conectividad": "Wi-Fi / Ethernet / USB",
+      "Tinta": "4 cartuchos"
+    }
+  },
+  {
+    "id": "plotter-epson-surecolor-t2170",
+    "cat": "Plotter",
+    "family": "Oficina",
+    "brand": "Epson",
+    "name": "SureColor T2170 24 pulgadas",
+    "price": 900,
+    "score": 85,
+    "image": "https://loremflickr.com/640/640/large-format-printer?lock=114",
+    "specs": {
+      "Ancho máximo": "24 pulgadas",
+      "Tecnología": "PrecisionCore MicroTFP",
+      "Resolución": "2400 × 1200 dpi",
+      "Velocidad": "43 segundos por página D",
+      "Conectividad": "Wi-Fi / Ethernet / USB",
+      "Tinta": "4 cartuchos pigmentados"
+    }
+  }
 ]

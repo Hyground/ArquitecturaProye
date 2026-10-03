@@ -1,0 +1,74 @@
+.hero-search-wrap {
+  position: relative;
+  width: min(710px, 100%);
+  z-index: 30;
+}
+
+/* Permite que las sugerencias se superpongan al comparador. */
+.hero { overflow: visible; z-index: 21; }
+
+.hero-search-wrap .hero-search { width: 100%; }
+
+.hero-suggestions {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  left: 0;
+  z-index: 40;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 16px 35px #15171b22;
+}
+
+.hero-suggestions.visible { display: grid; }
+
+.hero-suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 12px;
+  color: var(--ink);
+  text-align: left;
+  font: 13px DM Sans;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+}
+
+.hero-suggestion:hover,
+.hero-suggestion:focus { background: var(--paper); outline: 0; }
+.hero-suggestion span { display: grid; gap: 3px; }
+.hero-suggestion small { color: var(--muted); font-size: 11px; }
+.hero-suggestion strong { font: 700 12px Manrope; white-space: nowrap; }
+
+/* El catálogo se reemplaza por el menú lateral del comparador. */
+#catalogo { display: none; }
+
+.swap {
+  padding: 11px 16px;
+  color: var(--ink);
+  font: 800 13px Manrope;
+  cursor: pointer;
+  background: var(--lime);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 0 #a8ca20;
+  transition: transform .18s, box-shadow .18s;
+}
+
+.swap:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #a8ca20; }
+.swap:active { transform: translateY(2px); box-shadow: 0 2px 0 #a8ca20; }
+
+@media (max-width: 620px) {
+  .hero-search-wrap { width: 100%; }
+  .hero-suggestion { padding: 12px 10px; }
+  .hero-suggestion strong { font-size: 11px; }
+  .swap { padding: 10px 12px; font-size: 12px; }
+  .section-heading { align-items: center; gap: 12px; }
+  .section-heading h2 { font-size: 20px; }
+}

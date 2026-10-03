@@ -1,4 +1,38 @@
 [
-  {"id":"nas-synology-ds925-plus","cat":"NAS","family":"Red","brand":"Synology","name":"DiskStation DS925+","price":600,"score":91,"image":"assets/hardware-hero.png","specs":{"Bahías":"4 × SATA + 2 × M.2 NVMe","CPU":"AMD Ryzen V1500B, 4 núcleos","RAM":"4 GB DDR4 ECC, ampliable a 32 GB","Red":"2 × 2.5 GbE","Expansión":"Hasta 9 bahías con DX525","Sistema":"DiskStation Manager"}},
-  {"id":"nas-qnap-ts-464","cat":"NAS","family":"Red","brand":"QNAP","name":"TS-464","price":550,"score":89,"image":"assets/hardware-hero.png","specs":{"Bahías":"4 × SATA + 2 × M.2 NVMe","CPU":"Intel Celeron N5105, 4 núcleos","RAM":"4 GB DDR4, ampliable a 16 GB","Red":"2 × 2.5 GbE","Expansión":"PCIe Gen 3 x2","Sistema":"QTS / QuTS hero"}}
+  {
+    "id": "nas-synology-ds925-plus",
+    "cat": "NAS",
+    "family": "Red",
+    "brand": "Synology",
+    "name": "DiskStation DS925+",
+    "price": 600,
+    "score": 91,
+    "image": "https://loremflickr.com/640/640/network-storage?lock=74",
+    "specs": {
+      "Bahías": "4 × SATA + 2 × M.2 NVMe",
+      "CPU": "AMD Ryzen V1500B, 4 núcleos",
+      "RAM": "4 GB DDR4 ECC, ampliable a 32 GB",
+      "Red": "2 × 2.5 GbE",
+      "Expansión": "Hasta 9 bahías con DX525",
+      "Sistema": "DiskStation Manager"
+    }
+  },
+  {
+    "id": "nas-qnap-ts-464",
+    "cat": "NAS",
+    "family": "Red",
+    "brand": "QNAP",
+    "name": "TS-464",
+    "price": 550,
+    "score": 89,
+    "image": "https://loremflickr.com/640/640/network-storage?lock=75",
+    "specs": {
+      "Bahías": "4 × SATA + 2 × M.2 NVMe",
+      "CPU": "Intel Celeron N5105, 4 núcleos",
+      "RAM": "4 GB DDR4, ampliable a 16 GB",
+      "Red": "2 × 2.5 GbE",
+      "Expansión": "PCIe Gen 3 x2",
+      "Sistema": "QTS / QuTS hero"
+    }
+  }
 ]

@@ -1,21 +1,310 @@
 [
-  {"id":"headset-sony-inzone-h9","cat":"Audífonos","family":"Audio","brand":"Sony","name":"INZONE H9","price":299,"score":89,"image":"assets/hardware-hero.png","specs":{"Tipo":"Over-ear cerrado","Conexión":"2.4 GHz + Bluetooth","Cancelación":"Activa dual","Batería":"Hasta 32 horas"}},
-  {"id":"headset-bose-qc-ultra","cat":"Audífonos","family":"Audio","brand":"Bose","name":"QuietComfort Ultra","price":429,"score":91,"image":"assets/hardware-hero.png","specs":{"Tipo":"Over-ear inalámbrico","Conexión":"Bluetooth 5.3 / 3.5 mm","Cancelación":"ANC inmersiva","Batería":"Hasta 24 horas"}},
-  {"id":"speaker-edifier-r1280dbs","cat":"Bocinas","family":"Audio","brand":"Edifier","name":"R1280DBs","price":159,"score":84,"image":"assets/hardware-hero.png","specs":{"Potencia":"42 W RMS","Canales":"2.0 estéreo","Bluetooth":"5.0 aptX","Entradas":"Óptica / coaxial / RCA"}},
-  {"id":"speaker-logitech-z407","cat":"Bocinas","family":"Audio","brand":"Logitech","name":"Z407","price":119,"score":79,"image":"assets/hardware-hero.png","specs":{"Potencia":"40 W RMS","Canales":"2.1 con subwoofer","Bluetooth":"5.0","Entradas":"USB / 3.5 mm"}},
-  {"id":"microphone-blue-yeti-x","cat":"Micrófono","family":"Audio","brand":"Blue","name":"Yeti X","price":169,"score":85,"image":"assets/hardware-hero.png","specs":{"Patrones":"4 patrones polares","Resolución":"24-bit / 48 kHz","Conexión":"USB","Monitoreo":"Salida de 3.5 mm"}},
-  {"id":"microphone-hyperx-quadcast-2","cat":"Micrófono","family":"Audio","brand":"HyperX","name":"QuadCast 2","price":149,"score":84,"image":"assets/hardware-hero.png","specs":{"Patrones":"4 patrones polares","Resolución":"24-bit / 96 kHz","Conexión":"USB-C","Monitoreo":"Salida de 3.5 mm"}},
-  {"id":"ups-apc-bx1500m","cat":"UPS","family":"Energía","brand":"APC","name":"Back-UPS Pro BX1500M","price":219,"score":85,"image":"assets/hardware-hero.png","specs":{"Capacidad":"1500 VA","Potencia":"900 W","Topología":"Line-interactive AVR","Tomacorrientes":"10","Batería":"Reemplazable"}},
-  {"id":"ups-cyberpower-cp1500pfclcd","cat":"UPS","family":"Energía","brand":"CyberPower","name":"CP1500PFCLCD","price":219,"score":87,"image":"assets/hardware-hero.png","specs":{"Capacidad":"1500 VA","Potencia":"1000 W","Topología":"Onda senoidal pura","Tomacorrientes":"12","Batería":"Reemplazable"}},
-  {"id":"capture-elgato-4kx","cat":"Capturadora","family":"Streaming","brand":"Elgato","name":"4K X","price":229,"score":89,"image":"assets/hardware-hero.png","specs":{"Captura máxima":"4K a 144 Hz","Interfaz":"USB 3.2 Gen 2 Type-C","VRR":"HDMI 2.1","Passthrough":"4K a 144 Hz"}},
-  {"id":"capture-avermedia-gcu21","cat":"Capturadora","family":"Streaming","brand":"AVerMedia","name":"Live Gamer Ultra 2.1","price":249,"score":88,"image":"assets/hardware-hero.png","specs":{"Captura máxima":"4K a 60 Hz","Interfaz":"USB 3.2 Gen 2 Type-C","VRR":"HDMI 2.1","Passthrough":"4K a 144 Hz"}},
-  {"id":"network-asus-pce-be92bt","cat":"Red","family":"Red","brand":"ASUS","name":"PCE-BE92BT","price":99,"score":87,"image":"assets/hardware-hero.png","specs":{"Wi-Fi":"Wi-Fi 7","Velocidad":"Hasta 5.8 Gbps","Bluetooth":"5.4","Interfaz":"PCIe x1","Bandas":"Tri-band"}},
-  {"id":"network-tplink-tbe550e","cat":"Red","family":"Red","brand":"TP-Link","name":"Archer TBE550E","price":89,"score":86,"image":"assets/hardware-hero.png","specs":{"Wi-Fi":"Wi-Fi 7","Velocidad":"Hasta 5.8 Gbps","Bluetooth":"5.4","Interfaz":"PCIe x1","Bandas":"Tri-band"}},
-  {"id":"printer-hp-officejet-9125e","cat":"Impresora","family":"Oficina","brand":"HP","name":"OfficeJet Pro 9125e","price":209,"score":82,"image":"assets/hardware-hero.png","specs":{"Tecnología":"Inyección térmica","Velocidad en negro":"22 ppm","Dúplex":"Automático","Conectividad":"Wi-Fi / Ethernet / USB"}},
-  {"id":"console-sony-ps5-pro","cat":"Consola","family":"Gaming","brand":"Sony","name":"PlayStation 5 Pro","price":699,"score":92,"image":"assets/hardware-hero.png","specs":{"Resolución":"Hasta 8K","Almacenamiento":"2 TB SSD","Ray tracing":"Avanzado","Conectividad":"Wi-Fi 7"}},
-  {"id":"console-microsoft-xsx-2tb","cat":"Consola","family":"Gaming","brand":"Microsoft","name":"Xbox Series X 2 TB","price":599,"score":89,"image":"assets/hardware-hero.png","specs":{"Resolución":"Hasta 8K","Almacenamiento":"2 TB SSD","Ray tracing":"Acelerado por hardware","Conectividad":"Wi-Fi 6E"}},
-  {"id":"controller-sony-dualsense-edge","cat":"Control","family":"Gaming","brand":"Sony","name":"DualSense Edge","price":199,"score":87,"image":"assets/hardware-hero.png","specs":{"Compatibilidad":"PS5 / PC","Conexión":"Bluetooth / USB-C","Batería":"Hasta 6 horas","Controles":"Módulos de stick intercambiables"}},
-  {"id":"controller-microsoft-elite-2","cat":"Control","family":"Gaming","brand":"Microsoft","name":"Xbox Elite Wireless Controller Series 2","price":179,"score":86,"image":"assets/hardware-hero.png","specs":{"Compatibilidad":"Xbox / PC","Conexión":"Xbox Wireless / Bluetooth","Batería":"Hasta 40 horas","Controles":"Palancas ajustables"}},
-  {"id":"dock-caldigit-ts4","cat":"Dock","family":"Conectividad","brand":"CalDigit","name":"TS4 Thunderbolt 4","price":399,"score":91,"image":"assets/hardware-hero.png","specs":{"Puertos":"18","Host":"Thunderbolt 4, 40 Gbps","Carga":"Hasta 98 W","Red":"2.5 GbE"}},
-  {"id":"dock-anker-prime-tb5","cat":"Dock","family":"Conectividad","brand":"Anker","name":"Prime TB5 Dock","price":399,"score":90,"image":"assets/hardware-hero.png","specs":{"Puertos":"14","Host":"Thunderbolt 5, 120 Gbps","Carga":"Hasta 140 W","Red":"2.5 GbE"}}
+  {
+    "id": "headset-sony-inzone-h9",
+    "cat": "Audífonos",
+    "family": "Audio",
+    "brand": "Sony",
+    "name": "INZONE H9",
+    "price": 299,
+    "score": 89,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=86",
+    "specs": {
+      "Tipo": "Over-ear cerrado",
+      "Conexión": "2.4 GHz + Bluetooth",
+      "Cancelación": "Activa dual",
+      "Batería": "Hasta 32 horas"
+    }
+  },
+  {
+    "id": "headset-bose-qc-ultra",
+    "cat": "Audífonos",
+    "family": "Audio",
+    "brand": "Bose",
+    "name": "QuietComfort Ultra",
+    "price": 429,
+    "score": 91,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=87",
+    "specs": {
+      "Tipo": "Over-ear inalámbrico",
+      "Conexión": "Bluetooth 5.3 / 3.5 mm",
+      "Cancelación": "ANC inmersiva",
+      "Batería": "Hasta 24 horas"
+    }
+  },
+  {
+    "id": "speaker-edifier-r1280dbs",
+    "cat": "Bocinas",
+    "family": "Audio",
+    "brand": "Edifier",
+    "name": "R1280DBs",
+    "price": 159,
+    "score": 84,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=88",
+    "specs": {
+      "Potencia": "42 W RMS",
+      "Canales": "2.0 estéreo",
+      "Bluetooth": "5.0 aptX",
+      "Entradas": "Óptica / coaxial / RCA"
+    }
+  },
+  {
+    "id": "speaker-logitech-z407",
+    "cat": "Bocinas",
+    "family": "Audio",
+    "brand": "Logitech",
+    "name": "Z407",
+    "price": 119,
+    "score": 79,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=89",
+    "specs": {
+      "Potencia": "40 W RMS",
+      "Canales": "2.1 con subwoofer",
+      "Bluetooth": "5.0",
+      "Entradas": "USB / 3.5 mm"
+    }
+  },
+  {
+    "id": "microphone-blue-yeti-x",
+    "cat": "Micrófono",
+    "family": "Audio",
+    "brand": "Blue",
+    "name": "Yeti X",
+    "price": 169,
+    "score": 85,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=90",
+    "specs": {
+      "Patrones": "4 patrones polares",
+      "Resolución": "24-bit / 48 kHz",
+      "Conexión": "USB",
+      "Monitoreo": "Salida de 3.5 mm"
+    }
+  },
+  {
+    "id": "microphone-hyperx-quadcast-2",
+    "cat": "Micrófono",
+    "family": "Audio",
+    "brand": "HyperX",
+    "name": "QuadCast 2",
+    "price": 149,
+    "score": 84,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=91",
+    "specs": {
+      "Patrones": "4 patrones polares",
+      "Resolución": "24-bit / 96 kHz",
+      "Conexión": "USB-C",
+      "Monitoreo": "Salida de 3.5 mm"
+    }
+  },
+  {
+    "id": "ups-apc-bx1500m",
+    "cat": "UPS",
+    "family": "Energía",
+    "brand": "APC",
+    "name": "Back-UPS Pro BX1500M",
+    "price": 219,
+    "score": 85,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=92",
+    "specs": {
+      "Capacidad": "1500 VA",
+      "Potencia": "900 W",
+      "Topología": "Line-interactive AVR",
+      "Tomacorrientes": "10",
+      "Batería": "Reemplazable"
+    }
+  },
+  {
+    "id": "ups-cyberpower-cp1500pfclcd",
+    "cat": "UPS",
+    "family": "Energía",
+    "brand": "CyberPower",
+    "name": "CP1500PFCLCD",
+    "price": 219,
+    "score": 87,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=93",
+    "specs": {
+      "Capacidad": "1500 VA",
+      "Potencia": "1000 W",
+      "Topología": "Onda senoidal pura",
+      "Tomacorrientes": "12",
+      "Batería": "Reemplazable"
+    }
+  },
+  {
+    "id": "capture-elgato-4kx",
+    "cat": "Capturadora",
+    "family": "Streaming",
+    "brand": "Elgato",
+    "name": "4K X",
+    "price": 229,
+    "score": 89,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=94",
+    "specs": {
+      "Captura máxima": "4K a 144 Hz",
+      "Interfaz": "USB 3.2 Gen 2 Type-C",
+      "VRR": "HDMI 2.1",
+      "Passthrough": "4K a 144 Hz"
+    }
+  },
+  {
+    "id": "capture-avermedia-gcu21",
+    "cat": "Capturadora",
+    "family": "Streaming",
+    "brand": "AVerMedia",
+    "name": "Live Gamer Ultra 2.1",
+    "price": 249,
+    "score": 88,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=95",
+    "specs": {
+      "Captura máxima": "4K a 60 Hz",
+      "Interfaz": "USB 3.2 Gen 2 Type-C",
+      "VRR": "HDMI 2.1",
+      "Passthrough": "4K a 144 Hz"
+    }
+  },
+  {
+    "id": "network-asus-pce-be92bt",
+    "cat": "Red",
+    "family": "Red",
+    "brand": "ASUS",
+    "name": "PCE-BE92BT",
+    "price": 99,
+    "score": 87,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=96",
+    "specs": {
+      "Wi-Fi": "Wi-Fi 7",
+      "Velocidad": "Hasta 5.8 Gbps",
+      "Bluetooth": "5.4",
+      "Interfaz": "PCIe x1",
+      "Bandas": "Tri-band"
+    }
+  },
+  {
+    "id": "network-tplink-tbe550e",
+    "cat": "Red",
+    "family": "Red",
+    "brand": "TP-Link",
+    "name": "Archer TBE550E",
+    "price": 89,
+    "score": 86,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=97",
+    "specs": {
+      "Wi-Fi": "Wi-Fi 7",
+      "Velocidad": "Hasta 5.8 Gbps",
+      "Bluetooth": "5.4",
+      "Interfaz": "PCIe x1",
+      "Bandas": "Tri-band"
+    }
+  },
+  {
+    "id": "printer-hp-officejet-9125e",
+    "cat": "Impresora",
+    "family": "Oficina",
+    "brand": "HP",
+    "name": "OfficeJet Pro 9125e",
+    "price": 209,
+    "score": 82,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=98",
+    "specs": {
+      "Tecnología": "Inyección térmica",
+      "Velocidad en negro": "22 ppm",
+      "Dúplex": "Automático",
+      "Conectividad": "Wi-Fi / Ethernet / USB"
+    }
+  },
+  {
+    "id": "console-sony-ps5-pro",
+    "cat": "Consola",
+    "family": "Gaming",
+    "brand": "Sony",
+    "name": "PlayStation 5 Pro",
+    "price": 699,
+    "score": 92,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=99",
+    "specs": {
+      "Resolución": "Hasta 8K",
+      "Almacenamiento": "2 TB SSD",
+      "Ray tracing": "Avanzado",
+      "Conectividad": "Wi-Fi 7"
+    }
+  },
+  {
+    "id": "console-microsoft-xsx-2tb",
+    "cat": "Consola",
+    "family": "Gaming",
+    "brand": "Microsoft",
+    "name": "Xbox Series X 2 TB",
+    "price": 599,
+    "score": 89,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=100",
+    "specs": {
+      "Resolución": "Hasta 8K",
+      "Almacenamiento": "2 TB SSD",
+      "Ray tracing": "Acelerado por hardware",
+      "Conectividad": "Wi-Fi 6E"
+    }
+  },
+  {
+    "id": "controller-sony-dualsense-edge",
+    "cat": "Control",
+    "family": "Gaming",
+    "brand": "Sony",
+    "name": "DualSense Edge",
+    "price": 199,
+    "score": 87,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=101",
+    "specs": {
+      "Compatibilidad": "PS5 / PC",
+      "Conexión": "Bluetooth / USB-C",
+      "Batería": "Hasta 6 horas",
+      "Controles": "Módulos de stick intercambiables"
+    }
+  },
+  {
+    "id": "controller-microsoft-elite-2",
+    "cat": "Control",
+    "family": "Gaming",
+    "brand": "Microsoft",
+    "name": "Xbox Elite Wireless Controller Series 2",
+    "price": 179,
+    "score": 86,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=102",
+    "specs": {
+      "Compatibilidad": "Xbox / PC",
+      "Conexión": "Xbox Wireless / Bluetooth",
+      "Batería": "Hasta 40 horas",
+      "Controles": "Palancas ajustables"
+    }
+  },
+  {
+    "id": "dock-caldigit-ts4",
+    "cat": "Dock",
+    "family": "Conectividad",
+    "brand": "CalDigit",
+    "name": "TS4 Thunderbolt 4",
+    "price": 399,
+    "score": 91,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=103",
+    "specs": {
+      "Puertos": "18",
+      "Host": "Thunderbolt 4, 40 Gbps",
+      "Carga": "Hasta 98 W",
+      "Red": "2.5 GbE"
+    }
+  },
+  {
+    "id": "dock-anker-prime-tb5",
+    "cat": "Dock",
+    "family": "Conectividad",
+    "brand": "Anker",
+    "name": "Prime TB5 Dock",
+    "price": 399,
+    "score": 90,
+    "image": "https://loremflickr.com/640/640/computer-accessory?lock=104",
+    "specs": {
+      "Puertos": "14",
+      "Host": "Thunderbolt 5, 120 Gbps",
+      "Carga": "Hasta 140 W",
+      "Red": "2.5 GbE"
+    }
+  }
 ]

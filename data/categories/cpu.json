@@ -7,7 +7,7 @@
     "name": "Ryzen 7 9800X3D",
     "price": 479,
     "score": 96,
-    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMLJy_GTIDCmWHmMtmQoK6ogege_XZURHMWFvPQuWebtCPwDBO-c0uU0&s=10",
     "specs": {
       "Núcleos / hilos": "8 / 16",
       "Frecuencia boost": "5.2 GHz",
@@ -26,7 +26,7 @@
     "name": "Core Ultra 7 265K",
     "price": 399,
     "score": 88,
-    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSX2eBbfK6bRPPaeaw--q1hb9owj9jUloLtOOKQbBedyoPtjoHmpbSlOY&s=10",
     "specs": {
       "Núcleos / hilos": "20 / 20",
       "Frecuencia boost": "5.5 GHz",
@@ -45,7 +45,7 @@
     "name": "Ryzen 7 7800X3D",
     "price": 399,
     "score": 94,
-    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "image": "https://static.kemikcdn.com/2025/11/23988-7800X3DBOX1200x12001.jpg",
     "specs": {
       "Núcleos / hilos": "8 / 16",
       "Frecuencia boost": "5.0 GHz",
@@ -64,7 +64,7 @@
     "name": "Core i7-14700K",
     "price": 389,
     "score": 90,
-    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
+    "image": "https://static.kemikcdn.com/2023/11/BX8071514700K-INTEL-1200x1200-01.-300x300.jpg",
     "specs": {
       "Núcleos / hilos": "20 / 28",
       "Frecuencia boost": "5.6 GHz",
@@ -74,50 +74,5 @@
       "Socket": "LGA1700",
       "Litografía": "10 nm"
     }
-  },
-  {
-    "id": "cpu-amd-7600x",
-    "cat": "CPU",
-    "family": "Componentes",
-    "brand": "AMD",
-    "name": "Ryzen 5 7600X",
-    "price": 199,
-    "score": 85,
-    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Núcleos / hilos": "6 / 12",
-      "Frecuencia boost": "5.3 GHz",
-      "Frecuencia base": "4.7 GHz",
-      "Caché": "38 MB",
-      "TDP": "105 W",
-      "Socket": "AM5",
-      "Litografía": "5 nm"
-    }
-  },
-  {
-    "id": "cpu-intel-14600k",
-    "cat": "CPU",
-    "family": "Componentes",
-    "brand": "Intel",
-    "name": "Core i5-14600K",
-    "price": 289,
-    "score": 87,
-    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Núcleos / hilos": "14 / 20",
-      "Frecuencia boost": "5.3 GHz",
-      "Frecuencia base": "3.5 GHz",
-      "Caché": "44 MB",
-      "TDP": "125 W",
-      "Socket": "LGA1700",
-      "Litografía": "10 nm"
-    }
-  },
-  {"id":"cpu-amd-9950x","cat":"CPU","family":"Componentes","brand":"AMD","name":"Ryzen 9 9950X","price":599,"score":95,"image":"assets/hardware-hero.png","specs":{"Núcleos / hilos":"16 / 32","Frecuencia boost":"5.7 GHz","Frecuencia base":"4.3 GHz","Caché":"80 MB","TDP":"170 W","Socket":"AM5","Litografía":"4 nm"}},
-  {"id":"cpu-amd-9700x","cat":"CPU","family":"Componentes","brand":"AMD","name":"Ryzen 7 9700X","price":329,"score":90,"image":"assets/hardware-hero.png","specs":{"Núcleos / hilos":"8 / 16","Frecuencia boost":"5.5 GHz","Frecuencia base":"3.8 GHz","Caché":"40 MB","TDP":"65 W","Socket":"AM5","Litografía":"4 nm"}},
-  {"id":"cpu-amd-9600x","cat":"CPU","family":"Componentes","brand":"AMD","name":"Ryzen 5 9600X","price":249,"score":87,"image":"assets/products/cpu/amd-ryzen-5-9600x.webp","specs":{"Núcleos / hilos":"6 / 12","Frecuencia boost":"5.4 GHz","Frecuencia base":"3.9 GHz","Caché":"38 MB","TDP":"65 W","Socket":"AM5","Litografía":"4 nm"}},
-  {"id":"cpu-intel-285k","cat":"CPU","family":"Componentes","brand":"Intel","name":"Core Ultra 9 285K","price":589,"score":93,"image":"assets/hardware-hero.png","specs":{"Núcleos / hilos":"24 / 24","Frecuencia boost":"5.7 GHz","Frecuencia base":"3.7 GHz","Caché":"76 MB","TDP":"125 W","Socket":"LGA1851","Litografía":"3 nm"}},
-  {"id":"cpu-intel-245k","cat":"CPU","family":"Componentes","brand":"Intel","name":"Core Ultra 5 245K","price":309,"score":86,"image":"assets/hardware-hero.png","specs":{"Núcleos / hilos":"14 / 14","Frecuencia boost":"5.2 GHz","Frecuencia base":"4.2 GHz","Caché":"50 MB","TDP":"125 W","Socket":"LGA1851","Litografía":"3 nm"}},
-  {"id":"cpu-amd-8700g","cat":"CPU","family":"Componentes","brand":"AMD","name":"Ryzen 7 8700G","price":329,"score":85,"image":"assets/hardware-hero.png","specs":{"Núcleos / hilos":"8 / 16","Frecuencia boost":"5.1 GHz","Frecuencia base":"4.2 GHz","Caché":"24 MB","TDP":"65 W","Socket":"AM5","Litografía":"4 nm"}},
-  {"id":"cpu-intel-14400f","cat":"CPU","family":"Componentes","brand":"Intel","name":"Core i5-14400F","price":209,"score":82,"image":"assets/hardware-hero.png","specs":{"Núcleos / hilos":"10 / 16","Frecuencia boost":"4.7 GHz","Frecuencia base":"2.5 GHz","Caché":"29.5 MB","TDP":"65 W","Socket":"LGA1700","Litografía":"10 nm"}}
+  }
 ]

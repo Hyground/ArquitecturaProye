@@ -1,4 +1,38 @@
 [
-  {"id":"tablet-wacom-cintiq-16","cat":"Tableta gráfica","family":"Periféricos","brand":"Wacom","name":"Cintiq 16","price":650,"score":90,"image":"assets/hardware-hero.png","specs":{"Pantalla":"15.6 pulgadas Full HD","Resolución":"1920 × 1080","Lápiz":"Pro Pen 2 sin batería","Niveles de presión":"8192","Color":"72% NTSC","Conexión":"HDMI / USB-A"}},
-  {"id":"tablet-huion-kamvas-16","cat":"Tableta gráfica","family":"Periféricos","brand":"Huion","name":"Kamvas 16 (2021)","price":400,"score":86,"image":"assets/hardware-hero.png","specs":{"Pantalla":"15.6 pulgadas Full HD","Resolución":"1920 × 1080","Lápiz":"PW517 sin batería","Niveles de presión":"8192","Color":"120% sRGB","Conexión":"USB-C"}}
+  {
+    "id": "tablet-wacom-cintiq-16",
+    "cat": "Tableta gráfica",
+    "family": "Periféricos",
+    "brand": "Wacom",
+    "name": "Cintiq 16",
+    "price": 650,
+    "score": 90,
+    "image": "https://loremflickr.com/640/640/drawing-tablet?lock=21",
+    "specs": {
+      "Pantalla": "15.6 pulgadas Full HD",
+      "Resolución": "1920 × 1080",
+      "Lápiz": "Pro Pen 2 sin batería",
+      "Niveles de presión": "8192",
+      "Color": "72% NTSC",
+      "Conexión": "HDMI / USB-A"
+    }
+  },
+  {
+    "id": "tablet-huion-kamvas-16",
+    "cat": "Tableta gráfica",
+    "family": "Periféricos",
+    "brand": "Huion",
+    "name": "Kamvas 16 (2021)",
+    "price": 400,
+    "score": 86,
+    "image": "https://loremflickr.com/640/640/drawing-tablet?lock=22",
+    "specs": {
+      "Pantalla": "15.6 pulgadas Full HD",
+      "Resolución": "1920 × 1080",
+      "Lápiz": "PW517 sin batería",
+      "Niveles de presión": "8192",
+      "Color": "120% sRGB",
+      "Conexión": "USB-C"
+    }
+  }
 ]

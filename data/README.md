@@ -104,5 +104,7 @@ Cada elemento dentro de los archivos JSON debe ser un objeto con los siguientes 
 - `name` (string): Nombre del modelo.
 - `price` (numero): Precio estimado en USD (ej. `42`).
 - `score` (numero): Puntaje general de 1 a 100 (ej. `95`).
-- `image` (string): URL de imagen del producto o ruta local (`assets/...`).
+- `image` (string): URL directa `https://...` de la imagen del producto. Déjalo
+  vacío mientras no exista un enlace válido; la interfaz mostrará un marcador
+  y no intentará cargar archivos locales.
 - `specs` (objeto clave-valor): Especificaciones tecnicas comparables.

@@ -1,4 +1,38 @@
 [
-  {"id":"projector-benq-ht2060","cat":"Proyector","family":"Pantallas","brand":"BenQ","name":"HT2060","price":999,"score":89,"image":"assets/hardware-hero.png","specs":{"Resolución":"1920 × 1080","Brillo":"2300 ANSI lúmenes","Contraste":"500,000:1","Tecnología":"DLP 4LED","Conectividad":"2 × HDMI 2.0b","Vida útil":"Hasta 30,000 horas Eco"}},
-  {"id":"projector-epson-hc-2350","cat":"Proyector","family":"Pantallas","brand":"Epson","name":"Home Cinema 2350","price":1300,"score":88,"image":"assets/hardware-hero.png","specs":{"Resolución":"4K PRO-UHD","Brillo":"2800 lúmenes","Contraste":"35,000:1","Tecnología":"3LCD","Conectividad":"2 × HDMI","Vida útil":"Hasta 4,500 horas"}}
+  {
+    "id": "projector-benq-ht2060",
+    "cat": "Proyector",
+    "family": "Pantallas",
+    "brand": "BenQ",
+    "name": "HT2060",
+    "price": 999,
+    "score": 89,
+    "image": "https://loremflickr.com/640/640/projector?lock=138",
+    "specs": {
+      "Resolución": "1920 × 1080",
+      "Brillo": "2300 ANSI lúmenes",
+      "Contraste": "500,000:1",
+      "Tecnología": "DLP 4LED",
+      "Conectividad": "2 × HDMI 2.0b",
+      "Vida útil": "Hasta 30,000 horas Eco"
+    }
+  },
+  {
+    "id": "projector-epson-hc-2350",
+    "cat": "Proyector",
+    "family": "Pantallas",
+    "brand": "Epson",
+    "name": "Home Cinema 2350",
+    "price": 1300,
+    "score": 88,
+    "image": "https://loremflickr.com/640/640/projector?lock=139",
+    "specs": {
+      "Resolución": "4K PRO-UHD",
+      "Brillo": "2800 lúmenes",
+      "Contraste": "35,000:1",
+      "Tecnología": "3LCD",
+      "Conectividad": "2 × HDMI",
+      "Vida útil": "Hasta 4,500 horas"
+    }
+  }
 ]

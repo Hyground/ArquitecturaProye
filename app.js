@@ -11,39 +11,12 @@ let compareCat = 'CPU';
 let sideToPick = 'a';
 let selected = { a: null, b: null };
 
-const catPhoto = {
-  CPU: 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80',
-  GPU: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80',
-  RAM: 'https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80',
-  'Placa base': 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80',
-  Almacenamiento: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80',
-  'Memoria USB': 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80',
-  Ventiladores: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80',
-  Gabinete: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80',
-  Teclado: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80',
-  Mouse: 'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80',
-  Monitor: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80',
-  Consola: 'https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=700&q=80',
-  Control: 'https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=700&q=80',
-  Audífonos: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80',
-  Impresora: 'assets/hardware-hero.png',
-  Escáner: 'assets/products/categories/scanner.png',
-  Proyector: 'assets/products/categories/projector.png',
-  Plotter: 'assets/products/categories/plotter.png',
-  Etiquetadora: 'assets/products/categories/label-maker.png',
-  'Destructora de papel': 'assets/products/categories/paper-shredder.png',
-  'Tableta gráfica': 'assets/products/categories/drawing-tablet.png',
-  Router: 'assets/products/categories/router.png',
-  NAS: 'assets/products/categories/nas.png',
-  'Silla ergonómica': 'assets/products/categories/ergonomic-chair.png',
-  default: 'assets/hardware-hero.png'
-};
-
-const photo = p => {
-  const categoryPhoto = p && catPhoto[p.cat];
-  // El hero genérico solo es un fallback de datos: prioriza la imagen local de categoría.
-  if (p && (!p.image || p.image === 'assets/hardware-hero.png') && categoryPhoto) return categoryPhoto;
-  return (p && p.image) || categoryPhoto || catPhoto.default;
+const imageLink = product => /^https?:\/\/\S+$/i.test(String(product?.image || '').trim()) ? product.image.trim() : '';
+const imageMarkup = (product, className = '', lazy = false) => {
+  const url = imageLink(product);
+  return url
+    ? `<img${className ? ` class="${className}"` : ''} src="${url}" alt="${product.name}"${lazy ? ' loading="lazy"' : ''} onerror="this.remove();this.parentElement.classList.add('image-missing');">`
+    : '<span class="image-link-placeholder">Sin enlace de imagen</span>';
 };
 const $ = s => document.querySelector(s);
 const money = n => new Intl.NumberFormat('es-GT', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
@@ -55,6 +28,32 @@ const toast = msg => {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
 };
+
+function heroMatches(query) {
+  const normalized = query.trim().toLocaleLowerCase('es');
+  if (!normalized) return [];
+  return products.filter(product => {
+    const specs = Object.values(product.specs || {}).join(' ');
+    return `${product.name} ${product.brand} ${product.cat} ${specs}`
+      .toLocaleLowerCase('es')
+      .includes(normalized);
+  }).slice(0, 3);
+}
+
+function renderHeroSuggestions(query) {
+  const list = $('#heroSuggestions');
+  const input = $('#heroSearch');
+  if (!list || !input) return;
+  const matches = heroMatches(query);
+  input.setAttribute('aria-expanded', String(matches.length > 0));
+  list.innerHTML = matches.map(product => `
+    <button class="hero-suggestion" type="button" role="option" data-hero-result="${product.id}">
+      <span><b>${product.name}</b><small>${product.brand} · ${product.cat}</small></span>
+      <strong>${money(product.price)}</strong>
+    </button>
+  `).join('');
+  list.classList.toggle('visible', matches.length > 0);
+}
 
 function updateDatasetState() {
   const uniqueCats = [...new Set(products.map(p => p.cat).filter(Boolean))].sort();
@@ -132,7 +131,7 @@ function renderProducts() {
     return `
     <article class="product-card" aria-label="${p.brand} ${p.name}">
       <div class="product-image">
-        <img src="${photo(p)}" alt="${p.cat} ${p.brand}" loading="lazy" onerror="this.onerror=null;this.src='assets/hardware-hero.png';">
+        ${imageMarkup(p, '', true)}
         <span class="tag">${p.cat.toUpperCase()}</span>
       </div>
       <div class="product-top">
@@ -159,7 +158,15 @@ function populateCompareCategories() {
   if (!nav) return;
   const availableCats = cats.filter(c => c !== 'Todos');
 
-  nav.innerHTML = availableCats.map(c => {
+  nav.innerHTML = `
+    <label class="compare-category-select" for="compareCategorySelect">
+      <span>Categoría</span>
+      <select id="compareCategorySelect" data-compare-select>
+        ${availableCats.map(c => `<option value="${c}" ${c === compareCat ? 'selected' : ''}>${c}</option>`).join('')}
+      </select>
+    </label>
+    <div class="compare-category-buttons">
+      ${availableCats.map(c => {
     const count = products.filter(p => p.cat === c).length;
     return `
       <button class="compare-cat-btn ${c === compareCat ? 'active' : ''}" data-compare-cat="${c}" type="button">
@@ -167,37 +174,37 @@ function populateCompareCategories() {
         <small>(${count})</small>
       </button>
     `;
-  }).join('');
+      }).join('')}
+    </div>
+  `;
 }
 
 /**
  * Fija la categoria activa del comparador.
  * Garantiza que Componente A y Componente B pertenezcan ESTRICTAMENTE a la misma categoria.
  */
-function setCompareCategory(newCat, specificProduct = null, targetSide = 'a') {
+function setCompareCategory(newCat, specificProduct = null, targetSide = 'a', resetSelection = !specificProduct) {
   compareCat = newCat;
 
   // Actualiza estilo activo en chips
   document.querySelectorAll('.compare-cat-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.compareCat === newCat);
   });
+  const categorySelect = $('#compareCategorySelect');
+  if (categorySelect) categorySelect.value = newCat;
 
   const catProducts = products.filter(p => p.cat === newCat);
   if (catProducts.length === 0) return;
 
-  if (specificProduct) {
+  if (resetSelection) {
+    selected = { a: null, b: null };
+  } else if (specificProduct) {
     if (targetSide === 'a') {
       selected.a = specificProduct;
       selected.b = catProducts.find(p => p.id !== specificProduct.id) || catProducts[0];
     } else {
       selected.b = specificProduct;
       selected.a = catProducts.find(p => p.id !== specificProduct.id) || catProducts[0];
-    }
-  } else {
-    // Si la seleccion actual no es de esta categoria, auto-asigna los 2 primeros modelos de ella
-    if (!selected.a || selected.a.cat !== newCat || !selected.b || selected.b.cat !== newCat) {
-      selected.a = catProducts[0];
-      selected.b = catProducts.length > 1 ? catProducts[1] : catProducts[0];
     }
   }
 
@@ -213,8 +220,7 @@ function renderSelection() {
   const catProducts = products.filter(p => p.cat === compareCat);
 
   ['a', 'b'].forEach(side => {
-    const p = selected[side] || catProducts[0];
-    selected[side] = p;
+    const p = selected[side];
     const el = $(`#pick${side.toUpperCase()}`);
     if (!el) return;
 
@@ -223,8 +229,9 @@ function renderSelection() {
       el.innerHTML = `
         <span class="side-label">COMPONENTE ${side.toUpperCase()}</span>
         <span class="plus">+</span>
-        <strong>Sin componentes</strong>
-        <small>No hay modelos cargados en ${compareCat}</small>
+        <strong>Elige un modelo</strong>
+        <small>Selecciona un producto de ${compareCat}</small>
+        <button class="pick-empty-action" type="button" data-open-picker="${side}">Seleccionar</button>
       `;
       return;
     }
@@ -233,7 +240,7 @@ function renderSelection() {
     el.innerHTML = `
       <span class="side-label">COMPONENTE ${side.toUpperCase()} · ${compareCat.toUpperCase()}</span>
       <div class="picked-image-wrap">
-        <img class="picked-image" src="${photo(p)}" alt="${p.name}" onerror="this.onerror=null;this.src='assets/hardware-hero.png';">
+        ${imageMarkup(p, 'picked-image')}
       </div>
       <div class="picked-copy">
         <div class="card-select-row">
@@ -279,7 +286,7 @@ function pickerItems(q = '') {
 
   listEl.innerHTML = list.map(p => `
     <button class="picker-item" data-pick="${p.id}" type="button">
-      <img class="picker-thumb" src="${photo(p)}" alt="${p.name}" onerror="this.onerror=null;this.src='assets/hardware-hero.png';">
+      ${imageMarkup(p, 'picker-thumb', true)}
       <span>
         <strong>${p.name}</strong>
         <small>${p.brand} · ${p.cat}</small>
@@ -445,7 +452,7 @@ function startComparisonFromQuery(query) {
     || selected.a;
 
   populateCompareCategories();
-  setCompareCategory(category);
+  setCompareCategory(category, null, 'a', false);
   const compEl = document.querySelector('.compare-section');
   if (compEl) compEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   toast(`Comparando ${selected.a.name} con ${selected.b.name}`);
@@ -540,6 +547,21 @@ async function loadDataset() {
 
 // Inicialización de Eventos de Usuario
 document.addEventListener('click', e => {
+  const heroResult = e.target.closest('[data-hero-result]');
+  if (heroResult) {
+    const product = products.find(item => item.id === heroResult.dataset.heroResult);
+    if (product) {
+      setCompareCategory(product.cat, product, 'a');
+      const input = $('#heroSearch');
+      if (input) input.value = product.name;
+      renderHeroSuggestions('');
+      const compEl = document.querySelector('.compare-section');
+      if (compEl) compEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      toast(`Selecciona el segundo modelo para comparar con ${product.name}`);
+    }
+    return;
+  }
+
   // Clic en chip de categoria del catálogo
   const cat = e.target.closest('[data-cat]');
   if (cat) {
@@ -592,6 +614,12 @@ document.addEventListener('click', e => {
 
 // Evento al cambiar directamente el desplegable de modelo en la tarjeta A o B
 document.addEventListener('change', e => {
+  const categorySelect = e.target.closest('[data-compare-select]');
+  if (categorySelect) {
+    setCompareCategory(categorySelect.value);
+    return;
+  }
+
   const sel = e.target.closest('.card-dropdown');
   if (sel) {
     const side = sel.dataset.side;
@@ -624,6 +652,13 @@ if (sortSelectEl) sortSelectEl.onchange = renderProducts;
 
 const heroSearchEl = $('#heroSearch');
 if (heroSearchEl) {
+  heroSearchEl.addEventListener('input', e => renderHeroSuggestions(e.target.value));
+  heroSearchEl.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      e.target.value = '';
+      renderHeroSuggestions('');
+    }
+  });
   heroSearchEl.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
       const q = e.target.value;
@@ -645,6 +680,10 @@ document.addEventListener('keydown', e => {
     e.preventDefault();
     if (heroSearchEl) heroSearchEl.focus();
   }
+});
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.hero-search-wrap')) renderHeroSuggestions('');
 });
 
 const swapBtn = $('#swapButton');

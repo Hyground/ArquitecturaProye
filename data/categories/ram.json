@@ -7,7 +7,7 @@
     "name": "Vengeance RGB 32 GB",
     "price": 119,
     "score": 91,
-    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-ram?lock=140",
     "specs": {
       "Capacidad": "32 GB (2×16)",
       "Velocidad": "6000 MT/s",
@@ -25,7 +25,7 @@
     "name": "Trident Z5 Neo 32 GB",
     "price": 124,
     "score": 93,
-    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-ram?lock=141",
     "specs": {
       "Capacidad": "32 GB (2×16)",
       "Velocidad": "6000 MT/s",
@@ -43,7 +43,7 @@
     "name": "Fury Beast RGB 32 GB",
     "price": 109,
     "score": 89,
-    "image": "https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-ram?lock=142",
     "specs": {
       "Capacidad": "32 GB (2×16)",
       "Velocidad": "5600 MT/s",
@@ -53,14 +53,22 @@
       "Perfil": "Intel XMP 3.0"
     }
   },
-  {"id":"ram-corsair-dominator-64","cat":"RAM","family":"Componentes","brand":"Corsair","name":"Dominator Titanium DDR5 64 GB","price":279,"score":94,"image":"assets/hardware-hero.png","specs":{"Capacidad":"64 GB (2×32 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.40 V","Perfil":"Intel XMP / AMD EXPO"}},
-  {"id":"ram-gskill-ripjaws-s5-48","cat":"RAM","family":"Componentes","brand":"G.Skill","name":"Ripjaws S5 48 GB","price":169,"score":92,"image":"assets/hardware-hero.png","specs":{"Capacidad":"48 GB (2×24 GB)","Velocidad":"DDR5-6400","Latencia":"CL32","Tipo":"DDR5","Voltaje":"1.40 V","Perfil":"Intel XMP"}},
-  {"id":"ram-kingston-fury-64","cat":"RAM","family":"Componentes","brand":"Kingston","name":"FURY Beast RGB 64 GB","price":219,"score":90,"image":"assets/hardware-hero.png","specs":{"Capacidad":"64 GB (2×32 GB)","Velocidad":"DDR5-5600","Latencia":"CL36","Tipo":"DDR5","Voltaje":"1.25 V","Perfil":"Intel XMP"}},
-  {"id":"ram-crucial-pro-32","cat":"RAM","family":"Componentes","brand":"Crucial","name":"Pro Overclocking 32 GB","price":109,"score":87,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2×16 GB)","Velocidad":"DDR5-6000","Latencia":"CL36","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"Intel XMP / AMD EXPO"}},
-  {"id":"ram-teamgroup-delta-32","cat":"RAM","family":"Componentes","brand":"TeamGroup","name":"T-Force Delta RGB 32 GB","price":119,"score":88,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2×16 GB)","Velocidad":"DDR5-6400","Latencia":"CL40","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"Intel XMP"}},
-  {"id":"ram-adata-lancer-32","cat":"RAM","family":"Componentes","brand":"ADATA","name":"XPG Lancer Blade 32 GB","price":114,"score":86,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2×16 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"AMD EXPO"}},
-  {"id":"ram-corsair-vengeance-rgb-96","cat":"RAM","family":"Componentes","brand":"Corsair","name":"Vengeance RGB 96 GB","price":299,"score":83,"image":"assets/hardware-hero.png","specs":{"Capacidad":"96 GB (2×48 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.40 V","Perfil":"Intel XMP / AMD EXPO"}}
-,
-  {"id":"ram-patriot-catalog-01","cat":"RAM","family":"Componentes","brand":"Patriot","name":"Viper Venom 32 GB DDR5-6000 CL30","price":99,"score":87,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2 × 16 GB)","Velocidad":"DDR5-6000","Latencia":"CL30","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"Intel XMP 3.0 / AMD EXPO"}},
-  {"id":"ram-kingston-catalog-02","cat":"RAM","family":"Componentes","brand":"Kingston","name":"FURY Beast 32 GB DDR5-6000 CL36","price":95,"score":86,"image":"assets/hardware-hero.png","specs":{"Capacidad":"32 GB (2 × 16 GB)","Velocidad":"DDR5-6000","Latencia":"CL36","Tipo":"DDR5","Voltaje":"1.35 V","Perfil":"Intel XMP 3.0"}}
+  {
+    "id": "ram-corsair-dominator-64",
+    "cat": "RAM",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "Dominator Titanium DDR5 64 GB",
+    "price": 279,
+    "score": 94,
+    "image": "https://loremflickr.com/640/640/computer-ram?lock=143",
+    "specs": {
+      "Capacidad": "64 GB (2×32 GB)",
+      "Velocidad": "DDR5-6000",
+      "Latencia": "CL30",
+      "Tipo": "DDR5",
+      "Voltaje": "1.40 V",
+      "Perfil": "Intel XMP / AMD EXPO"
+    }
+  }
 ]

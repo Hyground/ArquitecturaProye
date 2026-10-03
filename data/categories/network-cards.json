@@ -1,8 +1,73 @@
 [
-  {"id":"nic-tplink-tx201","cat":"Tarjeta de red","family":"Componentes","brand":"TP-Link","name":"TX201","price":30,"score":84,"image":"assets/products/network-cards/tp-link-tx201.jpg","specs":{"Interfaz":"PCIe 2.1 x1","Puertos":"1 × RJ45","Velocidad":"2.5 GbE","Estándar":"2.5GBASE-T / 1000BASE-T / 100BASE-TX","Perfil":"Soportes estándar y bajo perfil","Compatibilidad":"Windows / Linux"}},
-  {"id":"nic-tplink-tx401","cat":"Tarjeta de red","family":"Componentes","brand":"TP-Link","name":"TX401","price":100,"score":91,"image":"assets/hardware-hero.png","specs":{"Interfaz":"PCIe 3.0 x4","Puertos":"1 × RJ45","Velocidad":"10 GbE","Estándar":"10GBASE-T / 5G / 2.5G / 1G / 100M","Perfil":"Soportes estándar y bajo perfil","Compatibilidad":"Windows / Linux"}},
-  {"id":"nic-tplink-tx55e","cat":"Tarjeta de red","family":"Componentes","brand":"TP-Link","name":"Archer TX55E","price":45,"score":86,"image":"assets/hardware-hero.png","specs":{"Interfaz":"PCIe x1","Puertos":"Wi-Fi 6 + Bluetooth 5.2","Velocidad":"AX3000","Estándar":"802.11ax","Perfil":"Soportes estándar y bajo perfil","Compatibilidad":"Windows 10 / 11"}},
-  {"id":"nic-intel-i210-t1","cat":"Tarjeta de red","family":"Componentes","brand":"Intel","name":"Ethernet Server Adapter I210-T1","price":49,"score":83,"image":"assets/hardware-hero.png","specs":{"Interfaz":"PCIe 2.1 x1","Puertos":"1 × RJ45","Velocidad":"1 GbE","Estándar":"10/100/1000 Mbps","Perfil":"Soportes estándar y bajo perfil","Compatibilidad":"Windows / Linux / FreeBSD"}},
-  {"id":"nic-intel-x550-t2","cat":"Tarjeta de red","family":"Componentes","brand":"Intel","name":"Ethernet Converged Network Adapter X550-T2","price":300,"score":93,"image":"assets/hardware-hero.png","specs":{"Interfaz":"PCIe 3.0 x4","Puertos":"2 × RJ45","Velocidad":"10 GbE por puerto","Estándar":"10GBASE-T / 5G / 2.5G / 1G / 100M","Perfil":"Estándar y bajo perfil","Compatibilidad":"Windows / Linux / VMware"}},
-  {"id":"nic-asus-xg-c100c","cat":"Tarjeta de red","family":"Componentes","brand":"ASUS","name":"XG-C100C","price":90,"score":89,"image":"assets/hardware-hero.png","specs":{"Interfaz":"PCIe 3.0 x4","Puertos":"1 × RJ45","Velocidad":"10 GbE","Estándar":"10GBASE-T / 5G / 2.5G / 1G / 100M","Perfil":"Soportes estándar y bajo perfil","Compatibilidad":"Windows / Linux"}}
+  {
+    "id": "nic-tplink-tx401",
+    "cat": "Tarjeta de red",
+    "family": "Componentes",
+    "brand": "TP-Link",
+    "name": "TX401",
+    "price": 100,
+    "score": 91,
+    "image": "https://loremflickr.com/640/640/network-card?lock=76",
+    "specs": {
+      "Interfaz": "PCIe 3.0 x4",
+      "Puertos": "1 × RJ45",
+      "Velocidad": "10 GbE",
+      "Estándar": "10GBASE-T / 5G / 2.5G / 1G / 100M",
+      "Perfil": "Soportes estándar y bajo perfil",
+      "Compatibilidad": "Windows / Linux"
+    }
+  },
+  {
+    "id": "nic-tplink-tx201",
+    "cat": "Tarjeta de red",
+    "family": "Componentes",
+    "brand": "TP-Link",
+    "name": "TX201",
+    "price": 30,
+    "score": 84,
+    "image": "https://loremflickr.com/640/640/network-card?lock=77",
+    "specs": {
+      "Interfaz": "PCIe 2.1 x1",
+      "Puertos": "1 × RJ45",
+      "Velocidad": "2.5 GbE",
+      "Estándar": "2.5GBASE-T / 1000BASE-T / 100BASE-TX",
+      "Perfil": "Soportes estándar y bajo perfil",
+      "Compatibilidad": "Windows / Linux"
+    }
+  },
+  {
+    "id": "nic-tplink-tg-3468",
+    "cat": "Tarjeta de red",
+    "family": "Componentes",
+    "brand": "TP-Link",
+    "name": "TG-3468",
+    "price": 19,
+    "image": "https://loremflickr.com/640/640/network-card?lock=78",
+    "specs": {
+      "Interfaz": "PCIe x1",
+      "Puertos": "1 × RJ45",
+      "Velocidad": "1 GbE",
+      "Estándar": "IEEE 802.3 / 802.3u / 802.3ab",
+      "Perfil": "Soportes estándar y bajo perfil",
+      "Compatibilidad": "Windows / Linux"
+    }
+  },
+  {
+    "id": "nic-asus-xg-c100c",
+    "cat": "Tarjeta de red",
+    "family": "Componentes",
+    "brand": "ASUS",
+    "name": "XG-C100C",
+    "price": 90,
+    "score": 89,
+    "image": "https://loremflickr.com/640/640/network-card?lock=79",
+    "specs": {
+      "Interfaz": "PCIe 3.0 x4",
+      "Puertos": "1 × RJ45",
+      "Velocidad": "10 GbE",
+      "Estándar": "10GBASE-T / 5G / 2.5G / 1G / 100M",
+      "Perfil": "Soportes estándar y bajo perfil",
+      "Compatibilidad": "Windows / Linux"
+    }
+  }
 ]

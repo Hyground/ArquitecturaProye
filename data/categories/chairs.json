@@ -1,4 +1,38 @@
 [
-  {"id":"chair-steelcase-gesture","cat":"Silla ergonómica","family":"Mobiliario","brand":"Steelcase","name":"Gesture","price":1399,"score":92,"image":"assets/hardware-hero.png","specs":{"Soporte lumbar":"Ajustable","Reposabrazos":"360° ajustables","Material":"Tela y espuma","Capacidad":"181 kg","Ajustes":"Profundidad de asiento y tensión","Garantía":"12 años"}},
-  {"id":"chair-herman-miller-aeron","cat":"Silla ergonómica","family":"Mobiliario","brand":"Herman Miller","name":"Aeron","price":1495,"score":94,"image":"assets/hardware-hero.png","specs":{"Soporte lumbar":"PostureFit SL","Reposabrazos":"4D ajustables","Material":"Malla Pellicle","Capacidad":"159 kg","Ajustes":"Inclinación y tensión","Garantía":"12 años"}}
+  {
+    "id": "chair-steelcase-gesture",
+    "cat": "Silla ergonómica",
+    "family": "Mobiliario",
+    "brand": "Steelcase",
+    "name": "Gesture",
+    "price": 1399,
+    "score": 92,
+    "image": "https://loremflickr.com/640/640/office-chair?lock=7",
+    "specs": {
+      "Soporte lumbar": "Ajustable",
+      "Reposabrazos": "360° ajustables",
+      "Material": "Tela y espuma",
+      "Capacidad": "181 kg",
+      "Ajustes": "Profundidad de asiento y tensión",
+      "Garantía": "12 años"
+    }
+  },
+  {
+    "id": "chair-herman-miller-aeron",
+    "cat": "Silla ergonómica",
+    "family": "Mobiliario",
+    "brand": "Herman Miller",
+    "name": "Aeron",
+    "price": 1495,
+    "score": 94,
+    "image": "https://loremflickr.com/640/640/office-chair?lock=8",
+    "specs": {
+      "Soporte lumbar": "PostureFit SL",
+      "Reposabrazos": "4D ajustables",
+      "Material": "Malla Pellicle",
+      "Capacidad": "159 kg",
+      "Ajustes": "Inclinación y tensión",
+      "Garantía": "12 años"
+    }
+  }
 ]

@@ -7,7 +7,7 @@
     "name": "Kraken Elite 360",
     "price": 279,
     "score": 91,
-    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-cooling?lock=9",
     "specs": {
       "Tipo": "AIO líquido",
       "Radiador": "360 mm",
@@ -25,7 +25,7 @@
     "name": "Liquid Freezer III 360",
     "price": 129,
     "score": 95,
-    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-cooling?lock=10",
     "specs": {
       "Tipo": "AIO líquido",
       "Radiador": "360 mm",
@@ -43,7 +43,7 @@
     "name": "Peerless Assassin 120 SE",
     "price": 38,
     "score": 93,
-    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-cooling?lock=11",
     "specs": {
       "Tipo": "Aire doble torre",
       "Radiador": "6 heatpipes 6mm",
@@ -53,14 +53,22 @@
       "Garantía": "3 años"
     }
   },
-  {"id":"cool-nzxt-kraken-360","cat":"Refrigeración","family":"Componentes","brand":"NZXT","name":"Kraken 360 RGB","price":199,"score":92,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"21–33 dBA","Pantalla":"LCD 1.54 pulgadas","Ventiladores":"3 × 120 mm RGB","Garantía":"6 años"}},
-  {"id":"cool-arctic-liquid-freezer-iii","cat":"Refrigeración","family":"Componentes","brand":"ARCTIC","name":"Liquid Freezer III 360","price":119,"score":94,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"22.5 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm","Garantía":"6 años"}},
-  {"id":"cool-corsair-icue-link-360","cat":"Refrigeración","family":"Componentes","brand":"Corsair","name":"iCUE LINK H150i RGB","price":229,"score":91,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"10–37.8 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm RGB","Garantía":"5 años"}},
-  {"id":"cool-noctua-nhd15g2","cat":"Refrigeración","family":"Componentes","brand":"Noctua","name":"NH-D15 G2","price":149,"score":93,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire","Radiador":"Doble torre","Ruido":"24.8 dBA","Pantalla":"No","Ventiladores":"2 × 140 mm","Garantía":"6 años"}},
-  {"id":"cool-deepcool-ak620","cat":"Refrigeración","family":"Componentes","brand":"DeepCool","name":"AK620","price":69,"score":88,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire","Radiador":"Doble torre","Ruido":"28 dBA","Pantalla":"No","Ventiladores":"2 × 120 mm","Garantía":"3 años"}},
-  {"id":"cool-bequiet-darkrock-pro5","cat":"Refrigeración","family":"Componentes","brand":"be quiet!","name":"Dark Rock Pro 5","price":99,"score":90,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire","Radiador":"Doble torre","Ruido":"32.3 dBA","Pantalla":"No","Ventiladores":"1 × 135 mm + 1 × 120 mm","Garantía":"3 años"}},
-  {"id":"cool-thermalright-frozen-notte","cat":"Refrigeración","family":"Componentes","brand":"Thermalright","name":"Frozen Notte 360","price":64,"score":86,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"27 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm","Garantía":"3 años"}}
-,
-  {"id":"refrigeracion-id-cooling-catalog-01","cat":"Refrigeración","family":"Componentes","brand":"ID-COOLING","name":"FROZN A620","price":65,"score":86,"image":"assets/hardware-hero.png","specs":{"Tipo":"Aire, doble torre","Radiador":"2 torres con 6 heatpipes","Ruido":"Hasta 29.9 dBA","Pantalla":"No","Ventiladores":"2 × 120 mm","Garantía":"3 años"}},
-  {"id":"refrigeracion-ek-catalog-02","cat":"Refrigeración","family":"Componentes","brand":"EK","name":"Nucleus AIO CR360 Lux D-RGB","price":169,"score":90,"image":"assets/hardware-hero.png","specs":{"Tipo":"Líquida AIO","Radiador":"360 mm","Ruido":"Hasta 36 dBA","Pantalla":"No","Ventiladores":"3 × 120 mm D-RGB","Garantía":"5 años"}}
+  {
+    "id": "cool-nzxt-kraken-360",
+    "cat": "Refrigeración",
+    "family": "Componentes",
+    "brand": "NZXT",
+    "name": "Kraken 360 RGB",
+    "price": 199,
+    "score": 92,
+    "image": "https://loremflickr.com/640/640/computer-cooling?lock=12",
+    "specs": {
+      "Tipo": "Líquida AIO",
+      "Radiador": "360 mm",
+      "Ruido": "21–33 dBA",
+      "Pantalla": "LCD 1.54 pulgadas",
+      "Ventiladores": "3 × 120 mm RGB",
+      "Garantía": "6 años"
+    }
+  }
 ]

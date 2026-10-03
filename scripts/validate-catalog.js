@@ -38,7 +38,9 @@ for (const file of files) {
     if (!product.brand) error(`${label} no tiene marca.`);
     if (!product.cat) error(`${label} no tiene categoría.`);
     if (typeof product.price !== 'number' || product.price <= 0) error(`${label} tiene precio inválido.`);
-    if (!product.image) error(`${label} no tiene imagen.`);
+    if (typeof product.image !== 'string') error(`${label} debe declarar image como texto.`);
+    else if (!product.image.trim()) warning(`${label} no tiene enlace de imagen.`);
+    else if (!/^https?:\/\//i.test(product.image)) error(`${label} debe usar una URL http(s) en image.`);
     if (product.name && genericName.test(product.name)) error(`${label} conserva nombre genérico "Serie/Modelo NN".`);
     if (product.id) {
       if (ids.has(product.id)) error(`ID duplicado ${product.id} en ${ids.get(product.id)} y ${file}.`);
@@ -48,11 +50,6 @@ for (const file of files) {
       const brands = categories.get(product.cat) || new Set();
       brands.add(product.brand);
       categories.set(product.cat, brands);
-    }
-    if (product.image && !/^https?:\/\//i.test(product.image)) {
-      const localImage = path.join(root, product.image.replace(/\//g, path.sep));
-      if (!fs.existsSync(localImage)) error(`${label} referencia imagen local inexistente: ${product.image}`);
-      if (product.image === 'assets/hardware-hero.png') warning(`${label} usa imagen fallback.`);
     }
   }
 }

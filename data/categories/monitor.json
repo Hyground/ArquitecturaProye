@@ -7,7 +7,7 @@
     "name": "UltraGear 27GS95QE",
     "price": 699,
     "score": 94,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-monitor?lock=50",
     "specs": {
       "Panel": "WOLED antireflejos",
       "Resolución": "2560 × 1440 (QHD 2K)",
@@ -24,7 +24,7 @@
     "name": "Odyssey OLED G6 (G60SD)",
     "price": 749,
     "score": 95,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-monitor?lock=51",
     "specs": {
       "Panel": "QD-OLED",
       "Resolución": "2560 × 1440 (QHD 2K)",
@@ -41,7 +41,7 @@
     "name": "ROG Swift Pro PG248QP",
     "price": 899,
     "score": 96,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-monitor?lock=52",
     "specs": {
       "Panel": "Esports-TN ultra responsivo",
       "Resolución": "1920 × 1080 (FHD)",
@@ -58,7 +58,7 @@
     "name": "UltraSharp U2724DE",
     "price": 499,
     "score": 92,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-monitor?lock=53",
     "specs": {
       "Panel": "IPS Black (Contraste 2000:1)",
       "Resolución": "2560 × 1440 (QHD)",
@@ -66,29 +66,5 @@
       "Espacio de color": "100% sRGB · 98% DCI-P3",
       "Puertos": "Thunderbolt 4 (90W PD)"
     }
-  },
-  {
-    "id": "mon-aoc-q27g3xmn",
-    "cat": "Monitor",
-    "family": "Pantallas",
-    "brand": "AOC",
-    "name": "Gaming Q27G3XMN Mini-LED",
-    "price": 279,
-    "score": 90,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80",
-    "specs": {
-      "Panel": "Fast VA Mini-LED (336 zonas)",
-      "Resolución": "2560 × 1440 (QHD 2K)",
-      "Frecuencia de actualización": "180 Hz",
-      "Tiempo de respuesta": "1 ms GtG",
-      "HDR": "DisplayHDR 1000"
-    }
-  },
-  {"id":"monitor-asus-pg27aqdp","cat":"Monitor","family":"Pantallas","brand":"ASUS","name":"ROG Swift PG27AQDP","price":999,"score":97,"image":"assets/hardware-hero.png","specs":{"Panel":"OLED","Resolución":"2560 × 1440","Frecuencia de actualización":"480 Hz","Tiempo de respuesta":"0.03 ms","HDR":"DisplayHDR True Black 400"}},
-  {"id":"monitor-lg-32gs95ue","cat":"Monitor","family":"Pantallas","brand":"LG","name":"UltraGear 32GS95UE","price":1399,"score":96,"image":"assets/hardware-hero.png","specs":{"Panel":"OLED","Resolución":"3840 × 2160 / 1920 × 1080","Frecuencia de actualización":"240 Hz / 480 Hz","Tiempo de respuesta":"0.03 ms","HDR":"DisplayHDR True Black 400"}},
-  {"id":"monitor-alienware-aw2725df","cat":"Monitor","family":"Pantallas","brand":"Alienware","name":"AW2725DF","price":799,"score":94,"image":"assets/hardware-hero.png","specs":{"Panel":"QD-OLED","Resolución":"2560 × 1440","Frecuencia de actualización":"360 Hz","Tiempo de respuesta":"0.03 ms","HDR":"DisplayHDR True Black 400"}},
-  {"id":"monitor-samsung-g80sd","cat":"Monitor","family":"Pantallas","brand":"Samsung","name":"Odyssey OLED G8 G80SD","price":899,"score":93,"image":"assets/hardware-hero.png","specs":{"Panel":"OLED","Resolución":"3840 × 2160","Frecuencia de actualización":"240 Hz","Tiempo de respuesta":"0.03 ms","HDR":"HDR10+"}},
-  {"id":"monitor-gigabyte-m32u","cat":"Monitor","family":"Pantallas","brand":"Gigabyte","name":"M32U","price":549,"score":88,"image":"assets/hardware-hero.png","specs":{"Panel":"IPS","Resolución":"3840 × 2160","Frecuencia de actualización":"144 Hz","Tiempo de respuesta":"1 ms","HDR":"DisplayHDR 400"}},
-  {"id":"monitor-dell-u2723qe","cat":"Monitor","family":"Pantallas","brand":"Dell","name":"UltraSharp U2723QE","price":549,"score":87,"image":"assets/hardware-hero.png","specs":{"Panel":"IPS Black","Resolución":"3840 × 2160","Frecuencia de actualización":"60 Hz","Tiempo de respuesta":"5 ms","HDR":"DisplayHDR 400"}},
-  {"id":"monitor-aoc-24g4","cat":"Monitor","family":"Pantallas","brand":"AOC","name":"24G4X","price":169,"score":84,"image":"assets/hardware-hero.png","specs":{"Panel":"Fast IPS","Resolución":"1920 × 1080","Frecuencia de actualización":"180 Hz","Tiempo de respuesta":"1 ms","HDR":"HDR10"}}
+  }
 ]

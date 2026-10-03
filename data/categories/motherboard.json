@@ -7,7 +7,7 @@
     "name": "ROG Strix X870E-E Gaming",
     "price": 499,
     "score": 94,
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-motherboard?lock=62",
     "specs": {
       "Socket": "AM5",
       "Formato": "ATX",
@@ -25,7 +25,7 @@
     "name": "MAG X870 Tomahawk WiFi",
     "price": 299,
     "score": 91,
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-motherboard?lock=63",
     "specs": {
       "Socket": "AM5",
       "Formato": "ATX",
@@ -43,7 +43,7 @@
     "name": "B650 AORUS Elite AX",
     "price": 199,
     "score": 88,
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-motherboard?lock=64",
     "specs": {
       "Socket": "AM5",
       "Formato": "ATX",
@@ -53,14 +53,22 @@
       "PCIe": "PCIe 4.0 x16"
     }
   },
-  {"id":"mb-asus-rog-x870e-hero","cat":"Placa base","family":"Componentes","brand":"ASUS","name":"ROG Crosshair X870E Hero","price":699,"score":96,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"5 ranuras","PCIe":"PCIe 5.0 x16"}},
-  {"id":"mb-msi-x870e-carbon","cat":"Placa base","family":"Componentes","brand":"MSI","name":"MPG X870E Carbon WiFi","price":499,"score":94,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"4 ranuras","PCIe":"PCIe 5.0 x16"}},
-  {"id":"mb-gigabyte-x870-aorus-elite","cat":"Placa base","family":"Componentes","brand":"Gigabyte","name":"X870 AORUS Elite WIFI7","price":299,"score":90,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}},
-  {"id":"mb-asrock-b850-steel-legend","cat":"Placa base","family":"Componentes","brand":"ASRock","name":"B850 Steel Legend WiFi","price":229,"score":87,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}},
-  {"id":"mb-asus-b650e-f","cat":"Placa base","family":"Componentes","brand":"ASUS","name":"TUF Gaming B650E-PLUS WiFi","price":219,"score":86,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"ATX","Memoria":"DDR5 hasta 192 GB","Wi-Fi":"Wi-Fi 6","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}},
-  {"id":"mb-msi-z890-tomahawk","cat":"Placa base","family":"Componentes","brand":"MSI","name":"MAG Z890 Tomahawk WiFi","price":299,"score":89,"image":"assets/hardware-hero.png","specs":{"Socket":"LGA1851","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"4 ranuras","PCIe":"PCIe 5.0 x16"}},
-  {"id":"mb-gigabyte-b860-aorus","cat":"Placa base","family":"Componentes","brand":"Gigabyte","name":"B860 AORUS Elite WIFI7","price":219,"score":85,"image":"assets/hardware-hero.png","specs":{"Socket":"LGA1851","Formato":"ATX","Memoria":"DDR5 hasta 256 GB","Wi-Fi":"Wi-Fi 7","M.2":"3 ranuras","PCIe":"PCIe 5.0 x16"}}
-,
-  {"id":"placa-base-asrock-catalog-01","cat":"Placa base","family":"Componentes","brand":"ASRock","name":"B650M Pro RS WiFi","price":150,"score":87,"image":"assets/hardware-hero.png","specs":{"Socket":"AM5","Formato":"Micro ATX","Memoria":"4 × DDR5, hasta 192 GB","Wi-Fi":"Wi-Fi 6E + Bluetooth 5.2","M.2":"1 × PCIe 5.0 x4 + 2 × PCIe 4.0","PCIe":"1 × PCIe 4.0 x16","Red":"2.5 GbE"}},
-  {"id":"placa-base-asus-catalog-02","cat":"Placa base","family":"Componentes","brand":"ASUS","name":"PRIME B760-PLUS D4","price":145,"score":84,"image":"assets/hardware-hero.png","specs":{"Socket":"LGA1700","Formato":"ATX","Memoria":"4 × DDR4, hasta 128 GB","Wi-Fi":"M.2 Key E para módulo Wi-Fi","M.2":"3 × M.2 PCIe 4.0","PCIe":"1 × PCIe 5.0 x16","Red":"2.5 GbE"}}
+  {
+    "id": "mb-asus-rog-x870e-hero",
+    "cat": "Placa base",
+    "family": "Componentes",
+    "brand": "ASUS",
+    "name": "ROG Crosshair X870E Hero",
+    "price": 699,
+    "score": 96,
+    "image": "https://loremflickr.com/640/640/computer-motherboard?lock=65",
+    "specs": {
+      "Socket": "AM5",
+      "Formato": "ATX",
+      "Memoria": "DDR5 hasta 256 GB",
+      "Wi-Fi": "Wi-Fi 7",
+      "M.2": "5 ranuras",
+      "PCIe": "PCIe 5.0 x16"
+    }
+  }
 ]

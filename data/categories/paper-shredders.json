@@ -1,4 +1,38 @@
 [
-  {"id":"shredder-fellowes-99ci","cat":"Destructora de papel","family":"Oficina","brand":"Fellowes","name":"Powershred 99Ci","price":430,"score":88,"image":"assets/hardware-hero.png","specs":{"Corte":"Microcorte","Capacidad":"18 hojas","Tamaño de partícula":"4 × 38 mm","Ciclo de trabajo":"25 min","Capacidad de papelera":"34 L","Nivel de seguridad":"P-4"}},
-  {"id":"shredder-bonsaii-c149-c","cat":"Destructora de papel","family":"Oficina","brand":"Bonsaii","name":"C149-C","price":150,"score":80,"image":"assets/hardware-hero.png","specs":{"Corte":"Microcorte","Capacidad":"18 hojas","Tamaño de partícula":"5 × 12 mm","Ciclo de trabajo":"60 min","Capacidad de papelera":"23 L","Nivel de seguridad":"P-4"}}
+  {
+    "id": "shredder-fellowes-99ci",
+    "cat": "Destructora de papel",
+    "family": "Oficina",
+    "brand": "Fellowes",
+    "name": "Powershred 99Ci",
+    "price": 430,
+    "score": 88,
+    "image": "https://loremflickr.com/640/640/paper-shredder?lock=105",
+    "specs": {
+      "Corte": "Microcorte",
+      "Capacidad": "18 hojas",
+      "Tamaño de partícula": "4 × 38 mm",
+      "Ciclo de trabajo": "25 min",
+      "Capacidad de papelera": "34 L",
+      "Nivel de seguridad": "P-4"
+    }
+  },
+  {
+    "id": "shredder-bonsaii-c149-c",
+    "cat": "Destructora de papel",
+    "family": "Oficina",
+    "brand": "Bonsaii",
+    "name": "C149-C",
+    "price": 150,
+    "score": 80,
+    "image": "https://loremflickr.com/640/640/paper-shredder?lock=106",
+    "specs": {
+      "Corte": "Microcorte",
+      "Capacidad": "18 hojas",
+      "Tamaño de partícula": "5 × 12 mm",
+      "Ciclo de trabajo": "60 min",
+      "Capacidad de papelera": "23 L",
+      "Nivel de seguridad": "P-4"
+    }
+  }
 ]

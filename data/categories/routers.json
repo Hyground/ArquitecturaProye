@@ -1,4 +1,38 @@
 [
-  {"id":"router-tplink-archer-be550","cat":"Router","family":"Red","brand":"TP-Link","name":"Archer BE550","price":250,"score":88,"image":"assets/hardware-hero.png","specs":{"Estándar":"Wi-Fi 7 (802.11be)","Bandas":"Tri-band","Velocidad":"BE9300","Puertos":"4 × 2.5 GbE","Cobertura":"Hasta 230 m²","Seguridad":"HomeShield"}},
-  {"id":"router-asus-rt-be86u","cat":"Router","family":"Red","brand":"ASUS","name":"RT-BE86U","price":300,"score":90,"image":"assets/hardware-hero.png","specs":{"Estándar":"Wi-Fi 7 (802.11be)","Bandas":"Dual-band","Velocidad":"BE6800","Puertos":"1 × 10 GbE + 4 × 2.5 GbE","Cobertura":"AiMesh","Seguridad":"AiProtection Pro"}}
+  {
+    "id": "router-tplink-archer-be550",
+    "cat": "Router",
+    "family": "Red",
+    "brand": "TP-Link",
+    "name": "Archer BE550",
+    "price": 250,
+    "score": 88,
+    "image": "https://loremflickr.com/640/640/wifi-router?lock=152",
+    "specs": {
+      "Estándar": "Wi-Fi 7 (802.11be)",
+      "Bandas": "Tri-band",
+      "Velocidad": "BE9300",
+      "Puertos": "4 × 2.5 GbE",
+      "Cobertura": "Hasta 230 m²",
+      "Seguridad": "HomeShield"
+    }
+  },
+  {
+    "id": "router-asus-rt-be86u",
+    "cat": "Router",
+    "family": "Red",
+    "brand": "ASUS",
+    "name": "RT-BE86U",
+    "price": 300,
+    "score": 90,
+    "image": "https://loremflickr.com/640/640/wifi-router?lock=153",
+    "specs": {
+      "Estándar": "Wi-Fi 7 (802.11be)",
+      "Bandas": "Dual-band",
+      "Velocidad": "BE6800",
+      "Puertos": "1 × 10 GbE + 4 × 2.5 GbE",
+      "Cobertura": "AiMesh",
+      "Seguridad": "AiProtection Pro"
+    }
+  }
 ]

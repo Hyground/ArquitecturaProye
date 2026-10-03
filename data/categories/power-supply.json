@@ -7,7 +7,7 @@
     "name": "Vertex GX-850",
     "price": 189,
     "score": 94,
-    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-power-supply?lock=115",
     "specs": {
       "Potencia": "850 W",
       "Certificación": "80+ Gold",
@@ -24,7 +24,7 @@
     "name": "RM850x Shift",
     "price": 159,
     "score": 92,
-    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "image": "https://loremflickr.com/640/640/computer-power-supply?lock=116",
     "specs": {
       "Potencia": "850 W",
       "Certificación": "80+ Gold",
@@ -33,15 +33,38 @@
       "Garantía": "10 años"
     }
   },
-  {"id":"psu-corsair-rm1000x","cat":"Fuente","family":"Componentes","brand":"Corsair","name":"RM1000x SHIFT","price":199,"score":94,"image":"assets/hardware-hero.png","specs":{"Potencia":"1000 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
-  {"id":"psu-seasonic-vertex-gx1000","cat":"Fuente","family":"Componentes","brand":"Seasonic","name":"VERTEX GX-1000","price":209,"score":95,"image":"assets/hardware-hero.png","specs":{"Potencia":"1000 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
-  {"id":"psu-bequiet-straightpower-12","cat":"Fuente","family":"Componentes","brand":"be quiet!","name":"Straight Power 12 850W","price":179,"score":92,"image":"assets/hardware-hero.png","specs":{"Potencia":"850 W","Certificación":"80 PLUS Platinum","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
-  {"id":"psu-msi-a850gl","cat":"Fuente","family":"Componentes","brand":"MSI","name":"MAG A850GL PCIE5","price":119,"score":87,"image":"assets/hardware-hero.png","specs":{"Potencia":"850 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"7 años"}},
-  {"id":"psu-thermaltake-toughpower-1200","cat":"Fuente","family":"Componentes","brand":"Thermaltake","name":"Toughpower GF A3 1200W","price":189,"score":91,"image":"assets/hardware-hero.png","specs":{"Potencia":"1200 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0","Modular":"Totalmente modular","Garantía":"10 años"}},
-  {"id":"psu-coolermaster-mwe-750","cat":"Fuente","family":"Componentes","brand":"Cooler Master","name":"MWE Gold 750 V2","price":99,"score":84,"image":"assets/hardware-hero.png","specs":{"Potencia":"750 W","Certificación":"80 PLUS Gold","Estándar":"ATX 2.52","Modular":"Totalmente modular","Garantía":"10 años"}},
-  {"id":"psu-evga-700br","cat":"Fuente","family":"Componentes","brand":"EVGA","name":"700 BR","price":69,"score":76,"image":"assets/hardware-hero.png","specs":{"Potencia":"700 W","Certificación":"80 PLUS Bronze","Estándar":"ATX 2.4","Modular":"No","Garantía":"3 años"}}
-,
-  {"id":"fuente-fsp-catalog-01","cat":"Fuente","family":"Componentes","brand":"FSP","name":"Hydro G Pro ATX 3.0 850 W","price":135,"score":89,"image":"assets/hardware-hero.png","specs":{"Potencia":"850 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0 / PCIe 5.0","Modular":"Totalmente modular","Conector GPU":"12VHPWR","Garantía":"10 años"}},
-  {"id":"fuente-seasonic-catalog-02","cat":"Fuente","family":"Componentes","brand":"Seasonic","name":"FOCUS GX-750 ATX 3.0","price":130,"score":90,"image":"assets/hardware-hero.png","specs":{"Potencia":"750 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0 / PCIe 5.0","Modular":"Totalmente modular","Conector GPU":"12VHPWR","Garantía":"10 años"}},
-  {"id":"fuente-corsair-catalog-03","cat":"Fuente","family":"Componentes","brand":"Corsair","name":"RM750e (2023)","price":110,"score":87,"image":"assets/hardware-hero.png","specs":{"Potencia":"750 W","Certificación":"80 PLUS Gold","Estándar":"ATX 3.0 / PCIe 5.0","Modular":"Totalmente modular","Conector GPU":"12VHPWR","Garantía":"7 años"}}
+  {
+    "id": "psu-corsair-rm1000x",
+    "cat": "Fuente",
+    "family": "Componentes",
+    "brand": "Corsair",
+    "name": "RM1000x SHIFT",
+    "price": 199,
+    "score": 94,
+    "image": "https://loremflickr.com/640/640/computer-power-supply?lock=117",
+    "specs": {
+      "Potencia": "1000 W",
+      "Certificación": "80 PLUS Gold",
+      "Estándar": "ATX 3.0",
+      "Modular": "Totalmente modular",
+      "Garantía": "10 años"
+    }
+  },
+  {
+    "id": "psu-seasonic-vertex-gx1000",
+    "cat": "Fuente",
+    "family": "Componentes",
+    "brand": "Seasonic",
+    "name": "VERTEX GX-1000",
+    "price": 209,
+    "score": 95,
+    "image": "https://loremflickr.com/640/640/computer-power-supply?lock=118",
+    "specs": {
+      "Potencia": "1000 W",
+      "Certificación": "80 PLUS Gold",
+      "Estándar": "ATX 3.0",
+      "Modular": "Totalmente modular",
+      "Garantía": "10 años"
+    }
+  }
 ]

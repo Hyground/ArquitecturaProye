@@ -256,3 +256,25 @@ fichas públicas de los fabricantes de memoria, almacenamiento, energía,
 gabinetes, refrigeración y ventiladores para contrastar denominaciones y
 especificaciones. Los precios son aproximaciones en USD y no se presentan
 como cotizaciones en tiempo real.
+
+## Complemento — categorías internas faltantes
+
+Se completaron las tres categorías que no aparecían en la selección original:
+`Unidad óptica`, `Tarjeta de sonido` y `Tarjeta de red`. Cada una queda con
+cinco productos activos y conserva el dataset modular existente. La categoría
+`Red` se mantuvo separada: contiene adaptadores Wi-Fi y no se fusionó con las
+tarjetas Ethernet PCIe.
+
+- Productos activos antes/después: 201 / 198. Se retiraron 8 entradas de estas
+  categorías y se añadieron 5 modelos seleccionados; el respaldo previo sigue
+  fuera del manifiesto en `data/archive/phase-6-before-curation/`.
+- Imágenes descargadas y verificadas: 15. Todas respondieron HTTP 200 como
+  `image/*`, superaron 5 KB y se validaron localmente antes de referenciarlas.
+- Fuentes técnicas contrastadas: LG (GP65NB60 y WH16NS40), Verbatim (43888) y
+  StarTech (ST1000SPEX2); las fichas ya coincidentes se conservaron.
+- Referencias de precio orientativas nuevas: LG GP65NB60, Best Buy, USD 28.99;
+  Verbatim 43888, SIM Supply, USD 147.20; StarTech ST1000SPEX2, StarTech,
+  USD 31.76. Los precios no representan cotizaciones de Guatemala.
+- Pruebas ejecutadas: `validate-catalog.js`, `validate-images.js`,
+  `node --check app.js` y `test-recommendation.js`, sin errores. Persisten
+  advertencias de fallback en otras categorías, fuera de este complemento.

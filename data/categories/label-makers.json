@@ -1,4 +1,38 @@
 [
-  {"id":"label-brother-pt-d610bt","cat":"Etiquetadora","family":"Oficina","brand":"Brother","name":"P-touch PT-D610BT","price":110,"score":87,"image":"assets/hardware-hero.png","specs":{"Tecnología":"TZe térmica","Ancho máximo":"24 mm","Conectividad":"Bluetooth / USB","Teclado":"QWERTY","Alimentación":"Adaptador o pilas AA","Resolución":"180 dpi"}},
-  {"id":"label-dymo-labelmanager-280","cat":"Etiquetadora","family":"Oficina","brand":"DYMO","name":"LabelManager 280","price":70,"score":80,"image":"assets/hardware-hero.png","specs":{"Tecnología":"D1 térmica","Ancho máximo":"12 mm","Conectividad":"USB","Teclado":"QWERTY","Alimentación":"Batería recargable","Resolución":"180 dpi"}}
+  {
+    "id": "label-brother-pt-d610bt",
+    "cat": "Etiquetadora",
+    "family": "Oficina",
+    "brand": "Brother",
+    "name": "P-touch PT-D610BT",
+    "price": 110,
+    "score": 87,
+    "image": "https://loremflickr.com/640/640/label-printer?lock=48",
+    "specs": {
+      "Tecnología": "TZe térmica",
+      "Ancho máximo": "24 mm",
+      "Conectividad": "Bluetooth / USB",
+      "Teclado": "QWERTY",
+      "Alimentación": "Adaptador o pilas AA",
+      "Resolución": "180 dpi"
+    }
+  },
+  {
+    "id": "label-dymo-labelmanager-280",
+    "cat": "Etiquetadora",
+    "family": "Oficina",
+    "brand": "DYMO",
+    "name": "LabelManager 280",
+    "price": 70,
+    "score": 80,
+    "image": "https://loremflickr.com/640/640/label-printer?lock=49",
+    "specs": {
+      "Tecnología": "D1 térmica",
+      "Ancho máximo": "12 mm",
+      "Conectividad": "USB",
+      "Teclado": "QWERTY",
+      "Alimentación": "Batería recargable",
+      "Resolución": "180 dpi"
+    }
+  }
 ]
