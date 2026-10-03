@@ -7,7 +7,7 @@
     "name": "Kraken Elite 360",
     "price": 279,
     "score": 91,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0D9GWDTHZ.jpg",
     "specs": {
       "Tipo": "AIO líquido",
       "Radiador": "360 mm",
@@ -25,7 +25,7 @@
     "name": "Liquid Freezer III 360",
     "price": 129,
     "score": 95,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/1000x1000/B0DLWFCVSD.jpg",
     "specs": {
       "Tipo": "AIO líquido",
       "Radiador": "360 mm",
@@ -43,7 +43,7 @@
     "name": "Peerless Assassin 120 SE",
     "price": 38,
     "score": 93,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOt7wdOMLuQ5q3Ltb3STK92GH1juK3ttJma2E8RrYc80eJ6qYr82bAJk&s=10",
     "specs": {
       "Tipo": "Aire doble torre",
       "Radiador": "6 heatpipes 6mm",
@@ -61,7 +61,7 @@
     "name": "Kraken 360 RGB",
     "price": 199,
     "score": 92,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0D9GV78D8.jpg",
     "specs": {
       "Tipo": "Líquida AIO",
       "Radiador": "360 mm",

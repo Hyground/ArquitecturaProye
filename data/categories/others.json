@@ -7,7 +7,7 @@
     "name": "INZONE H9",
     "price": 299,
     "score": 89,
-    "image": "",
+    "image": "https://www.sony.com.gt/image/a900b53164683e1fc98b8eefb9b6c406?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
     "specs": {
       "Tipo": "Over-ear cerrado",
       "Conexión": "2.4 GHz + Bluetooth",
@@ -23,7 +23,7 @@
     "name": "QuietComfort Ultra",
     "price": 429,
     "score": 91,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0CCZ1L489.jpg",
     "specs": {
       "Tipo": "Over-ear inalámbrico",
       "Conexión": "Bluetooth 5.3 / 3.5 mm",
@@ -39,7 +39,7 @@
     "name": "R1280DBs",
     "price": 159,
     "score": 84,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/71zmXSlm0hL._AC_SX569_.jpg",
     "specs": {
       "Potencia": "42 W RMS",
       "Canales": "2.0 estéreo",
@@ -55,7 +55,7 @@
     "name": "Z407",
     "price": 119,
     "score": 79,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/1000x1000/YzVlNzdjZj_0_623.png",
     "specs": {
       "Potencia": "40 W RMS",
       "Canales": "2.1 con subwoofer",
@@ -71,7 +71,7 @@
     "name": "Yeti X",
     "price": 169,
     "score": 85,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/1000x1000/NDM4ZGYyNG_157.png",
     "specs": {
       "Patrones": "4 patrones polares",
       "Resolución": "24-bit / 48 kHz",
@@ -87,7 +87,7 @@
     "name": "QuadCast 2",
     "price": 149,
     "score": 84,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0DG9X4WHW.jpg",
     "specs": {
       "Patrones": "4 patrones polares",
       "Resolución": "24-bit / 96 kHz",
@@ -103,7 +103,7 @@
     "name": "Back-UPS Pro BX1500M",
     "price": 219,
     "score": 85,
-    "image": "",
+    "image": "https://conectividad.com.gt/wp-content/uploads/2022/07/APC336-1.jpg",
     "specs": {
       "Capacidad": "1500 VA",
       "Potencia": "900 W",
@@ -120,7 +120,7 @@
     "name": "CP1500PFCLCD",
     "price": 219,
     "score": 87,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqKRbYhCjH_nW7G2x3fpXBznv94jYPMcksVBY5UhMwg&s=10",
     "specs": {
       "Capacidad": "1500 VA",
       "Potencia": "1000 W",
@@ -137,7 +137,7 @@
     "name": "4K X",
     "price": 229,
     "score": 89,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu4NGtseEmV3Y4fvZ8qgfiWY4syihnRkkrRZJ3jTococe87SEcUMT1yI&s=10",
     "specs": {
       "Captura máxima": "4K a 144 Hz",
       "Interfaz": "USB 3.2 Gen 2 Type-C",
@@ -153,7 +153,7 @@
     "name": "Live Gamer Ultra 2.1",
     "price": 249,
     "score": 88,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/61VPT5iY-HL._AC_UF1000,1000_QL80_.jpg",
     "specs": {
       "Captura máxima": "4K a 60 Hz",
       "Interfaz": "USB 3.2 Gen 2 Type-C",
@@ -169,7 +169,7 @@
     "name": "PCE-BE92BT",
     "price": 99,
     "score": 87,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ67KHQscDZAq_EBJHb89EKQ8PWclgOuW3pzUZAkSkWg&s=10",
     "specs": {
       "Wi-Fi": "Wi-Fi 7",
       "Velocidad": "Hasta 5.8 Gbps",
@@ -186,7 +186,7 @@
     "name": "Archer TBE550E",
     "price": 89,
     "score": 86,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBkEIT7jS-pZrkJd2CwrnGZ6Sna-7L83uUz6264NQBXyuXnT7F3_e-PWM&s=10",
     "specs": {
       "Wi-Fi": "Wi-Fi 7",
       "Velocidad": "Hasta 5.8 Gbps",
@@ -203,7 +203,7 @@
     "name": "OfficeJet Pro 9125e",
     "price": 209,
     "score": 82,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0CFM82NS2.jpg",
     "specs": {
       "Tecnología": "Inyección térmica",
       "Velocidad en negro": "22 ppm",
@@ -219,7 +219,7 @@
     "name": "PlayStation 5 Pro",
     "price": 699,
     "score": 92,
-    "image": "",
+    "image": "https://backoffice.max.com.gt/media/catalog/product/P/S/PS5PRODIGITAL_1.jpg?optimize=high&fit=bounds&height=&width=",
     "specs": {
       "Resolución": "Hasta 8K",
       "Almacenamiento": "2 TB SSD",
@@ -235,7 +235,7 @@
     "name": "Xbox Series X 2 TB",
     "price": 599,
     "score": 89,
-    "image": "",
+    "image": "https://i5.walmartimages.com/seo/Xbox-Series-X-2TB-Galaxy-Black-Special-Edition_0447ddab-7ecc-4a50-9c48-8692c018c2f3.81ef323231b99af8d8290f61b850b0cd.jpeg",
     "specs": {
       "Resolución": "Hasta 8K",
       "Almacenamiento": "2 TB SSD",
@@ -251,7 +251,7 @@
     "name": "DualSense Edge",
     "price": 199,
     "score": 87,
-    "image": "",
+    "image": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22",
     "specs": {
       "Compatibilidad": "PS5 / PC",
       "Conexión": "Bluetooth / USB-C",
@@ -267,7 +267,7 @@
     "name": "Xbox Elite Wireless Controller Series 2",
     "price": 179,
     "score": 86,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B07SFKTLZM.jpg",
     "specs": {
       "Compatibilidad": "Xbox / PC",
       "Conexión": "Xbox Wireless / Bluetooth",
@@ -283,7 +283,7 @@
     "name": "TS4 Thunderbolt 4",
     "price": 399,
     "score": 91,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B09GK8LBWS.jpg",
     "specs": {
       "Puertos": "18",
       "Host": "Thunderbolt 4, 40 Gbps",
@@ -299,7 +299,7 @@
     "name": "Prime TB5 Dock",
     "price": 399,
     "score": 90,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfEb6e4_TcJlE4969MmQkKuSRSLGjmFK3DQa-zFUUlxYMYQKodLoPs8g&s=10",
     "specs": {
       "Puertos": "14",
       "Host": "Thunderbolt 5, 120 Gbps",

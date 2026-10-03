@@ -7,7 +7,7 @@
     "name": "North XL",
     "price": 179,
     "score": 94,
-    "image": "",
+    "image": "https://assets.fractal-design.com/images/uxzbxy2o/production/1b97e24bef6749691603d959fd9951c7ca6f0d9f-2560x3200.png?rect=0,320,2560,2560&w=2560&h=2560&q=75&fit=crop&auto=format",
     "specs": {
       "Formato": "Full tower",
       "Placa máxima": "E-ATX",
@@ -25,7 +25,7 @@
     "name": "O11 Dynamic EVO",
     "price": 169,
     "score": 93,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0CRKVN35N.jpg",
     "specs": {
       "Formato": "Mid tower doble cámara",
       "Placa máxima": "E-ATX",
@@ -42,7 +42,7 @@
     "name": "4000D Airflow",
     "price": 104,
     "score": 91,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/YjU0OWE2MD.jpg",
     "specs": {
       "Formato": "Mid tower",
       "Placa máxima": "ATX",
@@ -59,7 +59,7 @@
     "name": "H6 Flow RGB",
     "price": 134,
     "score": 92,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/71s+qbMWMLL._AC_SX569_.jpg",
     "specs": {
       "Formato": "Mid tower doble cámara",
       "Placa máxima": "ATX",

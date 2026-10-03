@@ -7,7 +7,7 @@
     "name": "Archer BE550",
     "price": 250,
     "score": 88,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLG-asik3rhQNPq0dl2S_R4wRtUho5_gj-eIw5QB8edfoa-roENj6KvvI9&s=10",
     "specs": {
       "Estándar": "Wi-Fi 7 (802.11be)",
       "Bandas": "Tri-band",
@@ -25,7 +25,7 @@
     "name": "RT-BE86U",
     "price": 300,
     "score": 90,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/Y2ExYTM4Mj.jpg",
     "specs": {
       "Estándar": "Wi-Fi 7 (802.11be)",
       "Bandas": "Dual-band",

@@ -7,7 +7,7 @@
     "name": "GeForce RTX 5070 Ti",
     "price": 749,
     "score": 94,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0DTRC7782.jpg",
     "specs": {
       "VRAM": "16 GB GDDR7",
       "Frecuencia boost": "2.45 GHz",
@@ -25,7 +25,7 @@
     "name": "Radeon RX 9070 XT",
     "price": 599,
     "score": 92,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi52nS1-KyHg0GWMuL7R2u2cfca287qzBjx0dd8PsTuQ&s=10",
     "specs": {
       "VRAM": "16 GB GDDR6",
       "Frecuencia boost": "2.97 GHz",
@@ -43,7 +43,7 @@
     "name": "GeForce RTX 4070 Super",
     "price": 599,
     "score": 91,
-    "image": "",
+    "image": "https://storage-asset.msi.com/global/picture/product/product_1704703822984da48f4e57873dd8ba9f899f1df6ac.webp",
     "specs": {
       "VRAM": "12 GB GDDR6X",
       "Frecuencia boost": "2.48 GHz",
@@ -61,7 +61,7 @@
     "name": "Radeon RX 7800 XT",
     "price": 489,
     "score": 89,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVf-bQxwrPqKcfd-jduEyTProHD0A-XbI2iiuvSs5WlcJBWlcDuixCEqlu&s=10",
     "specs": {
       "VRAM": "16 GB GDDR6",
       "Frecuencia boost": "2.43 GHz",

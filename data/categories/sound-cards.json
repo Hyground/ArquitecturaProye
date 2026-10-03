@@ -7,7 +7,7 @@
     "name": "Sound BlasterX AE-5 Plus",
     "price": 150,
     "score": 91,
-    "image": "",
+    "image": "https://i5.walmartimages.com/seo/Creative-Sound-BlasterX-AE-5-Plus-SABRE32-class-Hi-res-32-bit-384-kHz-PCIe-Gaming-Sound-Card-DAC-Dolby-Digital-DTS-Xamp-Discrete-Headphone-Bi-amp-122_9b9c11cf-ec73-45bf-8721-c30027bd37e1.aca83739f018e1da5912a9121990b518.jpeg",
     "specs": {
       "Interfaz": "PCIe x1",
       "Canales": "5.1 / 7.1 virtual",
@@ -25,7 +25,7 @@
     "name": "Sound Blaster AE-7",
     "price": 220,
     "score": 94,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC8NjeCXrXtImODDKVxllmCIpmM--9XYLuMlUal7gLPkAviFXnlBEufF4&s=10",
     "specs": {
       "Interfaz": "PCIe x1",
       "Canales": "5.1 / 7.1 virtual",
@@ -43,7 +43,7 @@
     "name": "Sound Blaster Z SE",
     "price": 100,
     "score": 88,
-    "image": "",
+    "image": "https://i5.walmartimages.com/seo/Creative-Sound-Blaster-Z-SE-Internal-PCI-e-Gaming-Sound-Card-DAC-24-bit-192-kHz-116-dB-SNR-ASIO-600O-Headphones-Amp-Mic-EQ-Discrete-5-1-Virtual-7-1-S_04e354aa-287d-49e6-bad3-7757c89fc94d.d2a821c1fa9c4aca3413ef78a1c77a69.jpeg",
     "specs": {
       "Interfaz": "PCIe x1",
       "Canales": "5.1 / 7.1 virtual",
@@ -61,7 +61,7 @@
     "name": "Xonar SE",
     "price": 40,
     "score": 80,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/81KvITrf+oL._AC_SL1500_._SX600_.jpg",
     "specs": {
       "Interfaz": "PCIe",
       "Canales": "5.1",

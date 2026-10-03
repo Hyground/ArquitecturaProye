@@ -7,7 +7,7 @@
     "name": "TX401",
     "price": 100,
     "score": 91,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdYDl1hDOvPuCWzgNDjGQ6BS9dMM6vra3eBI-uDNfSvIWD-fd2gBts7A&s=10",
     "specs": {
       "Interfaz": "PCIe 3.0 x4",
       "Puertos": "1 × RJ45",
@@ -25,7 +25,7 @@
     "name": "TX201",
     "price": 30,
     "score": 84,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuGgU70bSB9ahUMnNwtzDOEieY-K97Kx0fQ7fw5_H_9IBYf_xlhMPHhJWv&s=10",
     "specs": {
       "Interfaz": "PCIe 2.1 x1",
       "Puertos": "1 × RJ45",
@@ -42,7 +42,7 @@
     "brand": "TP-Link",
     "name": "TG-3468",
     "price": 19,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9tXxici30cCVu5csop0VWV6_p70rYyeDjP_3iZ-zjQ&s=10",
     "specs": {
       "Interfaz": "PCIe x1",
       "Puertos": "1 × RJ45",
@@ -60,7 +60,7 @@
     "name": "XG-C100C",
     "price": 90,
     "score": 89,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxHHV8baks3_n5xPDEcioLSoAbdMKny7U_P6NHn2d4Q&s=10",
     "specs": {
       "Interfaz": "PCIe 3.0 x4",
       "Puertos": "1 × RJ45",

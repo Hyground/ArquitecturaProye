@@ -7,7 +7,7 @@
     "name": "DataTraveler Max 256 GB",
     "price": 42,
     "score": 95,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/61TI9oHMmpL.jpg",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "1000 MB/s",
@@ -24,7 +24,7 @@
     "name": "BAR Plus 256 GB",
     "price": 29,
     "score": 86,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B07BPKKTGL.jpg",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "400 MB/s",
@@ -41,7 +41,7 @@
     "name": "Extreme PRO 256 GB",
     "price": 49,
     "score": 91,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17uFZiVeR0p1Io1hpsztRNjTuQe7DQyyaU2sG_RywDg&s=10",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "420 MB/s",
@@ -58,7 +58,7 @@
     "name": "Flash Voyager GTX 256 GB",
     "price": 59,
     "score": 88,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/51FplK3eTwL._AC_UF894,1000_QL80_.jpg",
     "specs": {
       "Capacidad": "256 GB",
       "Velocidad de lectura": "440 MB/s",

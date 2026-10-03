@@ -7,7 +7,7 @@
     "name": "DiskStation DS925+",
     "price": 600,
     "score": 91,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/1000x1000/B0C8S7SF4B.jpg",
     "specs": {
       "Bahías": "4 × SATA + 2 × M.2 NVMe",
       "CPU": "AMD Ryzen V1500B, 4 núcleos",
@@ -25,7 +25,7 @@
     "name": "TS-464",
     "price": 550,
     "score": 89,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/B0BQ5TWCL8.jpg",
     "specs": {
       "Bahías": "4 × SATA + 2 × M.2 NVMe",
       "CPU": "Intel Celeron N5105, 4 núcleos",

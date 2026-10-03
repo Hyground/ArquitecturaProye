@@ -7,7 +7,7 @@
     "name": "EcoTank ET-4850",
     "price": 399,
     "score": 93,
-    "image": "",
+    "image": "https://img.pacifiko.com/PROD/resize/1/500x500/N2I4ZWY1MD.jpg",
     "specs": {
       "Tecnología": "Tanque continuo de tinta (EcoTank)",
       "Velocidad en negro": "15.5 ppm",
@@ -24,7 +24,7 @@
     "name": "LaserJet Pro M404dn",
     "price": 279,
     "score": 91,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvbryfO67okNmsXiRBgCz-EMFkIqAM5iXRlDcTu5GqGcrPturARneS3w_h&s=10",
     "specs": {
       "Tecnología": "Láser monocromo",
       "Velocidad en negro": "40 ppm",
@@ -41,7 +41,7 @@
     "name": "HL-L2370DW Compact",
     "price": 149,
     "score": 90,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiP6pMstv50I88dwvGbipGAVL2zetYv8o1oFXDa2zRTauavdv7zIbkaSc&s=10",
     "specs": {
       "Tecnología": "Láser monocromo",
       "Velocidad en negro": "36 ppm",

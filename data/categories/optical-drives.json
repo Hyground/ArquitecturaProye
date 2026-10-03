@@ -7,7 +7,7 @@
     "name": "BW-16D1HT",
     "price": 90,
     "score": 87,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGZY8X5wqZxpUrBKBOvwdmZ_osGkNbqLDo-HqAPVgjw&s=10",
     "specs": {
       "Tipo": "Grabadora interna Blu-ray",
       "Interfaz": "SATA",
@@ -25,7 +25,7 @@
     "name": "WH16NS40",
     "price": 120,
     "score": 88,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/41y91-OwciL._AC_UF894,1000_QL80_.jpg",
     "specs": {
       "Tipo": "Grabadora interna Blu-ray",
       "Interfaz": "SATA",
@@ -42,7 +42,7 @@
     "brand": "LG",
     "name": "GP65NB60",
     "price": 29,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsG4NPY45XMN1DlseBhJI3A1oPC1oLoLC7ELFCDpX5Gw&s",
     "specs": {
       "Tipo": "Grabadora externa DVD",
       "Interfaz": "USB 2.0",
@@ -59,7 +59,7 @@
     "brand": "Pioneer",
     "name": "BDR-XS07B-UHD",
     "price": 150,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/7143GfTNJXL._AC_UF894,1000_QL80_.jpg",
     "specs": {
       "Tipo": "Grabadora externa Blu-ray",
       "Interfaz": "USB 3.1 Gen 1 Type-C",
