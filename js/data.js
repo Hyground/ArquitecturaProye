@@ -3,7 +3,7 @@ import {
 } from './state.js';
 import { toast } from './ui.js';
 import {
-  updateDatasetState, renderProducts, renderCats
+  updateDatasetState
 } from './catalog.js';
 import {
   populateCompareCategories, setCompareCategory
@@ -45,8 +45,6 @@ export async function remoteSearch(query) {
     });
 
     updateDatasetState();
-    renderProducts();
-    renderCats();
     populateCompareCategories();
     toast(`${rows.length} componentes adicionales encontrados`);
   } catch (err) {
@@ -169,6 +167,4 @@ export async function loadDataset() {
   const initialCat = availableCats.includes('CPU') ? 'CPU' : (availableCats[0] || 'CPU');
   setCompareCategory(initialCat);
 
-  renderCats();
-  renderProducts();
 }

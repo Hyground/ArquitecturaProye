@@ -6,6 +6,21 @@
 
 /* La barra lateral reduce el espacio disponible para las tarjetas. */
 .compare-selection { min-width: 0; }
+.topbar { z-index: 50; }
+.compare-section, #guia, #como-funciona { scroll-margin-top: 90px; }
+.compare-cat-btn span { white-space: normal; overflow-wrap: anywhere; }
+.compare-cat-btn small { flex-shrink: 0; }
+.pick-card.selected { height: auto; min-height: 360px; max-height: none; }
+.pick-card.selected .picked-copy { height: auto; overflow: visible; padding-top: 48px; }
+.pick-card.selected .picked-image { object-fit: contain; padding: 12px; }
+.pick-open-modal { flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.pick-open-modal span, .pick-open-modal button { white-space: normal; text-align: left; }
+.picked-highlights { flex-wrap: wrap; }
+.side-label { right: 16px; line-height: 1.4; }
+.hero-suggestion span { min-width: 0; overflow-wrap: anywhere; }
+.picker-item { min-width: 0; }
+.picker-item > span { min-width: 0; overflow-wrap: anywhere; }
+.modal-head h2 { overflow-wrap: anywhere; }
 .product-specs { padding: 0 16px; }
 .compare-category-select select { min-width: 0; max-width: 100%; }
 @media (min-width: 621px) and (max-width: 1200px) {
@@ -13,6 +28,14 @@
   .pick-card.selected { grid-template-columns: 38% minmax(0, 1fr); }
 }
 @media (max-width: 620px) {
+  .section-heading { flex-wrap: wrap; }
+  .pick-card.selected .picked-copy { padding: 48px 14px 18px; }
+  .hero-meta { line-height: 1.6; gap: 8px; }
+  .hero-search input { font-size: 16px; }
+  .hero-search { padding-inline: 12px; }
+  .modal-head { gap: 12px; }
+  .modal-head h2 { font-size: 20px; }
+  .close { flex-shrink: 0; }
   .compare-grid { grid-template-columns: minmax(0, 1fr); }
   .verdict { flex-direction: column; align-items: stretch; gap: 16px; }
   .verdict .score { text-align: left; }

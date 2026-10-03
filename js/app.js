@@ -1,9 +1,8 @@
 import {
-  $, products, selected, setActiveCat, money
+  $, products, selected, money
 } from './state.js';
 import { toast } from './ui.js';
 import { renderAdvisor } from './advisor.js';
-import { renderCats, renderProducts } from './catalog.js';
 import {
   setCompareCategory, renderSelection, pickerItems, openPicker, pick
 } from './comparison.js';
@@ -63,34 +62,9 @@ document.addEventListener('click', e => {
       renderHeroSuggestions('');
       const compEl = document.querySelector('.compare-section');
       if (compEl) compEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      toast(`Selecciona el segundo modelo para comparar con ${product.name}`);
+      toast(`Comparación preparada para ${product.name}`);
     }
     return;
-  }
-
-  // Clic en chip de categoria del catálogo
-  const cat = e.target.closest('[data-cat]');
-  if (cat) {
-    const next = cat.dataset.cat;
-    setActiveCat(next);
-    renderCats();
-    renderProducts();
-    if (next !== 'Todos') {
-      setCompareCategory(next);
-      toast(`Comparador enfocado en: ${next}`);
-    }
-  }
-
-  // Clic en botón "COMPARAR" de una tarjeta del catálogo
-  const add = e.target.closest('[data-add]');
-  if (add) {
-    const item = products.find(x => x.id === add.dataset.add);
-    if (item) {
-      setCompareCategory(item.cat, item, 'a');
-      const compEl = $('#comparador') || document.querySelector('.compare-section');
-      if (compEl) compEl.scrollIntoView({ behavior: 'smooth' });
-      toast(`Enfrentamiento preparado para ${item.cat}: ${item.name}`);
-    }
   }
 
   // Clic en chip de categoria del comparador
@@ -142,20 +116,6 @@ document.addEventListener('change', e => {
 const pickerSearchEl = $('#pickerSearch');
 if (pickerSearchEl) pickerSearchEl.oninput = e => pickerItems(e.target.value);
 
-const catalogSearchEl = $('#catalogSearch');
-if (catalogSearchEl) {
-  catalogSearchEl.oninput = renderProducts;
-  catalogSearchEl.addEventListener('keydown', e => {
-    if (e.key === 'Enter') remoteSearch(e.target.value);
-  });
-}
-
-const categorySearchEl = $('#categorySearch');
-if (categorySearchEl) categorySearchEl.oninput = renderCats;
-
-const sortSelectEl = $('#sortSelect');
-if (sortSelectEl) sortSelectEl.onchange = renderProducts;
-
 const heroSearchEl = $('#heroSearch');
 if (heroSearchEl) {
   heroSearchEl.addEventListener('input', e => renderHeroSuggestions(e.target.value));
@@ -165,18 +125,17 @@ if (heroSearchEl) {
       renderHeroSuggestions('');
     }
   });
-  heroSearchEl.addEventListener('keydown', e => {
+  heroSearchEl.addEventListener('keydown', async e => {
     if (e.key === 'Enter') {
-      const q = e.target.value;
+      const q = e.target.value.trim();
+      if (!q) return;
+      renderHeroSuggestions('');
       if (startComparisonFromQuery(q)) return;
-
-      setActiveCat('Todos');
-      if (catalogSearchEl) catalogSearchEl.value = q;
-      const catSec = $('#catalogo');
-      if (catSec) catSec.scrollIntoView({ behavior: 'smooth' });
-      renderCats();
-      renderProducts();
-      remoteSearch(q);
+      await remoteSearch(q);
+      if (e.target.value.trim() !== q) return;
+      if (!startComparisonFromQuery(q)) {
+        toast('No encontramos modelos. Prueba con otra marca o elige una categoría.');
+      }
     }
   });
 }
