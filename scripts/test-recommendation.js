@@ -1,0 +1,11 @@
+const assert = require('assert');
+const { evaluate } = require('../recommendation.js');
+const product = (name, price, score, specs) => ({ name, price, score, specs });
+const premium = product('Premium', 400, 95, { 'Núcleos / hilos': '16 / 32', 'Frecuencia boost': '5.5 GHz', 'Caché': '64 MB' });
+const value = product('Valor', 220, 88, { 'Núcleos / hilos': '12 / 24', 'Frecuencia boost': '5.3 GHz', 'Caché': '48 MB' });
+const result = evaluate(premium, value, 'CPU');
+assert.strictEqual(result.bestPerformance, premium);
+assert.strictEqual(result.bestValue, value);
+const close = evaluate(product('A', 100, 80, { Capacidad: '32 GB' }), product('B', 102, 80, { Capacidad: '32 GB' }), 'RAM');
+assert.strictEqual(close.general, null);
+console.log('Recommendation tests passed.');

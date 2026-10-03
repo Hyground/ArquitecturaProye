@@ -335,21 +335,10 @@ function renderComparison() {
   }
   box.classList.remove('hidden');
 
-  const winner = a.score === b.score ? null : (a.score > b.score ? a : b);
+  const recommendation = VersusRecommendation.evaluate(a, b, compareCat);
   const keys = [...new Set([...Object.keys(a.specs || {}), ...Object.keys(b.specs || {})])];
 
   box.innerHTML = `
-    <div class="verdict">
-      <div>
-        <small>VEREDICTO · ${compareCat.toUpperCase()}</small>
-        <h3>${winner ? `${winner.name} obtiene la ventaja general` : 'Empate técnico'}</h3>
-        <p>La puntuación resume las especificaciones cargadas; revisa las filas para decidir según tu uso.</p>
-      </div>
-      <div class="score">
-        <span>PUNTUACIÓN</span>
-        <b>${a.score} — ${b.score}</b>
-      </div>
-    </div>
     <div class="comparison-guide"><span>Precio</span><span>El valor destacado indica la opción más conveniente para esa métrica.</span></div>
     <div class="spec-row">
       <span class="${a.price < b.price ? 'winner' : ''}">${money(a.price)}</span>
@@ -368,6 +357,16 @@ function renderComparison() {
         </div>
       `;
     }).join('')}
+    <div class="verdict">
+      <div>
+        <small>RECOMENDACIÓN · ${compareCat.toUpperCase()}</small>
+        <h3>${recommendation.general ? recommendation.general.name : 'Elección muy equilibrada'}</h3>
+        <p>${recommendation.explanation}</p>
+        <p>${recommendation.bestPerformance ? `<b>Mejor rendimiento:</b> ${recommendation.bestPerformance.name}. ` : ''}${recommendation.bestValue && recommendation.bestValue !== recommendation.bestPerformance ? `<b>Mejor valor:</b> ${recommendation.bestValue.name}.` : ''}</p>
+        <details class="recommendation-details"><summary>¿Por qué?</summary><p>Métricas: ${recommendation.metrics.join(', ') || 'score y precio disponibles'}.</p>${recommendation.general ? `<p>Rendimiento: ${recommendation.winnerData.performance}/100 · Valor: ${recommendation.winnerData.value}/100 · Características: ${recommendation.winnerData.features}/100 · Puntuación final: ${recommendation.winnerData.final}/100</p>` : ''}</details>
+      </div>
+      <div class="score"><span>PUNTUACIÓN FINAL</span><b>${recommendation.scores.a.final} — ${recommendation.scores.b.final}</b></div>
+    </div>
   `;
 }
 

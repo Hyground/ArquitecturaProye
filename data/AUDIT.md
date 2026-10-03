@@ -1,5 +1,19 @@
 # Auditoría del catálogo VERSUS
 
+## Fase 5 — Veredicto inteligente
+
+El veredicto usa métricas configurables por categoría, precio y disponibilidad
+de características. Los pesos centralizados son rendimiento 45%, valor 35% y
+características 20%; el valor combina 45% rendimiento normalizado y 55% precio
+normalizado. CPU, GPU, RAM, almacenamiento, monitor, router, NAS, placa base,
+tarjeta de red y memoria USB tienen métricas específicas. Las demás categorías
+usan campos numéricos comparables o el score existente como fallback seguro.
+
+Las diferencias de menos del 5% en precio se tratan como precio similar para
+evitar resultados artificiales. Una diferencia final menor de 5 puntos produce
+una conclusión equilibrada. El bloque se muestra al final de la tabla e incluye
+un detalle nativo “¿Por qué?” con sus puntuaciones calculadas.
+
 ## Fase 4 — Imágenes
 
 - Productos totales: **201**.
