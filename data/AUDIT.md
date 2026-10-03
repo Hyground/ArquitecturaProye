@@ -1,5 +1,31 @@
 # Auditoría del catálogo VERSUS
 
+## Fase 4 — Imágenes
+
+- Productos totales: **201**.
+- Fallback inicial: **160**; imágenes específicas iniciales: **41**.
+- Imágenes específicas nuevas descargadas y verificadas: **2**.
+- Imágenes específicas finales: **43** (**21.4%** del catálogo).
+- Fallback final: **158**.
+
+Se validaron por HTTP antes de descargarse y localmente después de guardarse:
+
+- `assets/products/cpu/amd-ryzen-5-9600x.webp`: imagen exacta del AMD Ryzen
+  5 9600X; HTTP 200, `image/webp`, 48,280 bytes.
+- `assets/products/keyboard/razer-huntsman-v3-pro-tkl.png`: imagen exacta del
+  Razer Huntsman V3 Pro TKL; HTTP 200, `image/png`, 1,551,222 bytes.
+
+No se aceptaron imágenes ambiguas, logos, miniaturas de buscadores ni URLs que
+no hubieran respondido como contenido de imagen. Por ello, las 158 fichas que
+siguen con fallback están pendientes de una fuente exacta o representativa
+confiable; `scripts/validate-images.js` las lista de forma individual. No se
+detectaron archivos faltantes, menores de 5 KB, inválidos ni hashes duplicados.
+
+Fuentes principales de esta iteración: tienda oficial AMD para la imagen del
+Ryzen y Walmart como distribuidor reconocido para la imagen exacta del teclado
+Razer. Esta fase dejó pendiente la cobertura masiva para no sacrificar la
+exactitud de las imágenes.
+
 ## Fase 3 — Saneamiento del catálogo
 
 - Productos genéricos al inicio: **215**.
