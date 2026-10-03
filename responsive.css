@@ -4,8 +4,25 @@
   z-index: 30;
 }
 
+/* La barra lateral reduce el espacio disponible para las tarjetas. */
+.compare-selection { min-width: 0; }
+.product-specs { padding: 0 16px; }
+.compare-category-select select { min-width: 0; max-width: 100%; }
+@media (min-width: 621px) and (max-width: 1200px) {
+  .compare-grid { grid-template-columns: minmax(0, 1fr); }
+  .pick-card.selected { grid-template-columns: 38% minmax(0, 1fr); }
+}
+@media (max-width: 620px) {
+  .compare-grid { grid-template-columns: minmax(0, 1fr); }
+  .verdict { flex-direction: column; align-items: stretch; gap: 16px; }
+  .verdict .score { text-align: left; }
+  .spec-row > span { min-width: 0; overflow-wrap: anywhere; }
+}
+
 /* Permite que las sugerencias se superpongan al comparador. */
 .hero { overflow: visible; z-index: 21; }
+.hero::after { width: min(440px, 100%); left: 50%; transform: translateX(-50%); }
+.image-missing::after { box-sizing: border-box; overflow-wrap: anywhere; }
 
 .hero-search-wrap .hero-search { width: 100%; }
 
@@ -46,8 +63,6 @@
 .hero-suggestion small { color: var(--muted); font-size: 11px; }
 .hero-suggestion strong { font: 700 12px Manrope; white-space: nowrap; }
 
-/* El catálogo se reemplaza por el menú lateral del comparador. */
-#catalogo { display: none; }
 
 .swap {
   padding: 11px 16px;
